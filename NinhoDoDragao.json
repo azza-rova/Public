@@ -7,7 +7,7 @@
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
 				"version": "1.0",
-				"authors": [ "Bruno e Azza" ],
+				"authors": [ "Azzarova", "Bruno", "Carol", "Dann", "Luc", "Murdoc", "Verdis", "Zoroa" ],
 				"url": "https://discord.gg/RkjPcCKc",
 				"color": "d80000"
 			}
@@ -1024,7 +1024,7 @@
 				"This spell allows you to bolster your allies and hinder your foes.",
 				"Every ally that can hear you within 30 ft of you gains +2 to attack rolls and saving throws, and every enemy subtracts 2 of the same rolls. ",
 				"While casting this spell, you cannot cast any other spell that demands a vocal component without breaking {@status concentration}. ",
-				"{@status concentration} also ends if your capability to use your voice is taken away."
+				"{@status Concentration} also ends if your capability to use your voice is taken away."
 			],
 			"classes": {
 				"fromClassList": [
