@@ -1,0 +1,3535 @@
+{
+	"siteVersion": "2.5.12",
+	"_meta": {
+		"sources": [
+			{
+				"json": "NinhodoDragao",
+				"abbreviation": "NDD",
+				"full": "Ninho do Dragão",
+				"version": "1.0",
+				"authors": [ "Bruno e Azza" ],
+				"url": "https://discord.gg/RkjPcCKc",
+				"color": "d80000"
+			}
+		],
+		"dateAdded": 1738745953,
+		"dateLastModified": 1738745953,
+		"edition": "classic"
+	},
+	"spell": [
+		{
+			"name": "Acid Lash",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Three drops of acid"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A strand of acid comes forth from your hands. ",
+				"For the duration and as part of casting this spell, you can use your action to make a melee spell attack with a range of 10 ft, dealing {@damage 4d4} acid damage on a hit. ",
+				"You can also use your action to hold the acid forth in a 10 ft line originating from you until the start of your next turn. ",
+				"When you do so, a creature that enters the area or starts its turn there must make a Dexterity saving throw or take {@damage 4d4} acid damage. If the creature succeeds, it takes half damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"the damage increases by {@dice 1d4} per level of the spell slot above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Adhesion",
+			"source": "NinhodoDragao",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of powdered hoof"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Two objects that you are touching and that are touching each other become magically glued for the duration. ",
+				"If either of the objects is being worn or carried by a creature, they can roll a Dexterity saving throw. On a success, the spell ends.",
+				"The two objects can be pulled apart by a Strength check against your spell save DC."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Agitate Wounds",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A pinch of salt"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You can open the wounds of a creature that is missing hit points.",
+				"The creature rolls a Constitution saving throw. On a failure, the creature takes {@damage 4d8} necrotic damage, and {@dice 2d8} more at the end of their turns for the duration or until the creature recovers any amount of hit points or spends a use of a Healer's Kit to patch their wounds. ",
+				"On a success, the creature takes half damage and doesn't suffer the additional effect."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The damage increases {@dice 1d8} for both the initial damage and the extra effect per level of the spell slot above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Agra's Ambush",
+			"source": "NinhodoDragao",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Roughly ground glass, which must be sprinkled around the target"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"You create a mental trap that springs whenever your mental faculties are tampered with. ",
+				"When the target is affected by spells or magic effects that charm, frighten or force a certain behavior out of them caused by a creature, the target can force that creature to roll an Intelligence saving throw, taking {@damage 4d6} psychic damage and losing the spell or magic effect on a failure or half the damage and no extra effect on a success.",
+				"After it activates, the spell ends regardless of the result of the sainvg throw."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, it can activate one extra time for each slot level above 2nd instead of immediately ending on the first activation."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Airsphere",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A fan"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A 5 ft diameter sphere of violent winds appears at an unoccupied space within range of your choice. ",
+				"Any creature that ends its turn within 5 ft of it must succeed a Strength saving throw or take {@damage 2d6} bludgeoning damage, be moved 5 ft away from the sphere and, if it's a large or smaller creature, be knocked {@condition prone} on a failure, half damage and none of the extra effects on success. If a large or smaller creature that is flying fails the saving throw, they fall up to 60ft.",
+				"As a bonus action, you can move the sphere up to 30 ft. If you ram the sphere against a creature, it must roll the saving throw against the effects again. A creature can only suffer these effects once per round.",
+				"The sphere can move in any direction, including up, but disappears if moved more than 60ft away from the caster."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			},
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Arachnophobia",
+			"source": "NinhodoDragao",
+			"page": 0,
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The target must roll a Wisdom saving throw when the spell is cast and again at the end of each of its turns or be considered {@condition frightened} for the duration of the spell, the source of fear being thousands upon thousands of illusory spiders that cover the target's body. On a success, the spell ends. ",
+				"A creature that is a construct, undead, or immune to the {@condition frightened} condition succeeds this saving throw automatically. While under the effects of the spell, the creature must use its action to attempt to brush off the spiders."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Augment Undead",
+			"source": "NinhodoDragao",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A piece of cloth taken from a corpse"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"Three undead creatures of your choice gain +1 to saving throws, attack and damage rolls, and are immune to being turned for the duration of the spell. ",
+				"To maintain this effect after the duration, you must cast this spell again before the 24 hour period ends. This effect does not stack."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"the bonuses increase to +2 when using a spell slot of 4th or 5th level, and +3 when using a spell slot of 6th level or higher."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Babble",
+			"source": "NinhodoDragao",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The target must make an Intelligence saving throw or lose all language proficiencies it has for the duration of the spell, making it incapable of speaking coherent sentences or using vocal components for spells.",
+				"At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Barrier Reaver",
+			"source": "NinhodoDragao",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A small metal key"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A magical barrier (Such as Wall of Force, Leomund's Tiny Hut, etc) you touch is opened for the duration. A 5 ft opening appears where you touch. ",
+				"If a creature is in the space of the opening when the spell ends, it takes {@damage 6d6} force damage and is shunted to the nearest unoccupied space of its choice. ",
+				"If the spell used to create the barrier is of higher level than the spell slot used to cast this spell, it fails."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Basilisk Gaze",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A pebble or stone chip and three tears from the caster"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"For the duration, your eyes glow a ruby red radiance, emitting dim light 5ft in front of you. As an action and as part of casting the spell you can attempt to petrify a creature with your gaze. ",
+				"A creature that is {@condition blinded} or doesn't have eyes is immune to this effect.",
+				"The target must succeed on a constitution saving throw or become {@condition petrified} until the start of your next turn. This petrification becomes undone if the target leaves the area of the spell or if you break eye contact with it.",
+				"If the creature is physically broken while {@condition petrified}, it suffers from similar deformities if it reverts to its original state. ",
+				"If a creature succeeds this save, it is immune to this effect for the next 24 hours."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the radius of the sphere increases by 10 feet for each slot level above 3th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			},
+			"conditionInflict": [
+				"petrified"
+			]
+		},
+		{
+			"name": "Belsham's Mace",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As an action, you create a blunt force that swings against a target. Roll a ranged spell attack. ",
+				"On a hit, it deals {@damage 3d10} force damage and {@dice 3d10} magical bludgeoning damage, and the target must roll a Constitution saving throw or be {@condition stunned} until the end of its turn and drop all items they are holding."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blacksteel",
+			"source": "NinhodoDragao",
+			"page": 0,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A pinch of iron fillings and a scrap of cobweb"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"As an action, you can turn a weapon into the ideal tool for stealth. Its color becomes black in its entirety and does not make a sound when swinging or hitting against something.",
+				"Any blood from attacks with this weapon is absorbed by the weapon. ",
+				"Divination spells used to locate or attain information about the weapon immediately fail for the duration of the spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bowgentle's Fleeting Journey",
+			"source": "NinhodoDragao",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A rubber ball"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A creature of your choice is teleported up to 40 ft away from its current position to a point you can see of your choice that is not occupied. ",
+				"The creature can choose to attempt to resist this spell and roll a Dexterity saving throw. If they succeed, nothing happens. ",
+				"At the end of your next turn, the creature returns to the unoccupied space nearest to its location when the spell was cast."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Breathsense",
+			"source": "NinhodoDragao",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"For the duration, you know the location and size of all breathing creatures within 1000 ft of you, provided that they are outdoors.",
+				"The spell can penetrate most barriers, but it won't work on a creature covered by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+				"A creature doesn't need to be fully encased in one of those materials to be protected from the effect, for example: a human breathing inside a house with closed doors and windows is not detected, even if there are cracks and small spaces within its cover."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Brightsong",
+			"source": "NinhodoDragao",
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You create a sphere of protection against movement impairing effects. ",
+				"For the duration, creatures of your choice within 20 ft of you are under the effects of a Freedom of Movement spell. ",
+				"Any spell or magical effect that targets the chosen creatures and would aim to restrict their movement or apply a condition that did so fail and are expended."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bubble Breath",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A bit of tree sap"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You blow forth 3 bubbles, rolling a ranged spell attack for each. They can target multiple targets or the same one. ",
+				"On a hit, the target takes {@damage 1d6} force damage and is coated in goo, suffering -2 to all saving throws and attack rolls for the duration, or until they use an action to wipe off the goo. ",
+				"The effect stacks if multiple bubbles target the same creature, but it can also remove all of the goo with a single action."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Chant",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell allows you to bolster your allies and hinder your foes.",
+				"Every ally that can hear you within 30 ft of you gains +2 to attack rolls and saving throws, and every enemy subtracts 2 of the same rolls. ",
+				"While casting this spell, you cannot cast any other spell that demands a vocal component without breaking {@status concentration}. ",
+				"{@status concentration} also ends if your capability to use your voice is taken away."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Combine",
+			"source": "NinhodoDragao",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 0,
+					"unit": "special"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A small pair of wings"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"You combine two spells you know and cast them at the same time. The combined level of the spells cannot exceed 7.",
+				"The casting time, duration, range, and the number of targets is whichever is most restrictive from the two spells. ",
+				"If both spells require {@status concentration}, you have disadvantage on checks to maintain it."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Comfort",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Up to 10 willing creatures of your choice feel no pain, heat, cold, hunger, thirst, {@condition exhaustion}, and need not eat for the duration of the spell. ",
+				"They are immune to spells and magical effects that would put them to sleep and gain a +1 to wisdom, intelligence, and charisma saving throws.",
+				"Not feeling something doesn't mean it isn't happening. The creature's body will suffer any effects as it would normally, regardless of the creature's ability to perceive it."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Death Spider",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A terrifying twist of the polymorph spell: it turns the appendage no larger than 5 ft of a creature into a spider on a failed Charisma saving throw. ",
+				"If the appendage is being used to hold something, that thing is dropped. ",
+				"If the appendage is necessary for the creature's movement, the creature's speed is halved. ",
+				"If the appendage is used for an attack, such as a tail, or claw attack, that attack is impossible while the spell is held and the spider is alive. ",
+				"The spider starts with 5 HP and moves at the start of the target’s turn. Each round, it consumes part of the limb, dealing {@damage 2d6} piercing damage and gaining 5 HP, growing larger. ",
+				"The spider has 12 AC and can be killed, but any damage it takes is also taken by the target of the spell. After it dies, it transforms back into the limb it once was. ",
+				"If the target creature dies, the spider detaches itself from the creature and becomes its own creature with its own initiative, obeying your commands. ",
+				"It still has an AC of 12, the HP it had before detaching, and it has a bite attack with +5 to hit and {@damage 2d6} damage. It disappears once the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"the spider deals {@damage 1d6} extra damage per round, and with its bite attack per level of spell slot used above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Delay Death",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "in which you see a creature hit 0 hit points"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Wood from a coffin or a chip of stone from a gravestone"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"As a reaction, you can maintain a creature other than you with 0 hit points from going {@condition unconscious}. ",
+				"The creature can take its turn normally and, while with 0 hit points, and it suffers the normal effects of taking damage while at 0 hit points. ",
+				"If the creature fails 3 death saving throws, it stays up until the spell ends, unable to be healed, dying at its end."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Despair",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A creature of your choice within range must succeed a Charisma saving throw or lapse into a despondent depression, as they realize the hopelessness and folly of their beliefs. ",
+				"A creature with 5 or less intelligence or with immunity to being {@condition charmed} automatically succeeds. The creature can also roll a saving throw at the end of each of its turns. On a success, the spell ends. ",
+				"The target is considered {@condition incapacitated}, even though physically capable of acting, everything just seems pointless. ",
+				"The target doesn't bother to defend itself, so attempts to disarm, bind or move the target automatically succeed, and attacks automatically hit, although whenever one of those things happen the creature may roll another saving throw to end the spell on itself."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					}
+				]
+			},
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Detho's Delirium",
+			"source": "NinhodoDragao",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a creature that is asleep or {@condition unconscious}. ",
+				"The creature is {@condition charmed}. While {@condition charmed} this way, it begins speaking at random, in all languages it knows, on random, rambling topics. It cannot hear questions or be magically induced to give specific answers. ",
+				"The creature may utter names, passwords, directions, and secrets, but those are often lost in random ramblings, and a listener would have to roll an intelligence check (DC up to the DM considering the information) to attempt to discern what any given topic is about.",
+				"If the creature is awakened at any time, the spell ends."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			},
+			"conditionInflict": [
+				"charmed"
+			]
+		},
+		{
+			"name": "Drenal's Amok Needles",
+			"source": "NinhodoDragao",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Needles"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You designate a creature within range and toss a needle in the air. At the start of each of the creature's turns for the duration, it takes 1 piercing damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, this spell uses one more needle per slot level above 1st, dealing 1 more damage. The damage is dealt individually."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Enchanted Mirrors",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "Two adorned mirrors, worth 50g each, which this spell consumes",
+					"consume": true,
+					"cost": 1000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You enchant two mirrors to reflect spells and use them to replicate them. ",
+				"As part of casting this spell, choose a cantrip or first level spell you have prepared. ",
+				"The two mirrors float in front of you, bouncing the power of the spell back and forth. For the duration, you can cast the spell as a bonus action, without using a spell slot.",
+				"When this spell ends, the mirrors shatter."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Erase",
+			"source": "NinhodoDragao",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A piece of writing of your choice within range is erased. The writing can be mundane or magical, such as glyphs of warding. ",
+				"If magical, it is immediately erased if the spell slot used for this spell is of a level higher than the spell used for the writing. ",
+				"Otherwise, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fallion's Fabulous Fireball",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A tiny ball of bat guano and sulfur"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A version of the Fireball spell that was made for artistic purposes, it can be shaped to the caster's will. ",
+				"When you cast this spell, you can freely draw a line up to 60 ft long. It can curve and even be off the ground. ",
+				"Anyone caught within the line must roll a Dexterity saving throw. A target takes {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one. ",
+				"The fire spreads around corners. It ignites flammable objects in the area that aren’t being worn or carried."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 1d6} per slot level after the first."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Flame of Justice",
+			"source": "NinhodoDragao",
+			"level": 6,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "desert bee wax candle worth 300 gp, which the spell consumes",
+					"consume": true,
+					"cost": 3000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A zealot's version of Zone of Truth, this spell works as a tool to achieve truth. ",
+				"If the spell targets a creature that doesn't share a language with the caster, the spell fails, unless another spell such as Tongues or Speak with Animals allows communication when the spell is cast.",
+				"The caster can then ask up to 10 questions to the target.",
+				"Whenever the target lies, its body bursts into flame, dealing {@damage 1d6} fire damage, plus {@dice 1d6} for each time before this one that this damage was activated. ",
+				"If the target avoids the question or stays silent, the caster can use their action to trigger the damage once again. ",
+				"When 10 questions are asked, or when the damage is dealt 10 times, the spell ends."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Flashburst",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell generates an intense flash of light in a 30 ft radius around the caster. ",
+				"Anyone caught within is considered {@condition blinded} until the start of their turn, and must roll a Constitution saving throw or be considered {@condition blinded} until the end of their turn.",
+				"Creatures forewarned before the casting of this spell can automatically succeed by using their reaction to avert their eyes."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fleshshiver",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A bone, broken during spellcasting"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Every turn and as part of casting this spell, you can use an action to force a target to roll a Constitution saving throw as the caster attempts to break/dislodge bones and rearrange organs.",
+				"On a failure, it takes {@damage 5d8} necrotic damage and loses 5ft of movement for the duration of the spell. On a success, the creature takes half damage and suffers none of the additional effects.",
+				"This movement loss is cumulative for the duration of the spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"the spell deals {@damage 1d8} more damage per level of the spell slot above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fool's Speech",
+			"source": "NinhodoDragao",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A whistle made of bone"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Up to 8 targets chosen within range gain proficiency in a secret language for the duration.  The language is incomprehensible to others and doesn't remotely sound like another language. ",
+				"Spells such as Comprehend Languages and Tongues cannot decipher this language."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Glassee",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A small piece of glass or crystal"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A 5 ft square, no more than 5 ft in depth surface or nonmagical object you touch becomes translucent. ",
+				"If the object is being worn or carried, the creature can roll a Dexterity saving throw against this spell, ending it on a success. ",
+				"You can choose to only make it translucent for you or to temporarily turn the material into glass, in which case everyone can see through it, and the material's resilience becomes that of glass. ",
+				"You can willingly end this spell. When it ends, if the object or surface was broken, it remains so. ",
+				"Alternatively, if the object is a weapon or piece of armor, the spell renders it only useful for one attack, even if it misses, if a weapon, or one hit taken, if a piece of armor or shield, as it breaks right after."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Gloom",
+			"source": "NinhodoDragao",
+			"page": 0,
+			"level": 0,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lit incense"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Every light within range of this spell is considered dim light for the duration."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Great Shout",
+			"source": "NinhodoDragao",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Your voice booms forth. ",
+				"Each creature in the 60 ft cone rolls a Constitution saving throw, taking {@damage 6d8} thunder damage and being pushed 30 ft away from you on a failure, half damage, and not pushed on success. ",
+				"Creatures in the center line of the cone automatically fail the save."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Imbue Undead",
+			"source": "NinhodoDragao",
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A scroll with a spell's name"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You give up the ability to cast a spell and give it to an undead, usually within your command. ",
+				"Touch the choosen undead creature while casting the spell and a spell you know of a level below the level of the spell slot used for this casting, but not below first level. ",
+				"You are no longer able to cast this spell until the creature dies, and the undead gains the ability to cast it. The creature can only cast it once and regains the ability to do so on a long rest. ",
+				"The undead must stay within range throughout the whole casting."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Jaggar's Strengthened Bastion",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A piece of chalk"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Objects in a 100 ft cube of your choice within your vision gain the ability to roll saves against harmful spells, adding your spell modifier plus your proficiency modifier to it, and also gain your spell modifier in AC for the duration."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lightning Cloak",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A bit of fur and a firefly"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Crackles of lightning surround your body, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. ",
+				"For the duration, you have resistance to lightning damage, and creatures who step within 5 ft of you must roll a Dexterity saving throw. They take {@damage 3d8} lightning damage and can’t take reactions until the start of its next turn on a failure, half as much damage and no additional effect on a success.",
+				"Additionally, for the duration, you can use your action to launch bolts of lightning towards creatures within 60 ft of you. ",
+				"Roll a ranged spell attack. On a hit, it deals {@damage 3d8} lightning damage on a hit."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lightning Curtain",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A small bit of fur; a piece of amber, glass, or a crystal rod"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a wall of lightning on a solid surface within range. ",
+				"You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is translucent and lasts for the duration. ",
+				"When the wall appears, each creature within its area must make a Dexterity saving throw. If the creature is wearing armor made of metal, the save is made at disadvantage. On a failed save, a creature takes {@damage 6d6} lightning damage, or half as much damage on a successful save.",
+				"The spell also deals {@damage 6d6} lightning damage to each creature that ends its turn inside the wall. ",
+				"A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mouse",
+			"source": "NinhodoDragao",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"An object you choose within range smaller than a 5 ft cube is animated. ",
+				"While under the effects of this spell, the object has an AC of 15 and 1 hit point. It rolls its own initiative with no bonus, and, on its turn, it scurries off away from all creatures. ",
+				"It can only use the hide action, and if it has no place to hide, the Dodge or Dash action. ",
+				"It has 30 ft of walking speed. ",
+				"You can choose to end this spell early. ",
+				"Damage dealt while this enchantment is in place does not permanently damage the object, just breaks the enchantment."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the object targeted has +1 AC and +5 hit points per level above 1st."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Multi-Lock",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "Gold dust worth at least 100 gp, which the spell consumes",
+					"consume": true,
+					"cost": 100
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"entries": [
+				"You touch the wall of a room. It must consist of walls and a ceiling that are connected and intact. You can touch the room you choose from inside or outside. ",
+				"All doors, windows, and gates leading in or out of the room are affected by an Arcane Lock spell. ",
+				"When you cast the spell, you can set a password for either all or none of the affected objects."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mycontil's Last Resort",
+			"source": "NinhodoDragao",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"When you cast this spell, deplete all of your spell slots. ",
+				"Creatures within range must roll a Dexterity saving throw, taking {@damage 20d12} radiant damage or half on a success. ",
+				"You then take a level of {@condition exhaustion}."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Nystul's Radiant Arch",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A crystal prism"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				" This spell creates a glimmering rainbow of light. ",
+				"Roll a ranged spell attack. On a hit, it deals {@damage 1d4} damage of each of the following types: Acid, Cold, Fire, Force, Lightning, Necrotic, Radiant, Poison, Psychic and Thunder, to a total of {@damage 10d4} damage. ",
+				"It also magically grants the caster the information of every resistance, immunity, and weakness the creature possesses."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Rip",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A pair of black gloves"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You target a creature or an object and attempt to rip it apart. ",
+				"If the target is a creature, it rolls a Constitution saving throw, taking {@damage 5d8} force damage on a failure or half as much on a success. ",
+				"On a failure you can also use your action on each of your turns for the duration of the spell to force the target to repeat the saving throw. If it fails, the damage of this spell is increased by {@dice 1d8} until it ends.",
+				"Regardless of success or failure on any saving throws after the first one, the target takes the spell's damage when you use this action.",
+				"The damage increase is cumulative, meaning that when a target fails each saving throw, the damage dice will begin at {@dice 5d8}, then increase to {@dice 6d8}, then {@dice 7d8} and so on until the spell ends.",
+				"The spell ends if you use your action to do anything else or if the target is ever outside the spell’s range. ",
+				"If this spell reduces a creature or object to 0 hit points, it is ripped apart and, if a creature, instantly killed."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sacremon's Acrid Wit",
+			"source": "NinhodoDragao",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"When this spell is cast, a large floating mouth, similar to a magic mouth appears and follows the target. The mouth criticizes, harangues, insults, and berates the target in its native tongue. ",
+				"As a bonus action and as part of casting this spell, if you haven't used your action to cast Vicious Mockery, you can command the mouth to do it for you, dealing {@dice 4d4} regardless of your level. ",
+				"If the target dies, you can use your bonus action to move the mouth to a new target within range before casting Vicious Mockery with it."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sandstorm",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A fistful of sand"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A 10 ft radius vortex of raging sand appears centered at a point within range. The area is heavily obscured and difficult terrain. ",
+				"All creatures in the area when the spell is cast or that end their turn in it roll a dexterity saving throw or take {@damage 4d8} slashing damage from the sands, taking half on a success. ",
+				"The sand is coarse and rough, and it gets everywhere."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8} per slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Scalding Spout",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "One ounce of fresh water"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You attempt to scald a target with a jet of boiling water. Roll a ranged spell attack against a target of your choice. ",
+				"This spell immediately fails if the target has any level of cover from you, and cannot be cast if there are creatures in between a direct line between you and your target. ",
+				"On a hit, the creature takes {@damage 5d4} bludgeoning damage from the impact and {@dice 5d4} fire damage from the boiling water. ",
+				"The fire damage ignores resistances, but not immunity."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, this spell deals extra {@dice 1d4} bludgeoning and {@damage 1d4} fire damage per slot level above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Surelife",
+			"source": "NinhodoDragao",
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when you reach 0 hit points"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As a reaction to taking damage which would reduce your hit points to 0, you can cast this spell and stay at 1, even if that damage would kill you outright."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Suric's Swift Perusal",
+			"source": "NinhodoDragao",
+			"page": 0,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You magically enhance yourself to be able to read books at five times the normal reading rate. "
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Temporal Eye",
+			"source": "NinhodoDragao",
+			"level": 7,
+			"school": "D",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an adorned veil of fine silk worth at least 200 gp and the eye of a hawk, both which the spell consume. A focus worth at least 1,000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water.",
+					"consume": true,
+					"cost": 120000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Much like Scrying, you can see and hear a particular creature or object you choose. However, you must also choose an event you know of related to this object or creature's past.",
+				"The spell allows you to see this event as if you were there, although creatures and the environment do not interact with you. ",
+				"You are free to move around in this vision, although no more than 120 ft from the target object or creature, but your body remains still and you are considered {@condition blinded} and {@condition deafened} for the duration."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Temporary Resurrection",
+			"source": "NinhodoDragao",
+			"level": 8,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A bit of coal and moss"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The spirit of a non-undead corpse you touch returns to its body. The creature must have died within the last minute.",
+				"Roll a contested Wisdom check against the creature as if it was alive. If you succeed, the creature is revived and restores all its hitpoints. ",
+				"It is considered Undead but retains all other features, ability scores, and proficiencies it had in life. While it is alive this way, it is considered {@condition charmed}. ",
+				"While {@condition charmed} this way, the creature acts as it would normally, but it considers you and your allies friends. ",
+				"If the creature is damaged by you or one of your allies, or if the creature reaches 0 hit points, the spell ends. When the spell ends, the corpse vanishes to dust."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Tenser's Deadly Strike",
+			"source": "NinhodoDragao",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A full set of tiger claws"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"For the duration, when you make a weapon attack, the weapon's damage die are treated as if you rolled the maximum damage."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "There/Not There",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A small bit of cat fur encased in an adorned box worth at least 50 gp",
+					"cost": 50
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Choose three creatures within range. At the start of each of their turns, they roll a {@dice 1d20}. On an 11 or higher, they become {@condition invisible} until the start of their next turn. ",
+				"On a 20, they also can teleport up to 30 ft away to an empty space they can see right after becoming {@condition invisible}."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature per slot above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thultaun's Thrust",
+			"source": "NinhodoDragao",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A Large or smaller creature is violently thrust 100 ft in a direction of your choice, slamming and stopping against the first obstacle it meets. ",
+				"If the creature hits an obstacle, it rolls a Dexterity save, taking {@damage 10d6} bludgeoning damage and falling {@condition prone} on a failure, taking half damage and not falling {@condition prone} on a success. If it hits a creature, both creatures roll a Dexterity saving throw. ",
+				"The other creature always takes half damage and falls {@condition prone} only if it fails the save. A Huge or larger creature automatically succeeds.",
+				"If the creature does not hit an obstacle, it rolls the save against being {@condition prone}, but takes no damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, you can shove the creature 10 ft farther per slot level above 6th, and the damage increases by {@dice 1d6} per slot level above 6th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Trick",
+			"source": "NinhodoDragao",
+			"level": 7,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "A ball of wax"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Choose a creature within one size category of you. ",
+				"That creature must roll a Charisma saving throw. On a success, the spell ends. ",
+				"On a failure, both you and the creature teleport and switch positions, and a powerful illusion makes you look like the target, and the target look like you, and, for the duration, you can use illusory noises to emulate whatever noises or even the voice of the creature targeted, and, should the creature speak, they do so in your voice.",
+				"The changes wrought by this spell fail to hold up to physical inspection. ",
+				"To discern through the illusion, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC. ",
+				"The creature has disadvantage on the check if both you and the creature have spoken since the casting of this spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Tumble",
+			"source": "NinhodoDragao",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A pinch of grease, which the spell consumes"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You attempt to shake a Large or smaller creature's balance. ",
+				"At the end of its turn, it rolls a Dexterity saving throw, falling {@condition prone} on a failure. As an action on following turns, you can use your action to make the target roll this save again. ",
+				"The spell ends if you use your action to do anything else, if the target is ever outside the spell’s range or if it has total cover from you."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Turn Pebble to Boulder",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A pebble"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A pebble you toss grows in size and speed. ",
+				"Anyone in a 10 ft wide, 60 ft line from you must roll a Dexterity saving throw, taking {@dice 8d8} non-magical bludgeoning damage and falling {@condition prone} on a failure, half as much damage, and no additional effect on a success. Huge or larger creatures automatically succeed the save. ",
+				"The boulder stops if it hits an obstacle or a Huge or larger creature, not having an effect on anything behind the creature or obstacle if it does. ",
+				"When the boulder stops, it turns back into a pebble."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you use a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot above 4th. ",
+						"Additionally, at 6th level, Huge creatures do not automatically succeed the save, and, at 8th level, Gargantuan creatures do not automatically succeed the save."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Undead Regeneration",
+			"source": "NinhodoDragao",
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell allows the caster to regenerate an undead's resilience. A target undead you touch regains {@dice 5d10} hit points. ",
+				"Once used, this spell cannot be used on the same undead for the next 24 hours."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you use a spell slot of 7th level or higher, the healing increases by {@dice 1d10} per slot level above 6th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Water Form",
+			"source": "NinhodoDragao",
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A drop of water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You transform someone's body into water. ",
+				"The target chooses what equipment turns into water and melds into them and what drops on the ground when they transform.",
+				"You can still use effects of magical items if they have melded into you. ",
+				"While in this form you cannot wield weapons, but you gain a Bludgeon attack that deals {@damage 1d6} + strength modifier bludgeoning damage. ",
+				"The water maintains your general sillouette, but you can drop your own shape to seep through small spaces, so long as you keep yourself as one singular body of water. ",
+				"While in this shape you have immunity to poison damage, weakness to lightning damage, and resistance to acid, cold, fire, thunder, bludgeoning, piercing, and slashing damage. ",
+				"You can also move through enemies, and use the Disengage action as a bonus action. ",
+				"You are considered {@condition invisible} while merged within bodies of water, your attacks are not hampered by being underwater, and you do not need to breathe while in this form. ",
+				"You gain a swimming speed equal to your walking speed."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wind Blade",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "A small fan"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell does not break stealth if cast from hiding. Roll a ranged spell attack against up to five creatures within range. ",
+				"Wind picks up and tears at the targets, dealing {@dice 6d8} magical slashing damage on a hit."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 5th level spell slot or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB'14"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB'14"
+					}
+				]
+			}
+		}
+	]
+}
