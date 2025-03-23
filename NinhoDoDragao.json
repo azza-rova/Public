@@ -1,5 +1,5 @@
 {
-	"siteVersion": "2.5.12",
+	"siteVersion": "2.7.3",
 	"_meta": {
 		"sources": [
 			{
@@ -7,13 +7,15 @@
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
 				"version": "1.0",
-				"authors": [ "Administração e moderação" ],
+				"authors": [
+					"Administração e moderação"
+				],
 				"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/NinhoDoDragao.json",
 				"color": "d80000"
 			}
 		],
-		"dateAdded": 1738745953,
-		"dateLastModified": 1738745953,
+		"dateAdded": 1742769779,
+		"dateLastModified": 1742769779,
 		"edition": "classic"
 	},
 	"spell": [
@@ -490,6 +492,60 @@
 					{
 						"name": "Warlock",
 						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Azza's Update",
+			"source": "NinhodoDragao",
+			"page": 999,
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"When you cast this spell, the Ninho do Dragão's Homebrew magically updates!",
+				"Then, a random hatchling is banned from the server."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Moderator",
+						"source": "PHB"
+					},
+					{
+						"name": "Administrator",
+						"source": "PHB"
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"Martelada vai cantar!"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.ibb.co/RGwGCP5j/meme-bonk-com-o-caozinho-acertando-outro-com-taco-de-baseball-1-53812.webp"
+						}
 					}
 				]
 			}
