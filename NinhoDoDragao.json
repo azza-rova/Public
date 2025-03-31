@@ -14,11 +14,105 @@
 				"color": "d80000"
 			}
 		],
-		"dateAdded": 1743445741,
-		"dateLastModified": 1743445741,
+		"dateAdded": 1743457799,
+		"dateLastModified": 1743457799,
 		"edition": "classic"
 	},
 	"spell": [
+		{
+			"name": "Absolute Zero Disruption",
+			"source": "NinhodoDragao",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a white dragon scale"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You channel the most extreme cold at a creature you can see within range of the spell. ",
+				"That creature must make a successful Constitution save or have its cold resistances affected for the duration of the spell.",
+				"If it has Immunity, it becomes resistant, if it has resistance, the resistance is ignored."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Fathomless",
+							"shortName": "Fathomless",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"Essa magia foi inspirada em Tartalis Naillo, personagem do jogador Diego que alcançou o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Characters/TartalisNaillo.png"
+						}
+					}
+				]
+			}
+		},
 		{
 			"name": "Acid Lash",
 			"source": "NinhodoDragao",
