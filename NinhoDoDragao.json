@@ -1,5 +1,5 @@
 {
-	"siteVersion": "2.7.4",
+	"siteVersion": "2.7.5",
 	"_meta": {
 		"sources": [
 			{
@@ -14,8 +14,8 @@
 				"color": "d80000"
 			}
 		],
-		"dateAdded": 1742858438,
-		"dateLastModified": 1742858438,
+		"dateAdded": 1743445741,
+		"dateLastModified": 1743445741,
 		"edition": "classic"
 	},
 	"spell": [
@@ -1653,6 +1653,92 @@
 			}
 		},
 		{
+			"name": "Elandur's Spacetime Bending",
+			"source": "NinhodoDragao",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"When you cast this spell, choose two points that you can see within the range of the spell.",
+				"You create a rift in spacetime, like a magical wall 10ft high and 10 ft wide in each of these points, each facing any direction. The rift connects the two points as if they were side by side.",
+				"Anything (objects, creatures, effects, etc.) that passes through entrance one immediately exits on the opposite side of entrance two (and vice-versa), preserving its speed, strength, range, etc."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the range increases by 10 for each slot level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"Essa magia foi inspirada em Elandur Silverleaf, personagem do jogador Azzarova que alcançou o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Characters/ElandurSilverleaf.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Elevar Cosmus",
 			"source": "NinhodoDragao",
 			"level": 3,
@@ -2534,6 +2620,82 @@
 					{
 						"name": "Warlock",
 						"source": "PHB'14"
+					}
+				]
+			}
+		},
+		{
+			"name": "Max's Haste",
+			"source": "NinhodoDragao",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a shaving of licorice root"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Choose up to three willing creatures that you can see within range.",
+				"Until the spell ends, a target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.",
+				"When the spell ends, a target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Druid",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Land",
+							"shortName": "Land",
+							"source": "PHB",
+							"subSubclass": "Grassland"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Blood",
+							"shortName": "Blood",
+							"source": "TDCSR"
+						}
 					}
 				]
 			}
