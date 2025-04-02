@@ -4334,21 +4334,21 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/azza-rova/Public/blob/main/Monsters/AbominationI.jpg"
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/AbominationI.jpg"
 						}
 					},
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/azza-rova/Public/blob/main/Monsters/Abomination2.jpg"
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/AbominationIII.jpg"
 						}
 					},
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://github.com/azza-rova/Public/blob/main/Monsters/Abomination3.jpg"
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/AbominationII.jpg"
 						}
 					}
 				]
@@ -4358,7 +4358,7 @@
 			],
 			"tokenHref": {
 				"type": "external",
-				"url": "https://github.com/azza-rova/Public/blob/main/Monsters/Abomination-Token.png"
+				"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/Abomination-TokenII.png"
 			},
 			"damageTags": [
 				"B",
