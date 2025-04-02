@@ -14,7 +14,7 @@
 			}
 		],
 		"dateAdded": 1743457799,
-		"dateLastModified": 1743457799
+		"dateLastModified": 1743459999
 	},
 	"spell": [
 		{
@@ -4053,7 +4053,7 @@
 			}
 		},
 		{
-			"name": "Summon Abomination",
+			"name": "Summon Abomination .",
 			"source": "NinhodoDragao",
 			"page": 0,
 			"level": 2,
