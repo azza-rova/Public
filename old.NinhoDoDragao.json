@@ -1,5 +1,4 @@
 {
-	"siteVersion": "2.7.5",
 	"_meta": {
 		"sources": [
 			{
@@ -15,8 +14,7 @@
 			}
 		],
 		"dateAdded": 1743457799,
-		"dateLastModified": 1743457799,
-		"edition": "classic"
+		"dateLastModified": 1743457799
 	},
 	"spell": [
 		{
@@ -4053,6 +4051,448 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Summon Abomination",
+			"source": "NinhodoDragao",
+			"page": 0,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a coffin toy"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"When you cast this spell, choose any number of undead under your control within range to sacrifice. ",
+				"You invoke an {@creature Abomination|ninhododragao}, consuming the afterlife, bones and flesh of the sacrifices to empower it.",
+				"The Abomination is hard to tame, and trying to assert control over it and other undead at the same time will make them hostile to you.",
+				"The creature disappears if it dies or when the spell ends.",
+				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and uses its move to avoid danger."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, use the higher level wherever the spell's level appears in the stat block."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave",
+							"shortName": "Grave",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death",
+							"shortName": "Death",
+							"source": "DMG"
+						}
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"Essa magia foi inspirada em Prime Octtavio Tempest Eureka (Pote), personagem do jogador Uzeriel que alcançou o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Characters/Pote.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Summon Abomination",
+			"source": "NinhodoDragao",
+			"page": 0,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a coffin toy"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"When you cast this spell, choose any number of undead under your control within range to sacrifice. ",
+				"You invoke an {@creature Abomination|ninhododragao}, consuming the afterlife, bones and flesh of the sacrifices to empower it.",
+				"The Abomination is hard to tame, and trying to assert control over it and other undead at the same time will make them hostile to you.",
+				"The creature disappears if it dies or when the spell ends.",
+				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and uses its move to avoid danger."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, use the higher level wherever the spell's level appears in the stat block."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave",
+							"shortName": "Grave",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Death",
+							"shortName": "Death",
+							"source": "DMG"
+						}
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"Essa magia foi inspirada em Prime Octtavio Tempest Eureka (Pote), personagem do jogador Uzeriel que alcançou o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Characters/Pote.png"
+						}
+					}
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Abomination",
+			"source": "NinhodoDragao",
+			"summonedBySpell": "Summon Abomination|ninhododragao",
+			"summonedBySpellLevel": 3,
+			"size": [
+				"M",
+				"L",
+				"H",
+				"G"
+			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "10 + the level of the spell (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "20 + 15 for each spell level above 2nd"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 16,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages you speak"
+			],
+			"trait": [
+				{
+					"name": "0. Abomination Build",
+					"entries": [
+						"The numbers of sacrificed undead and spell slot used to create the Abomination enable certain traits and actions for it.",
+						"Besides that, the Abomination's size is also determined by a number of creatures sacrificed and the spell slot spent: ",
+						"{@b Medium:} 20 or less sacrifices, 2nd level slot;",
+						"{@b Large:} 21 to 40 sacrifices, 4th level slot;",
+						"{@b Huge:} 41 to 70 sacrifices, 6th level slot;",
+						"{@b Gargantuan:} 71 or more sacrifices, 8th level slot;"
+					]
+				},
+				{
+					"name": "1. Undead Constitution (3rd level, 4 sacrifices)",
+					"entries": [
+						"The Abomination is immune to being {@condition frightened} or {@condition paralyzed}, and it is immune to necrotic damage."
+					]
+				},
+				{
+					"name": "2. Disgusting Form (4th level, 10 sacrifices)",
+					"entries": [
+						"The Abomination gains access to the Disgusting Form action."
+					]
+				},
+				{
+					"name": "3. Grave's Profanity (5th level, 20 sacrifices)",
+					"entries": [
+						"The Abomination attacks deal magical damage."
+					]
+				},
+				{
+					"name": "4. Festering Aura (6th level, 35 sacrifices)",
+					"entries": [
+						"Any creature other than the caster that starts its turn within 5 feet of the Abomination must succeed on a Constitution saving throw against the caster's DC or take 7 ({@damage 2d6}) necrotic damage. ",
+						"Undead are immune to this aura."
+					]
+				},
+				{
+					"name": "5. Regeneration (7th level, 45 sacrifices)",
+					"entries": [
+						"The Abomination regains 10 hit points at the start of its turn. If the Abomination takes radiant damage, this trait doesn't function at the start of its next turn. ",
+						"The Abomination dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "6. Abominable Resistance (8th level, 60 sacrifices)",
+					"entries": [
+						"The Abomination is resistant to piercing, slashing and bludgeoning damage, but is vulnerable to radiant damage. "
+					]
+				},
+				{
+					"name": "7. Dreadful Absorption (9th level, 80 sacrifices)",
+					"entries": [
+						"Whenever the Abomination is subjected to necrotic damage, it takes no damage and regains a number of hit points equal to the necrotic damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The abomination makes a number of attacks equal to half its spell level rounded down."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one creature. {@h}{@damage 1d12 + 3 + summonSpellLevel} bludgeoning damage."
+					]
+				},
+				{
+					"name": "Disgusting Form (4th level, 10 sacrifices)",
+					"entries": [
+						"Each creature of the caster's choice that is within 120 feet of the abomination and aware of it must succeed on a Wisdom saving throw against the caster's DC or become {@condition frightened} for 1 minute. ",
+						"A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the Abomination's Disgusting Form  for the next 24 hours."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Incorporeal Movement",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"fluff": {
+				"entries": [
+					"A disgusting abomination created by evil beings with disgusting ideas in mind.",
+					"Nothing good can come from this thing."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/azza-rova/Public/blob/main/Monsters/AbominationI.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/azza-rova/Public/blob/main/Monsters/Abomination2.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://github.com/azza-rova/Public/blob/main/Monsters/Abomination3.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"ninho do dragão"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://github.com/azza-rova/Public/blob/main/Monsters/Abomination-Token.png"
+			},
+			"damageTags": [
+				"B",
+				"N"
+			]
 		}
 	]
 }
