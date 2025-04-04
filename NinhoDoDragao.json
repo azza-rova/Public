@@ -1778,8 +1778,11 @@
 			],
 			"entries": [
 				"When you cast this spell, choose two points that you can see within the range of the spell.",
-				"You create a rift in spacetime, like a magical wall 10ft high and 10 ft wide in each of these points, each facing any direction. The rift connects the two points as if they were side by side.",
-				"Anything (objects, creatures, effects, etc.) that passes through entrance one immediately exits on the opposite side of entrance two (and vice-versa), preserving its speed, strength, range, etc."
+				"You create a rift in spacetime, with the chosen points as its edges, each like a magical wall 10ft high and 10 ft wide, facing any direction. The rift connects the two edges as if they were side by side.",
+				"Anything (objects, creatures, effects, etc.) that passes through one edge immediately exits on the opposite side of the other edge (and vice-versa), preserving its speed, strength, range, etc.",
+				"For the duration of the spell you gain a new action and a new reaction:",
+				"{@b Replace Edge (action).} You can reposition one of the edges of the rift to a new point (both the old and new edge need to be within the spell range when you take this action).",
+				"{@b Twist Edge (reaction).} You can rotate one of the edges of the rift to face a new direction."
 			],
 			"entriesHigherLevel": [
 				{
