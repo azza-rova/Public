@@ -3,7 +3,7 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "NinhodoDragao",
+				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
 				"version": "1.3",
@@ -21,7 +21,7 @@
 	"spell": [
 		{
 			"name": "Absolute Zero Disruption",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 2,
 			"school": "T",
 			"time": [
@@ -115,7 +115,7 @@
 		},
 		{
 			"name": "Acid Lash",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -196,7 +196,7 @@
 		},
 		{
 			"name": "Adhesion",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 1,
 			"school": "T",
 			"time": [
@@ -249,7 +249,7 @@
 		},
 		{
 			"name": "Agitate Wounds",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "N",
 			"time": [
@@ -316,7 +316,7 @@
 		},
 		{
 			"name": "Agra's Ambush",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 2,
 			"school": "A",
 			"time": [
@@ -374,7 +374,7 @@
 		},
 		{
 			"name": "Aika's Lightning Fury",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -469,7 +469,7 @@
 		},
 		{
 			"name": "Airsphere",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -554,7 +554,7 @@
 		},
 		{
 			"name": "Arachnophobia",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"page": 0,
 			"level": 2,
 			"school": "I",
@@ -621,7 +621,7 @@
 		},
 		{
 			"name": "Archivist's Wrath",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"page": 999,
 			"level": 6,
 			"school": "C",
@@ -723,7 +723,7 @@
 		},
 		{
 			"name": "Augment Undead",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 2,
 			"school": "N",
 			"time": [
@@ -789,7 +789,7 @@
 		},
 		{
 			"name": "Babble",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 2,
 			"school": "E",
 			"time": [
@@ -838,7 +838,7 @@
 		},
 		{
 			"name": "Barrier Reaver",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 6,
 			"school": "V",
 			"time": [
@@ -889,7 +889,7 @@
 		},
 		{
 			"name": "Basilisk Gaze",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "T",
 			"time": [
@@ -958,7 +958,7 @@
 		},
 		{
 			"name": "Belsham's Mace",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "V",
 			"time": [
@@ -1002,7 +1002,7 @@
 		},
 		{
 			"name": "Blacksteel",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"page": 0,
 			"level": 1,
 			"school": "E",
@@ -1064,7 +1064,7 @@
 		},
 		{
 			"name": "Bowgentle's Fleeting Journey",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 1,
 			"school": "C",
 			"time": [
@@ -1117,7 +1117,7 @@
 		},
 		{
 			"name": "Breathsense",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 2,
 			"school": "D",
 			"time": [
@@ -1172,7 +1172,7 @@
 		},
 		{
 			"name": "Brightsong",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 6,
 			"school": "A",
 			"time": [
@@ -1216,7 +1216,7 @@
 		},
 		{
 			"name": "Bubble Breath",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "V",
 			"time": [
@@ -1284,7 +1284,7 @@
 		},
 		{
 			"name": "Chant",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "E",
 			"time": [
@@ -1330,7 +1330,7 @@
 		},
 		{
 			"name": "Combine",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 9,
 			"school": "T",
 			"time": [
@@ -1371,7 +1371,7 @@
 		},
 		{
 			"name": "Comfort",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "E",
 			"time": [
@@ -1430,7 +1430,7 @@
 		},
 		{
 			"name": "Death Spider",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "T",
 			"time": [
@@ -1507,7 +1507,7 @@
 		},
 		{
 			"name": "Delay Death",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "N",
 			"time": [
@@ -1568,7 +1568,7 @@
 		},
 		{
 			"name": "Despair",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "E",
 			"time": [
@@ -1622,7 +1622,7 @@
 		},
 		{
 			"name": "Detho's Delirium",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 1,
 			"school": "E",
 			"time": [
@@ -1683,7 +1683,7 @@
 		},
 		{
 			"name": "Drenal's Amok Needles",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 1,
 			"school": "E",
 			"time": [
@@ -1748,7 +1748,7 @@
 		},
 		{
 			"name": "Elandur's Spacetime Bending",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "C",
 			"time": [
@@ -1837,7 +1837,7 @@
 		},
 		{
 			"name": "Elevar Cosmus",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "E",
 			"time": [
@@ -1905,7 +1905,7 @@
 		},
 		{
 			"name": "Enchanted Mirrors",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "E",
 			"time": [
@@ -1965,7 +1965,7 @@
 		},
 		{
 			"name": "Erase",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 1,
 			"school": "T",
 			"time": [
@@ -2018,7 +2018,7 @@
 		},
 		{
 			"name": "Fallion's Fabulous Fireball",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "V",
 			"time": [
@@ -2070,7 +2070,7 @@
 		},
 		{
 			"name": "Flame of Justice",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 6,
 			"school": "D",
 			"time": [
@@ -2125,7 +2125,7 @@
 		},
 		{
 			"name": "Flashburst",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -2190,7 +2190,7 @@
 		},
 		{
 			"name": "Fleshshiver",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "N",
 			"time": [
@@ -2247,7 +2247,7 @@
 		},
 		{
 			"name": "Fool's Speech",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 2,
 			"school": "E",
 			"time": [
@@ -2300,7 +2300,7 @@
 		},
 		{
 			"name": "Glassee",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "T",
 			"time": [
@@ -2357,7 +2357,7 @@
 		},
 		{
 			"name": "Gloom",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"page": 0,
 			"level": 0,
 			"school": "I",
@@ -2432,7 +2432,7 @@
 		},
 		{
 			"name": "Great Shout",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 6,
 			"school": "V",
 			"time": [
@@ -2476,7 +2476,7 @@
 		},
 		{
 			"name": "Holy Grenade",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "V",
 			"time": [
@@ -2558,7 +2558,7 @@
 		},
 		{
 			"name": "Imbue Undead",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 6,
 			"school": "E",
 			"time": [
@@ -2609,7 +2609,7 @@
 		},
 		{
 			"name": "Invoke the Nike",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 7,
 			"school": "D",
 			"time": [
@@ -2704,7 +2704,7 @@
 		},
 		{
 			"name": "Jaggar's Strengthened Bastion",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "A",
 			"time": [
@@ -2756,7 +2756,7 @@
 		},
 		{
 			"name": "Lightning Cloak",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "V",
 			"time": [
@@ -2829,7 +2829,7 @@
 		},
 		{
 			"name": "Lightning Curtain",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "V",
 			"time": [
@@ -2900,7 +2900,7 @@
 		},
 		{
 			"name": "Max's Haste",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 6,
 			"school": "T",
 			"time": [
@@ -2977,7 +2977,7 @@
 		},
 		{
 			"name": "Mouse",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 1,
 			"school": "E",
 			"time": [
@@ -3042,7 +3042,7 @@
 		},
 		{
 			"name": "Multi-Lock",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "A",
 			"time": [
@@ -3087,7 +3087,7 @@
 		},
 		{
 			"name": "Mycontil's Last Resort",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 9,
 			"school": "V",
 			"time": [
@@ -3132,7 +3132,7 @@
 		},
 		{
 			"name": "Nystul's Radiant Arch",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "V",
 			"time": [
@@ -3190,7 +3190,7 @@
 		},
 		{
 			"name": "Rip",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "V",
 			"time": [
@@ -3246,7 +3246,7 @@
 		},
 		{
 			"name": "Sacremon's Acrid Wit",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 5,
 			"school": "E",
 			"time": [
@@ -3293,7 +3293,7 @@
 		},
 		{
 			"name": "Sandstorm",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "A",
 			"time": [
@@ -3358,7 +3358,7 @@
 		},
 		{
 			"name": "Scalding Spout",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -3426,7 +3426,7 @@
 		},
 		{
 			"name": "Summon Abomination",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"page": 0,
 			"level": 2,
 			"school": "N",
@@ -3555,7 +3555,7 @@
 		},
 		{
 			"name": "Surelife",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 7,
 			"school": "A",
 			"time": [
@@ -3610,7 +3610,7 @@
 		},
 		{
 			"name": "Suric's Swift Perusal",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"page": 0,
 			"level": 1,
 			"school": "E",
@@ -3671,7 +3671,7 @@
 		},
 		{
 			"name": "Temporal Eye",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 7,
 			"school": "D",
 			"time": [
@@ -3738,7 +3738,7 @@
 		},
 		{
 			"name": "Temporary Resurrection",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 8,
 			"school": "N",
 			"time": [
@@ -3799,7 +3799,7 @@
 		},
 		{
 			"name": "Tenser's Deadly Strike",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 3,
 			"school": "E",
 			"time": [
@@ -3864,7 +3864,7 @@
 		},
 		{
 			"name": "There/Not There",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "I",
 			"time": [
@@ -3931,7 +3931,7 @@
 		},
 		{
 			"name": "Thultaun's Thrust",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 6,
 			"school": "V",
 			"time": [
@@ -3985,7 +3985,7 @@
 		},
 		{
 			"name": "Trick",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 7,
 			"school": "I",
 			"time": [
@@ -4047,7 +4047,7 @@
 		},
 		{
 			"name": "Tumble",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 2,
 			"school": "E",
 			"time": [
@@ -4111,7 +4111,7 @@
 		},
 		{
 			"name": "Turn Pebble to Boulder",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "T",
 			"time": [
@@ -4184,7 +4184,7 @@
 		},
 		{
 			"name": "Undead Regeneration",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 6,
 			"school": "N",
 			"time": [
@@ -4240,7 +4240,7 @@
 		},
 		{
 			"name": "Water Form",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 7,
 			"school": "T",
 			"time": [
@@ -4301,7 +4301,7 @@
 		},
 		{
 			"name": "Wind Blade",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"level": 4,
 			"school": "V",
 			"time": [
@@ -4367,41 +4367,8 @@
 	],
 	"item": [
 		{
-			"name": "Chromatic Dragon Scale Pouch",
-			"source": "NinhodoDragao",
-			"rarity": "uncommon",
-			"wondrous": true,
-			"entries": [
-				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
-				"While holding or wearing the pouch you gain a +1 bonus to spell attack rolls.",
-				"The pouch does not count towards the maximum number of magical items you can use."
-			]
-		},
-		{
-			"name": "Metallic Dragon Scale Pouch",
-			"source": "NinhodoDragao",
-			"rarity": "rare",
-			"wondrous": true,
-			"entries": [
-				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
-				"While holding or wearing the pouch you gain a +2 bonus to spell attack rolls.",
-				"The pouch does not count towards the maximum number of magical items you can use."
-			]
-		},
-		{
-			"name": "Gem Dragon Scale Pouch",
-			"source": "NinhodoDragao",
-			"rarity": "very rare",
-			"wondrous": true,
-			"entries": [
-				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
-				"While holding or wearing the pouch you gain a +3 bonus to spell attack rolls.",
-				"The pouch does not count towards the maximum number of magical items you can use."
-			]
-		},
-		{
 			"name": "Dragon Scale Pouch",
-			"source": "NinhodoDragao",
+			"source": "NDD",
 			"rarity": "varies",
 			"wondrous": true,
 			"focus": [
@@ -4422,9 +4389,75 @@
 				"The scales also define the rarity of the pouch:"
 			],
 			"items": [
-				"Chromatic Dragon Scale Pouch|NinhodoDragao",
-				"Metallic Dragon Scale Pouch|NinhodoDragao",
-				"Gem Dragon Scale Pouch|NinhodoDragao"
+				"Chromatic Dragon Scale Pouch|NDD",
+				"Metallic Dragon Scale Pouch|NDD",
+				"Gem Dragon Scale Pouch|NDD"
+			]
+		},
+		{
+			"name": "Chromatic Dragon Scale Pouch",
+			"source": "NDD",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
+				"While holding or wearing the pouch you gain a +1 bonus to spell attack rolls.",
+				"The pouch does not count towards the maximum number of magical items you can use."
+			]
+		},
+		{
+			"name": "Metallic Dragon Scale Pouch",
+			"source": "NDD",
+			"rarity": "rare",
+			"wondrous": true,
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
+				"While holding or wearing the pouch you gain a +2 bonus to spell attack rolls.",
+				"The pouch does not count towards the maximum number of magical items you can use."
+			]
+		},
+		{
+			"name": "Gem Dragon Scale Pouch",
+			"source": "NDD",
+			"rarity": "very rare",
+			"wondrous": true,
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
+				"While holding or wearing the pouch you gain a +3 bonus to spell attack rolls.",
+				"The pouch does not count towards the maximum number of magical items you can use."
 			]
 		}
 	]
