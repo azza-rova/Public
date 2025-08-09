@@ -4418,9 +4418,9 @@
 				"The scales also define the rarity of the pouch:"
 			],
 			"items": [
-				"Chromatic Dragon Scale Pouch|NinhodoDragao",
-				"Metallic Dragon Scale Pouch|NinhodoDragao",
-				"Gem Dragon Scale Pouch|NinhodoDragao"
+				"Chromatic Dragon Scale Pouch|NDD",
+				"Metallic Dragon Scale Pouch|NDD",
+				"Gem Dragon Scale Pouch|NDD"
 			]
 		}
 	]
