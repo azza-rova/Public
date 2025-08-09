@@ -6,11 +6,11 @@
 				"json": "NinhodoDragao",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.0",
+				"version": "1.1",
 				"authors": [
-					"Administração e moderação"
+					"Azza & Bruno"
 				],
-				"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/NinhoDoDragao.json",
+				"url": "https://discord.gg/ninhododragao",
 				"color": "d80000"
 			}
 		],
@@ -4363,6 +4363,65 @@
 					}
 				]
 			}
+		}
+	],
+	"item": [
+		{
+			"name": "Chromatic Dragon Scale Pouch",
+			"source": "NinhodoDragao",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
+				"While holding or wearing the pouch you gain a +1 bonus to spell attack rolls accordingly to which type of scales the pouch is made of."
+			]
+		},
+		{
+			"name": "Metallic Dragon Scale Pouch",
+			"source": "NinhodoDragao",
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
+				"While holding or wearing the pouch you gain a +2 bonus to spell attack rolls accordingly to which type of scales the pouch is made of."
+			]
+		},
+		{
+			"name": "Gem Dragon Scale Pouch",
+			"source": "NinhodoDragao",
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
+				"While holding or wearing the pouch you gain a +3 bonus to spell attack rolls accordingly to which type of scales the pouch is made of."
+			]
+		},
+		{
+			"name": "Dragon Scale Pouch",
+			"source": "NinhodoDragao",
+			"rarity": "varies",
+			"wondrous": true,
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
+				"While holding or wearing the pouch you gain a bonus to spell attack rolls accordingly to which type of scales the pouch is made of.",
+				"The scales also define the rarity of the pouch:"
+			],
+			"items": [
+				"Chromatic Dragon Scale Pouch|NinhodoDragao",
+				"Metallic Dragon Scale Pouch|NinhodoDragao",
+				"Gem Dragon Scale Pouch|NinhodoDragao"
+			]
 		}
 	]
 }
