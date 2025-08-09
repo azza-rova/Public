@@ -4387,12 +4387,46 @@
 				"While holding or wearing the pouch you gain a bonus to spell attack rolls accordingly to which type of scales the pouch is made of.",
 				"The pouch does not count towards the maximum number of magical items you can use.",
 				"The scales also define the rarity of the pouch:",
-				" {@item Chromatic Dragon Scale Pouch|NDD}"
+				"{@item Chromatic Dragon Scale Pouch|NDD}",
+				"{@item Metallic Dragon Scale Pouch|NDD}",
+				"{@item Gem Dragon Scale Pouch|NDD}"
+			]
+		},
+		{
+			"name": "Draconic Runes",
+			"source": "NDD",
+			"rarity": "varies",
+			"wondrous": true,
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"A special mix made from rare leaves and powdered dragon tooth, claws and teeth is heated with dragon fire and carved into an item in the format of ancient runes, empowering it and it's user.",
+				"This item must be a non-magical arcane focus, druidic focus, holy symbol, musical instrument or some kind of artisan's tool. After the runes are carved, the item becomes magical.",
+				"While holding or wearing this item you gain a bonus to the saving throw DC of spells that can use the item as a spellcasting focus.",
+				"Both the bonus and the item's rarity change accordingly to which type of dragon bones were used to create the runes:",
+				"{@item Chromatic Draconic Runes|NDD}",
+				"{@item Metallic Draconic Runes|NDD}",
+				"{@item Gem Draconic Runes|NDD}"
 			],
 			"items": [
-				"Chromatic Dragon Scale Pouch|NDD",
-				"Metallic Dragon Scale Pouch|NDD",
-				"Gem Dragon Scale Pouch|NDD"
+				"Chromatic Draconic Runes|NinhodoDragao",
+				"Metallic Draconic Runes|NinhodoDragao",
+				"Gem Draconic Runes|NinhodoDragao"
 			]
 		},
 		{
@@ -4418,6 +4452,34 @@
 			]
 		},
 		{
+			"name": "Chromatic Draconic Runes",
+			"source": "NDD",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"A special mix made from rare leaves and powdered dragon tooth, claws and teeth is heated with dragon fire and carved into an item in the format of ancient runes, empowering it and it's user.",
+				"This item must be a non-magical arcane focus, druidic focus, holy symbol, musical instrument or some kind of artisan's tool. After the runes are carved, the item becomes magical.",
+				"While holding or wearing this item you gain a +1 bonus to the saving throw DC of spells that can use the item as a spellcasting focus."
+			]
+		},
+		{
 			"name": "Metallic Dragon Scale Pouch",
 			"source": "NDD",
 			"rarity": "rare",
@@ -4440,6 +4502,34 @@
 			]
 		},
 		{
+			"name": "Metallic Draconic Runes",
+			"source": "NDD",
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"A special mix made from rare leaves and powdered dragon tooth, claws and teeth is heated with dragon fire and carved into an item in the format of ancient runes, empowering it and it's user.",
+				"This item must be a non-magical arcane focus, druidic focus, holy symbol, musical instrument or some kind of artisan's tool. After the runes are carved, the item becomes magical.",
+				"While holding or wearing this item you gain a +2 bonus to the saving throw DC of spells that can use the item as a spellcasting focus."
+			]
+		},
+		{
 			"name": "Gem Dragon Scale Pouch",
 			"source": "NDD",
 			"rarity": "very rare",
@@ -4459,6 +4549,34 @@
 				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
 				"While holding or wearing the pouch you gain a +3 bonus to spell attack rolls.",
 				"The pouch does not count towards the maximum number of magical items you can use."
+			]
+		},
+		{
+			"name": "Gem Draconic Runes",
+			"source": "NDD",
+			"rarity": "very rare",
+			"wondrous": true,
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"A special mix made from rare leaves and powdered dragon tooth, claws and teeth is heated with dragon fire and carved into an item in the format of ancient runes, empowering it and it's user.",
+				"This item must be a non-magical arcane focus, druidic focus, holy symbol, musical instrument or some kind of artisan's tool. After the runes are carved, the item becomes magical.",
+				"While holding or wearing this item you gain a +3 bonus to the saving throw DC of spells that can use the item as a spellcasting focus."
 			]
 		}
 	]
