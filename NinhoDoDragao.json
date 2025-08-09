@@ -4368,7 +4368,7 @@
 	"item": [
 		{
 			"name": "Chromatic Dragon Scale Pouch",
-			"source": "NDD",
+			"source": "NinhodoDragao",
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
@@ -4379,7 +4379,7 @@
 		},
 		{
 			"name": "Metallic Dragon Scale Pouch",
-			"source": "NDD",
+			"source": "NinhodoDragao",
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
@@ -4390,7 +4390,7 @@
 		},
 		{
 			"name": "Gem Dragon Scale Pouch",
-			"source": "NDD",
+			"source": "NinhodoDragao",
 			"rarity": "very rare",
 			"wondrous": true,
 			"entries": [
@@ -4401,7 +4401,7 @@
 		},
 		{
 			"name": "Dragon Scale Pouch",
-			"source": "NDD",
+			"source": "NinhodoDragao",
 			"rarity": "varies",
 			"wondrous": true,
 			"focus": [
@@ -4422,9 +4422,9 @@
 				"The scales also define the rarity of the pouch:"
 			],
 			"items": [
-				"Chromatic Dragon Scale Pouch|NDD",
-				"Metallic Dragon Scale Pouch|NDD",
-				"Gem Dragon Scale Pouch|NDD"
+				"Chromatic Dragon Scale Pouch|NinhodoDragao",
+				"Metallic Dragon Scale Pouch|NinhodoDragao",
+				"Gem Dragon Scale Pouch|NinhodoDragao"
 			]
 		}
 	]
