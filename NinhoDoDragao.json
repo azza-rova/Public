@@ -4374,7 +4374,8 @@
 			"entries": [
 				"This magical sphere is made from aged scales from a young dragon and contains an extradimensional pocket plane, magically created to adapt to whichever creature finds its way into it.",
 				"You can use an action to send a willing companion (like a mount, summoned creature, or familiar) that's within 10 feet to the pocket plane. This creature cannot be another character, simulacrum, or NPC.",
-				"You can also use an action to retrieve the creature from within the extradimensional space, which then appears up to 10 feet away from you, in an unoccupied space. "
+				"You can also use an action to retrieve the creature from within the extradimensional space, which then appears up to 10 feet away from you, in an unoccupied space. ",
+				"A character cannot have more than one of this item."
 			],
 			"fluff": {
 				"images": [
