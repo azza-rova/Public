@@ -6,9 +6,9 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.4",
+				"version": "1.5",
 				"authors": [
-					"Azza & Bruno"
+					"Staff do Ninho do Dragão"
 				],
 				"url": "https://discord.gg/ninhododragao",
 				"color": "d80000"
@@ -4367,6 +4367,28 @@
 	],
 	"item": [
 		{
+			"name": "Dragon's Pokeball",
+			"source": "NDD",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This magical sphere is made from aged scales from a young dragon and contains an extradimensional pocket plane, magically created to adapt to whichever creature finds its way into it.",
+				"You can use an action to send a willing companion (like a mount, summoned creature, or familiar) that's within 10 feet to the pocket plane. This creature cannot be another character, simulacrum, or NPC.",
+				"You can also use an action to retrieve the creature from within the extradimensional space, which then appears up to 10 feet away from you, in an unoccupied space. "
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DragonsPokeball.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Dragon Scale Pouch",
 			"source": "NDD",
 			"rarity": "varies",
@@ -4390,7 +4412,18 @@
 				"{@item Chromatic Dragon Scale Pouch|NDD}",
 				"{@item Metallic Dragon Scale Pouch|NDD}",
 				"{@item Gem Dragon Scale Pouch|NDD}"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DragonScalePouch.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Draconic Runes",
@@ -4427,7 +4460,18 @@
 				"Chromatic Draconic Runes|NinhodoDragao",
 				"Metallic Draconic Runes|NinhodoDragao",
 				"Gem Draconic Runes|NinhodoDragao"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DraconicRunes.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Chromatic Dragon Scale Pouch",
@@ -4449,7 +4493,18 @@
 				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
 				"While holding or wearing the pouch you gain a +1 bonus to spell attack rolls.",
 				"The pouch does not count towards the maximum number of magical items you can use."
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DragonScalePouch.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Chromatic Draconic Runes",
@@ -4477,7 +4532,18 @@
 				"A special mix made from rare leaves and powdered dragon tooth, claws and teeth is heated with dragon fire and carved into an item in the format of ancient runes, empowering it and it's user.",
 				"This item must be a non-magical arcane focus, druidic focus, holy symbol, musical instrument or some kind of artisan's tool. After the runes are carved, the item becomes magical.",
 				"While holding or wearing this item you gain a +1 bonus to the saving throw DC of spells that can use the item as a spellcasting focus."
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DraconicRunes.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Metallic Dragon Scale Pouch",
@@ -4499,7 +4565,18 @@
 				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
 				"While holding or wearing the pouch you gain a +2 bonus to spell attack rolls.",
 				"The pouch does not count towards the maximum number of magical items you can use."
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DragonScalePouch.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Metallic Draconic Runes",
@@ -4527,7 +4604,18 @@
 				"A special mix made from rare leaves and powdered dragon tooth, claws and teeth is heated with dragon fire and carved into an item in the format of ancient runes, empowering it and it's user.",
 				"This item must be a non-magical arcane focus, druidic focus, holy symbol, musical instrument or some kind of artisan's tool. After the runes are carved, the item becomes magical.",
 				"While holding or wearing this item you gain a +2 bonus to the saving throw DC of spells that can use the item as a spellcasting focus."
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DraconicRunes.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Gem Dragon Scale Pouch",
@@ -4549,7 +4637,18 @@
 				"This small belt pouch is made of a specific type of dragon scales inscribed with magical runes. It has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).",
 				"While holding or wearing the pouch you gain a +3 bonus to spell attack rolls.",
 				"The pouch does not count towards the maximum number of magical items you can use."
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DragonScalePouch.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Gem Draconic Runes",
@@ -4577,7 +4676,18 @@
 				"A special mix made from rare leaves and powdered dragon tooth, claws and teeth is heated with dragon fire and carved into an item in the format of ancient runes, empowering it and it's user.",
 				"This item must be a non-magical arcane focus, druidic focus, holy symbol, musical instrument or some kind of artisan's tool. After the runes are carved, the item becomes magical.",
 				"While holding or wearing this item you gain a +3 bonus to the saving throw DC of spells that can use the item as a spellcasting focus."
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/DraconicRunes.png"
+						}
+					}
+				]
+			}
 		}
 	]
 }
