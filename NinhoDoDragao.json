@@ -1294,7 +1294,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "sphere",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -2135,7 +2135,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "sphere",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -2368,7 +2368,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "sphere",
 				"distance": {
 					"type": "feet",
 					"amount": 30
@@ -2910,7 +2910,7 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "sphere",
 				"distance": {
 					"type": "feet",
 					"amount": 60
@@ -3425,7 +3425,7 @@
 			}
 		},
 		{
-			"name": "Summon Abomination",
+			"name": "Otto's Abomination",
 			"source": "NDD",
 			"page": 0,
 			"level": 2,
@@ -3462,7 +3462,7 @@
 			],
 			"entries": [
 				"When you cast this spell, choose any number of undead under your control within range to sacrifice. ",
-				"You invoke an {@creature Abomination|ninhododragao}, consuming the afterlife, bones and flesh of the sacrifices to empower it.",
+				"You invoke an {@creature Abomination|NDD}, consuming the afterlife, bones and flesh of the sacrifices to empower it.",
 				"The Abomination is hard to tame, and trying to assert control over it and other undead at the same time will make them hostile to you.",
 				"The creature disappears if it dies or when the spell ends.",
 				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and uses its move to avoid danger."
@@ -4458,9 +4458,9 @@
 				"{@item Gem Draconic Runes|NDD}"
 			],
 			"items": [
-				"Chromatic Draconic Runes|NinhodoDragao",
-				"Metallic Draconic Runes|NinhodoDragao",
-				"Gem Draconic Runes|NinhodoDragao"
+				"Chromatic Draconic Runes|NDD",
+				"Metallic Draconic Runes|NDD",
+				"Gem Draconic Runes|NDD"
 			],
 			"fluff": {
 				"images": [
@@ -4695,7 +4695,7 @@
 		{
 			"name": "Abomination",
 			"source": "NDD",
-			"summonedBySpell": "Summon Abomination|NDD",
+			"summonedBySpell": "Otto's Abomination|NDD",
 			"summonedBySpellLevel": 3,
 			"size": [
 				"M",
