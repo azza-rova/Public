@@ -5027,11 +5027,6 @@
 			"size": [
 				"M"
 			],
-			"skillProficiencies": [
-				{
-					"any": 2
-				}
-			],
 			"speed": {
 				"walk": 30
 			},
@@ -5089,7 +5084,7 @@
 					"type": "entries",
 					"name": "Mechanical Nature",
 					"entries": [
-						"You are a robot and cannot be healed or have your life preserved by any effects that would normally not work on a construct made of circuitry (such as items like healing potions or spells like Cure Wounds, Healing Word, Spare the Dying, etc.)."
+						"You are a robot and cannot be healed or have your life preserved by any effects that would normally not work on a construct made of circuitry (such as items like healing potions or spells like {@spell cure wounds|phb}, {@spell healing word|phb}, {@spell spare the dying|phb}, etc.)."
 					]
 				},
 				{
@@ -5104,17 +5099,17 @@
 								{
 									"type": "item",
 									"name": "Auto-Correction Protocol",
-									"entry": "At 1st level, you learn the Mending cantrip and regain 1 hit point when this cantrip is cast on you."
+									"entry": "At 1st level, you learn the {@spell mending|phb} cantrip and regain 1 hit point when this cantrip is cast on you."
 								},
 								{
 									"type": "item",
 									"name": "Reactive Shield Protocol",
-									"entry": "At 3rd level, you can cast the Armor of Agathys spell once, cast at a level equal to your PB."
+									"entry": "At 3rd level, you can cast the {@spell armor of agathys|phb} spell once, cast at a level equal to your PB."
 								},
 								{
 									"type": "item",
 									"name": "Extermination Protocol",
-									"entry": "At 5th level, you can cast the Enlarge/Reduce spell once."
+									"entry": "At 5th level, you can cast the {@spell enlarge/reduce|phb} spell once."
 								}
 							]
 						},
@@ -5140,7 +5135,7 @@
 					"type": "entries",
 					"name": "Construct Resilience",
 					"entries": [
-						"You have {@variantrule Resistance|XPHB} to Poison damage. You also have {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Poisoned|XPHB} condition.",
+						"You have resistance to poison damage. You also have advantage on saving throws to avoid or end the {@condition poisoned|PHB} condition.",
 						"You do not need to eat, drink, or breathe.",
 						"You are immune to disease.",
 						"You do not need to sleep, and magic cannot put you to sleep."
@@ -5187,7 +5182,7 @@
 			"fluff": {
 				"entries": [
 					"Gundam são grandes máquinas de batalha, forjadas inicialmente para a guerra. Com o tempo, cada uma se especializou em um caminho diferente, sendo os papéis de Defensores e Atacantes os mais comuns. Os Defensores, muitas vezes, são projetados para proteger um local específico, enquanto os Atacantes são máquinas de guerra planejadas para a aniquilação de seus inimigos.",
-					"AlgunsEsses Gundam são construídos a partir de diversos tipos de metais mágicos, que trazem vida a essas imponentes máquinas. Seu papel é definido no momento de sua criação. Entretanto, por algum motivo misterioso, todos os Gundam possuem uma alma — e ninguém sabe ao certo o porquê.",
+					"Esses Gundam são construídos a partir de diversos tipos de metais mágicos, que trazem vida a essas imponentes máquinas. Seu papel é definido no momento de sua criação. Entretanto, por algum motivo misterioso, todos os Gundam possuem uma alma — e ninguém sabe ao certo o porquê.",
 					"",
 					"Essa raça foi disponibilizada no servidor pelo jogador Dann, que atingiu o nível 20."
 				],
@@ -5201,6 +5196,444 @@
 					}
 				]
 			}
-		}
+		},
+		{
+			"name": "Replicant",
+			"source": "NDD",
+			"page": 1,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"size": [
+				"S",
+				"M"
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"creatureTypes": [
+				"construct"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Origin",
+					"entries": [
+						"When you choose this race, you must choose another playable race. Your physical appearance and you size is identical to that race, but you do not gain any of its traits."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magical Composition",
+					"entries": [
+						"Your form of life is complexly intertwined with magic; literally sustained by arcana, but somewhat fragile compared to other forms. Because of this, you gain the following traits:",
+						"When you enter an area of magical suppression or are affected by a dispel magic effect, you must succeed on a DC 10 Constitution saving throw or gain one level of {@condition exhaustion|phb} at the end of that day. You can only recover from this {@condition exhaustion|phb} and take damage equal to the roll of 1 Hit Die + your Constitution modifier.",
+						"You radiate arcane energy from the schools of Illusion and Conjuration."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Essential Skill",
+					"entries": [
+						"You gain proficiency in the {@skill Arcana|phb} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arcane Spark",
+					"entries": [
+						"You were created with an innate magical capacity to protect yourself from the dangers caused by your form:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"entry": "You know the {@spell mending|phb} cantrip."
+								},
+								{
+									"type": "item",
+									"entry": "Upon reaching 3rd level, you can cast the {@spell expeditious retreat|phb} spell."
+								},
+								{
+									"type": "item",
+									"entry": "Upon reaching 5th level, you can cast the {@spell misty step|phb} spell."
+								}
+							]
+						},
+						"Once you cast one of the leveled spells from this trait, you must finish a long rest before you can cast it again.",
+						"You can also cast these spells using any spell slots you have.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (chosen when selecting this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arcane Repair",
+					"entries": [
+						"When you are targeted by the {@spell mending|phb} spell, you may choose to expend one Hit Die to heal yourself, adding your Constitution modifier to the healing.",
+						"You can use this trait a number of times equal to your proficiency bonus, as long as you have Hit Dice available to expend.",
+						"In addition, you were designed in such a way that you can be affected by healing and life-preserving spells that normally do not work on constructs (such as {@spell cure wounds|phb}, {@spell healing word|phb}, {@spell spare the dying|phb}, etc.)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Replicantes são formas criadas com magia; uma cópia de outra forma de vida que adquiriu independência de seu criador.",
+					"Sua origem mais comum vem da magia Simulacrum. Outros, mais inusitados, são Clones que acordaram sem que sua contra parte tenha morrido, ficando sem uma alma por muito tempo.",
+					"Existem ainda aqueles que são resultados pouco ortodoxos, como a manipulação de um necromante para reviver um guerreiro antigo... Independente da origem da criação de seu corpo, essas formas artificiais de vida se tornam uma Replicata no momento que sua existência é agraciada pela dádiva que define a vida de uma criatura, uma alma.",
+					"Por conta de suas origens ímpares, as Replicatas tem aparência idêntica a raça da sua criatura de origem... Porém, mesmo que formuladas por culturas ou conjuradores diferentes, elas tem uma estrutura mágica inconfundível e podem ter um ou mais sinais de magia pelo corpo: veias saltadas de tom púrpura, runas e glifos pela pele, olhos de coloração incomum, ausência de calor corporal, sinais vitais fracos e até mesmo pequenos traços de outra raça.",
+					"",
+					"Essa raça foi disponibilizada no servidor pelo jogador Tarisu, que atingiu o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Races/Replicant.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Grung",
+			"source": "NDD",
+			"page": 1,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"size": [
+				"S"
+			],
+			"speed": {
+				"walk": 25,
+				"climb": 25
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"grung": true
+				}
+			],
+			"creatureTypes": [
+				"fey"
+			],
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Grungs reach adulthood in just one year, but can live up to 50 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Amphibious",
+					"entries": [
+						"You can breathe air and water."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Poisonous Skin",
+					"entries": [
+						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 13 Constitution saving throw or become {@condition poisoned|phb} for 1 minute. A {@condition poisoned|phb} creature that is no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"You can also apply this poison to any piercing weapon as part of an attack with that weapon. In this case, on a hit, the poison reacts differently: the target must succeed on a DC 13 Constitution saving throw or take 2d4 poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Standing Leap",
+					"entries": [
+						"Your long jump can be up to 25 feet and your high jump can be up to 15 feet, with or without a running start."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Poison Resilience",
+					"entries": [
+						"You have resistance to poison damage. You also have advantage on saving throws to avoid or end the {@condition poisoned|phb} condition on yourself.",
+						"In addition, you can use your reaction once to become immune to poison damage and the {@condition poisoned|phb} condition until the end of your next turn. You regain this ability when you finish a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Water Dependency",
+					"entries": [
+						"If you don't immerse yourself in water for at least 1 hour during a day, you suffer 1 level of {@condition exhaustion|phb} at the end of that day. You can only recover from this {@condition exhaustion|phb} through magic or by immersing yourself in water for at least 1 hour."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Vulnerability to Extreme Heat",
+					"entries": [
+						"Grungs exposed to extreme heat must make a Constitution saving throw at the end of 30 minutes, instead of 1 hour."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Grung."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Os grungs são humanoides agressivos e territoriais, semelhantes a sapos, que vivem em florestas tropicais e seguem uma sociedade rigidamente dividida em castas. Nascem com uma coloração acinzentada esverdeada e adquirem a cor de sua casta ao amadurecer, o que define seu papel na tribo, como guerreiros, trabalhadores, estudiosos ou líderes. Além disso, secretam uma toxina venenosa para outras criaturas, usada tanto como arma quanto para subjugar escravos, que são mantidos fracos e submissos por meio de alimentos levemente envenenados. Como anfíbios, precisam se imergir regularmente na água para evitar o esgotamento.",
+					"",
+					"Cada casta possui funções específicas: os grungs verdes são guerreiros e trabalhadores, os azuis são artesãos, e os roxos administradores. Os vermelhos atuam como estudiosos e usuários de magia, enquanto os laranjas são guerreiros de elite e supervisores. No topo, os grungs dourados ocupam as posições de liderança, com o soberano da tribo sempre sendo um deles. Embora a casta seja geralmente permanente, indivíduos excepcionais podem ascender por meio de rituais, mudando de cor e garantindo um status elevado também para seus descendentes.",
+					"",
+					"Essa raça foi disponibilizada no servidor pelo jogador Matheus, que atingiu o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Races/Grung.png"
+						}
+					}
+				]
+			}
+		},
+		{
+  "name": "Sayajin",
+  "source": "NDD",
+  "page": 1,
+  "hasFluff": true,
+  "hasFluffImages": true,
+  "size": [
+    "S",
+    "M"
+  ],
+  "skillProficiencies": [
+    {
+      "athletics": true
+    }
+  ],
+  "speed": {
+    "walk": 30
+  },
+  "ability": [
+    {
+      "choose": {
+        "weighted": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "weights": [
+            2,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "choose": {
+        "weighted": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "weights": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    }
+  ],
+  "languageProficiencies": [
+    {
+      "common": true,
+      "anyStandard": 1
+    }
+  ],
+  "creatureTypes": [
+    "humanoid"
+  ],
+  "darkvision": 60,
+  "entries": [
+    {
+      "type": "entries",
+      "name": "Age",
+      "entries": [
+        "Sayajins live on average between 80 and 100 years."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Athlete",
+      "entries": [
+        "You gain proficiency in the {@skill Athletics|phb} skill."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Combat Fists",
+      "entries": [
+        "You can use your fists to make unarmed strikes. Your unarmed strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the normal bludgeoning damage for an unarmed strike."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Natural Fighter",
+      "entries": [
+        "When you make an unarmed strike and both your hands are free, you gain a +1 bonus to the damage rolls of that attack."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Energy Wave",
+      "entries": [
+        "You gain a new attack option that you can use with the Attack action: a special ranged attack that deals 1d6 + your Dexterity modifier force damage, with a range of 30 feet. You are proficient with this attack.",
+        "When you gain the Extra Attack feature, you can use this special attack for any of the attacks you make as part of the Attack action."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Super Sayajin",
+      "entries": [
+        "Starting at 3rd level, you can use a bonus action to transform into a Super Sayajin warrior for 1 minute. Your hair becomes bright yellow and you gain a radiant aura around you.",
+        "During this time, you shed bright light in a 10-foot radius and dim light for an additional 10 feet.",
+        "When you transform, you gain temporary hit points equal to 5 × your proficiency bonus.",
+        "Until the transformation ends, once per turn, you can deal extra force damage to a target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
+        "Starting at 5th level, you also gain a flying speed equal to your walking speed while transformed.",
+        "Once you use this transformation, you can't use it again until you finish a long rest."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Languages",
+      "entries": [
+        "You can speak, read, and write Common and one other language of your choice."
+      ]
+    }
+  ],
+  "fluff": {
+    "entries": [
+      "Os Sayajin são uma raça humanoide de guerreiros naturalmente aptos. São originários de um plano em que a gravidade é dezenas de vezes mais intensa do que a do plano Material, o que faz com que eles sejam naturalmente fortes.",
+      "O gosto por brigas e guerras, no entanto, parece ser cultural e originário do respeito que os membros tem pela lei do mais forte.",
+					"",
+					"Essa raça foi disponibilizada no servidor pelo jogador Natã, que atingiu o nível 20."
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Races/Sayajin.png"
+        }
+      }
+    ]
+  }
+}
+
 	]
 }
