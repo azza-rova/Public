@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.6",
+				"version": "1.7",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -15,7 +15,7 @@
 			}
 		],
 		"dateAdded": 1754720728,
-		"dateLastModified": 1754720728,
+		"dateLastModified": 1768009200,
 		"edition": "classic"
 	},
 	"spell": [
