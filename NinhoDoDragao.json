@@ -4883,35 +4883,67 @@
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"size": [
-				"M", "S"
+				"S",
+				"M"
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
 			],
 			"speed": {
-				"walk": 20
+				"walk": 30
 			},
-			"creatureTypes": [
-				"fey"
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
 			],
 			"languageProficiencies": [
 				{
-					"common": true
+					"common": true,
+					"anyStandard": 1
 				}
 			],
-			"darkvision":60,
+			"creatureTypes": [
+				"fey"
+			],
+			"darkvision": 60,
 			"entries": [
-				{
-					"type": "entries",
-					"name": "Creature Type",
-					"entries": [
-						"You are a Fey."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"You are Medium or Small."
-					]
-				},
 				{
 					"type": "entries",
 					"name": "Ancestral Legacy",
@@ -4985,5 +5017,190 @@
 					}
 				]
 			}
-		}]
+		},
+		{
+			"name": "Gundam",
+			"source": "NDD",
+			"page": 1,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"size": [
+				"M"
+			],
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"creatureTypes": [
+				"construct"
+			],
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Mechanical Nature",
+					"entries": [
+						"You are a robot and cannot be healed or have your life preserved by any effects that would normally not work on a construct made of circuitry (such as items like healing potions or spells like Cure Wounds, Healing Word, Spare the Dying, etc.)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Progressive Technology",
+					"entries": [
+						"As you grow in power and experience, you unlock different protocols to assist you in battle:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Auto-Correction Protocol",
+									"entry": "At 1st level, you learn the Mending cantrip and regain 1 hit point when this cantrip is cast on you."
+								},
+								{
+									"type": "item",
+									"name": "Reactive Shield Protocol",
+									"entry": "At 3rd level, you can cast the Armor of Agathys spell once, cast at a level equal to your PB."
+								},
+								{
+									"type": "item",
+									"name": "Extermination Protocol",
+									"entry": "At 5th level, you can cast the Enlarge/Reduce spell once."
+								}
+							]
+						},
+						"Once you cast a leveled spell from any of these protocols, you cannot cast it again until you finish a long rest. You may also spend your spell slots to cast them again."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Repair Protocol",
+					"entries": [
+						"You can use your bonus action on your turn to expend your Hit Dice (up to a maximum number equal to half your PB, rounded down), roll them, and regain a number of hit points equal to the roll plus your Constitution modifier.",
+						"This healing cannot be increased in any way."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Emergency Protocol",
+					"entries": [
+						"When your hit points are reduced to 0 but you are not killed outright, your Repair Protocol activates automatically (if you have Hit Dice available to expend). Once this ability is triggered, it cannot be triggered again until after a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Construct Resilience",
+					"entries": [
+						"You have {@variantrule Resistance|XPHB} to Poison damage. You also have {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Poisoned|XPHB} condition.",
+						"You do not need to eat, drink, or breathe.",
+						"You are immune to disease.",
+						"You do not need to sleep, and magic cannot put you to sleep."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sentinel's Rest",
+					"entries": [
+						"When you take a long rest, you must spend at least eight hours in an inactive, motionless state instead of sleeping. In this state, you appear inert, but you are not unconscious and can see and hear normally."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Integrated Weapons",
+					"entries": [
+						"You were created with a specialized weapon fused into your body. As an action, you can drop whatever you are holding and transform your hand into this weapon, choosing between two options:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Beam Rifle Mk. IV",
+									"entry": "A ranged weapon with a range of 40/120 feet that deals 1d6 fire damage and uses Dexterity as its ability."
+								},
+								{
+									"type": "item",
+									"name": "Thermal Blade",
+									"entry": "A melee weapon that deals 1d6 slashing damage and uses Strength as its ability. While you have your integrated weapon exposed, you can spend an action to retract it and transform it back into a hand."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Gundam são grandes máquinas de batalha, forjadas inicialmente para a guerra. Com o tempo, cada uma se especializou em um caminho diferente, sendo os papéis de Defensores e Atacantes os mais comuns. Os Defensores, muitas vezes, são projetados para proteger um local específico, enquanto os Atacantes são máquinas de guerra planejadas para a aniquilação de seus inimigos.",
+					"AlgunsEsses Gundam são construídos a partir de diversos tipos de metais mágicos, que trazem vida a essas imponentes máquinas. Seu papel é definido no momento de sua criação. Entretanto, por algum motivo misterioso, todos os Gundam possuem uma alma — e ninguém sabe ao certo o porquê.",
+					"",
+					"Essa raça foi disponibilizada no servidor pelo jogador Dann, que atingiu o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Races/Gundam.png"
+						}
+					}
+				]
+			}
+		}
+	]
 }
