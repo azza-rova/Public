@@ -4875,6 +4875,180 @@
 			]
 		}
 	],
+	"condition": [
+		{
+			"name": "Diseased",
+			"source": "NDD",
+			"entries": [
+				"A diseased creature is under the influence of a magical disease that spreads and grows very fast, aggresively, unlike common diseases. Thus, the creature always knows that there is something wrong, it feels sick and may know that is diseased, even when it doesn't understand the details or works of it.",
+				"At the end of each of its turns, the creature must make an aggravation saving throw against your spell DC. The attribute used on the roll is specified by each magical disease.",
+				"If the save fails, the disease worsens and triggers its Aggravation effect, otherwise it slows down and triggers its Relief effect.",
+				"Creatures that are immune to mundane diseases have advantage on aggravation saving throws against magical diseases.",
+				"Three successful aggravation saving throws (consecutive or not) will cure the creature and make it immune to that disease for 24 hours.",
+				"A creature can be affected by multiple diseases at the same time: in that case, aggravation saving throws are rolled separately, and it counts as having multiple (and separate) stacks of this condition."
+			]
+		}
+	],
+	"disease": [
+		{
+			"name": "Withering Flash",
+			"source": "NDD",
+			"entries": [
+				"The creature's muscle mass (or equivalent) begins to atrophy, losing density and aging unnaturally.",
+				"The creature has disadvantage on Strength checks and Strength saving throws. Additionally, at the start of each of its turns, its maximum hit points are reduced by an amount equal to your cleric level.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aggravation (Strength)",
+							"entry": "On the first failure, the effect also applies to Dexterity saving throws. On the second failure, it also applies to Constitution saving throws. Starting with the third failure, the creature gains a cumulative –2 penalty to physical saving throws."
+						},
+						{
+							"type": "item",
+							"name": "Relief",
+							"entry": "On the first failure, the effect also applies to Dexterity saving throws. On the second failure, it also applies to Constitution saving throws. Starting with the third failure, the creature gains a cumulative –2 penalty to physical saving throws."
+						}
+					]
+				},
+				"{@note This magical disease is used on pair with the {@condition diseased|NDD} condition.}"
+			]
+		},
+		{
+			"name": "Minothaurite",
+			"source": "NDD",
+			"entries": [
+				"The creature loses its sense of balance and spatial awareness, with its senses heavily distorted.",
+				"Its movement speeds are reduced by 10 feet, and it has disadvantage on Acrobatics checks, as well as on checks or saving throws made to resist being pushed, knocked prone, or escaping grapples.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aggravation (Dexterity)",
+							"entries": [
+								"The creature's movement speeds are reduced by an additional 10 feet, and if any of its movement speeds are reduced to 0, the creature immediately falls prone.",
+								"If the creature can't move by not having any movement speed left, it automatically fails Dexterity checks and saving throws."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Relief",
+							"entry": "The creature regains 5 feet of its movement speed."
+						}
+					]
+				},
+				"{@note This magical disease is used on pair with the {@condition diseased|NDD} condition.}"
+			]
+		},
+		{
+			"name": "Bitter Torment",
+			"source": "NDD",
+			"entries": [
+				"The target's body is continuously and painfully assaulted. The creature cannot regain hit points.",
+				"The next time it takes damage before the start of its next turn, it must expend one of its Hit Dice and add the result to the damage taken as poison damage. If the creature has no Hit Dice remaining, it instead becomes vulnerable to poison damage.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aggravation (Constitution)",
+							"entry": "This effect can repeat one additional time before the start of the creature's next turn. Example: After the first aggravation, the next two instances of damage (instead of only the first) receive the increase."
+						},
+						{
+							"type": "item",
+							"name": "Relief",
+							"entry": "The damage taken by the creature is reduced by 1d4 for each time it has benefited from Relief."
+						}
+					]
+				},
+				"A creature that doesn't have a number of hit dice defined uses its CR as the number of dice and the die size is equals to twice its proficiency bonus (PB 2 = d4, PB 3 = d6 and so on).",
+				"{@note This magical disease is used on pair with the {@condition diseased|NDD} condition.}"
+			]
+		},
+		{
+			"name": "Whispering Void",
+			"source": "NDD",
+			"entries": [
+				"The creature begins to suffer short- and long-term memory lapses, along with impaired cognitive functions.",
+				"At the start of each of its turns, the creature rolls 1d20. If the result is 3 or lower, roll 1d4 to determine which of the following effects applies until the start of its next turn:",
+				"{@b 1- Long-term Amnesia.} The creature cannot discern alliances and becomes neutral (or hostile, if in combat and wounded) toward all creatures around it.",
+				"{@b 2- Short-term Amnesia.} Knowledge acquired in the last 5 minutes is lost (including remembering others' abilities, who attacked whom, or who caused damage).",
+				"{@b 3- Aphasia.} The ability to form sentences and communicate is lost, whether by speech or telepathy. Verbal components cannot be used.",
+				"{@b 4- Apraxia.} The creature cannot use complex abilities. It can only take the Multiattack (if available) and basic combat actions (attack, grapple, shove, etc.). Passive abilities continue to function normally.",
+				"Intelligence checks and saving throws are made with disadvantage.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aggravation (Intelligence)",
+							"entry": "The minimum value required on the d20 increases by 2."
+						},
+						{
+							"type": "item",
+							"name": "Relief",
+							"entry": "The minimum value required on the d20 decreases by 1."
+						}
+					]
+				},
+				"{@note This magical disease is used on pair with the {@condition diseased|NDD} condition.}"
+			]
+		},
+		{
+			"name": "Stonebone Syndrome",
+			"source": "NDD",
+			"entries": [
+				"The creature's body begins to slowly stiffen, causing it to lose the ability to use reactions.",
+				"A creature that dies while under this effect is turned to stone.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aggravation (Wisdom)",
+							"entries": [
+								"With each failure, the creature is deprived of one of its senses, gaining the following conditions in this exact order: {@condition deafened|PHB}, {@condition blinded|PHB}, {@condition restrained|PHB}, {@condition incapacitated|PHB}, {@condition stunned|PHB}.",
+								"The disease continues to worsen even if the creature is immune to one of these conditions; in that case, it does not suffer the effect, but the next aggravation applies the following condition normally."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Relief",
+							"entry": "The creature regresses one stage of the disease, losing the most recent condition gained from aggravation. If it fails the next check, it regains that same condition instead of progressing to the next one."
+						}
+					]
+				},
+				"{@note This magical disease is used on pair with the {@condition diseased|NDD} condition.}"
+			]
+		},
+		{
+			"name": "Crawling Delirium",
+			"source": "NDD",
+			"entries": [
+				"The target's mind is afflicted by vivid and constant hallucinations. It has disadvantage on all ability checks.",
+				"At the start of each of its turns, the creature rolls 1d20. If the result is 3 or lower, it must use the dodge action and spend all of its movement to walk in a random direction. Roll 1d8 to determine the direction.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Aggravation (Charisma)",
+							"entries": [
+								"The minimum value required on the d20 increases by 2."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Relief",
+							"entry": "The minimum value required on the d20 decreases by 1."
+						}
+					]
+				},
+				"{@note This magical disease is used on pair with the {@condition diseased|NDD} condition.}"
+			]
+		}
+	],
 	"race": [
 		{
 			"name": "Hexblood",
@@ -5104,12 +5278,12 @@
 								{
 									"type": "item",
 									"name": "Reactive Shield Protocol",
-									"entry": "At 3rd level, you can cast the {@spell armor of agathys|phb} spell once, cast at a level equal to your PB."
+									"entry": "At 3rd level, you can cast the {@spell armor of agathys|phb} spell once, upcasted to a level equal to your PB."
 								},
 								{
 									"type": "item",
 									"name": "Extermination Protocol",
-									"entry": "At 5th level, you can cast the {@spell enlarge/reduce|phb} spell once."
+									"entry": "At 5th level, you can cast the {@spell enlarge/reduce|phb} spell on yourself once."
 								}
 							]
 						},
@@ -5160,15 +5334,16 @@
 								{
 									"type": "item",
 									"name": "Beam Rifle Mk. IV",
-									"entry": "A ranged weapon with a range of 40/120 feet that deals 1d6 fire damage and uses Dexterity as its ability."
+									"entry": "A ranged weapon with a range of 40/120 feet that deals 1d6 fire damage and uses your dexterity modifier on the attack."
 								},
 								{
 									"type": "item",
 									"name": "Thermal Blade",
-									"entry": "A melee weapon that deals 1d6 slashing damage and uses Strength as its ability. While you have your integrated weapon exposed, you can spend an action to retract it and transform it back into a hand."
+									"entry": "A melee weapon that deals 1d6 slashing damage and uses your strength modifier on the attack."
 								}
 							]
-						}
+						},
+						"While you have your integrated weapon exposed, you can spend an action to retract it and transform it back into a hand."
 					]
 				},
 				{
@@ -5276,7 +5451,7 @@
 					"name": "Magical Composition",
 					"entries": [
 						"Your form of life is complexly intertwined with magic; literally sustained by arcana, but somewhat fragile compared to other forms. Because of this, you gain the following traits:",
-						"When you enter an area of magical suppression or are affected by a dispel magic effect, you must succeed on a DC 10 Constitution saving throw or gain one level of {@condition exhaustion|phb} at the end of that day. You can only recover from this {@condition exhaustion|phb} and take damage equal to the roll of 1 Hit Die + your Constitution modifier.",
+						"When you enter an area of magical suppression or are affected by a dispel magic effect, you must succeed on a DC 10 Constitution saving throw or gain one level of {@condition exhaustion|phb} and take damage equal to the roll of 1 Hit Die + your Constitution modifier. You can't reduce this damage in any way.",
 						"You radiate arcane energy from the schools of Illusion and Conjuration."
 					]
 				},
@@ -5493,147 +5668,363 @@
 			}
 		},
 		{
-  "name": "Sayajin",
-  "source": "NDD",
-  "page": 1,
-  "hasFluff": true,
-  "hasFluffImages": true,
-  "size": [
-    "S",
-    "M"
-  ],
-  "skillProficiencies": [
-    {
-      "athletics": true
-    }
-  ],
-  "speed": {
-    "walk": 30
-  },
-  "ability": [
-    {
-      "choose": {
-        "weighted": {
-          "from": [
-            "str",
-            "dex",
-            "con",
-            "int",
-            "wis",
-            "cha"
-          ],
-          "weights": [
-            2,
-            1
-          ]
-        }
-      }
-    },
-    {
-      "choose": {
-        "weighted": {
-          "from": [
-            "str",
-            "dex",
-            "con",
-            "int",
-            "wis",
-            "cha"
-          ],
-          "weights": [
-            1,
-            1,
-            1
-          ]
-        }
-      }
-    }
-  ],
-  "languageProficiencies": [
-    {
-      "common": true,
-      "anyStandard": 1
-    }
-  ],
-  "creatureTypes": [
-    "humanoid"
-  ],
-  "darkvision": 60,
-  "entries": [
-    {
-      "type": "entries",
-      "name": "Age",
-      "entries": [
-        "Sayajins live on average between 80 and 100 years."
-      ]
-    },
-    {
-      "type": "entries",
-      "name": "Athlete",
-      "entries": [
-        "You gain proficiency in the {@skill Athletics|phb} skill."
-      ]
-    },
-    {
-      "type": "entries",
-      "name": "Combat Fists",
-      "entries": [
-        "You can use your fists to make unarmed strikes. Your unarmed strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the normal bludgeoning damage for an unarmed strike."
-      ]
-    },
-    {
-      "type": "entries",
-      "name": "Natural Fighter",
-      "entries": [
-        "When you make an unarmed strike and both your hands are free, you gain a +1 bonus to the damage rolls of that attack."
-      ]
-    },
-    {
-      "type": "entries",
-      "name": "Energy Wave",
-      "entries": [
-        "You gain a new attack option that you can use with the Attack action: a special ranged attack that deals 1d6 + your Dexterity modifier force damage, with a range of 30 feet. You are proficient with this attack.",
-        "When you gain the Extra Attack feature, you can use this special attack for any of the attacks you make as part of the Attack action."
-      ]
-    },
-    {
-      "type": "entries",
-      "name": "Super Sayajin",
-      "entries": [
-        "Starting at 3rd level, you can use a bonus action to transform into a Super Sayajin warrior for 1 minute. Your hair becomes bright yellow and you gain a radiant aura around you.",
-        "During this time, you shed bright light in a 10-foot radius and dim light for an additional 10 feet.",
-        "When you transform, you gain temporary hit points equal to 5 × your proficiency bonus.",
-        "Until the transformation ends, once per turn, you can deal extra force damage to a target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
-        "Starting at 5th level, you also gain a flying speed equal to your walking speed while transformed.",
-        "Once you use this transformation, you can't use it again until you finish a long rest."
-      ]
-    },
-    {
-      "type": "entries",
-      "name": "Languages",
-      "entries": [
-        "You can speak, read, and write Common and one other language of your choice."
-      ]
-    }
-  ],
-  "fluff": {
-    "entries": [
-      "Os Sayajin são uma raça humanoide de guerreiros naturalmente aptos. São originários de um plano em que a gravidade é dezenas de vezes mais intensa do que a do plano Material, o que faz com que eles sejam naturalmente fortes.",
-      "O gosto por brigas e guerras, no entanto, parece ser cultural e originário do respeito que os membros tem pela lei do mais forte.",
+			"name": "Sayajin",
+			"source": "NDD",
+			"page": 1,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"size": [
+				"S",
+				"M"
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"creatureTypes": [
+				"humanoid"
+			],
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Sayajins live on average between 80 and 100 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Athlete",
+					"entries": [
+						"You gain proficiency in the {@skill Athletics|phb} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Combat Fists",
+					"entries": [
+						"You can use your fists to make unarmed strikes. Your unarmed strike deals 1d6 + your strength modifier bludgeoning damage, instead of the normal bludgeoning damage for an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Fighter",
+					"entries": [
+						"When you make an unarmed strike and both your hands are free, you gain a +1 bonus to the damage rolls of that attack."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Energy Wave",
+					"entries": [
+						"You gain a new attack option that you can use with the Attack action: a special ranged attack that deals 1d6 + your Dexterity modifier force damage, with a range of 30 feet. You are proficient with this attack.",
+						"When you gain the Extra Attack feature, you can use this special attack for any of the attacks you make as part of the Attack action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Super Sayajin",
+					"entries": [
+						"Starting at 3rd level, you can use a bonus action to transform into a Super Sayajin warrior for 1 minute. Your hair becomes bright yellow and you gain a radiant aura around you.",
+						"During this time, you shed bright light in a 10-foot radius and dim light for an additional 10 feet.",
+						"When you transform, you gain temporary hit points equal to 5 × your proficiency bonus.",
+						"Until the transformation ends, once per turn, you can deal extra force damage to a target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
+						"Starting at 5th level, you also gain a flying speed equal to your walking speed while transformed.",
+						"Once you use this transformation, you can't use it again until you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Os Sayajin são uma raça humanoide de guerreiros naturalmente aptos. São originários de um plano em que a gravidade é dezenas de vezes mais intensa do que a do plano Material, o que faz com que eles sejam naturalmente fortes.",
+					"O gosto por brigas e guerras, no entanto, parece ser cultural e originário do respeito que os membros tem pela lei do mais forte.",
 					"",
 					"Essa raça foi disponibilizada no servidor pelo jogador Natã, que atingiu o nível 20."
-    ],
-    "images": [
-      {
-        "type": "image",
-        "href": {
-          "type": "external",
-          "url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Races/Sayajin.png"
-        }
-      }
-    ]
-  }
-}
-
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Races/Sayajin.png"
+						}
+					}
+				]
+			}
+		}
+	],
+	"subclass": [
+		{
+			"name": "Pestilence Domain",
+			"shortName": "Pestilence",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"Detect Poison and Disease",
+							"Ray of Sickness"
+						],
+						"3": [
+							"Ray of Enfeeblement",
+							"Blindness/Deafness"
+						],
+						"5": [
+							"Bestow Curse",
+							"Stinking Cloud"
+						],
+						"7": [
+							"Blight",
+							"Greater Restoration"
+						],
+						"9": [
+							"Contagion",
+							"Cloudkill"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Pestilence Domain|Cleric|PHB|Pestilence|NDD|1",
+				"Channel Divinity: Sudden Plague|Cleric|PHB|Pestilence|NDD|2",
+				"Channel Divinity: Divine Miasma|Cleric|PHB|Pestilence|NDD|6",
+				"Pestilent Spellcasting|Cleric|PHB|Pestilence|NDD|8",
+				"Pestilent Nature|Cleric|PHB|Pestilence|NDD|17"
+			],
+			"hasFluffImages": true
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Pestilence Domain",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"level": 1,
+			"entries": [
+				"Plague domain clerics are rare and generally feared by the common folk. They are seen as harbingers of disease and rot; famous for their proficiency with blights and infestations, they have deep knowledge of the gods of pestilence and what appeases or enrages them.",
+				"Talona in the Forgotten Realms, Morgion in Dragonlance, and Incabulos in Greyhawk are great examples of those deities who empower their followers with some control over their own domain.",
+				"Thus, clerics of the pestilence domain are able to create, destroy, and manipulate all manner of poisons and diseases while keeping themselves untouched and immune, employing this power for good or evil.",
+				{
+					"type": "table",
+					"caption": "Pestilence Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell detect poison and disease|phb}, {@spell ray of sickness|phb}"
+						],
+						[
+							"3rd",
+							"{@spell blindness/deafness|phb}, {@spell ray of enfeeblement|phb}"
+						],
+						[
+							"5th",
+							"{@spell bestow curse|phb}, {@spell stinking cloud|phb}"
+						],
+						[
+							"7th",
+							"{@spell blight|phb}, {@spell greater restoration|phb}"
+						],
+						[
+							"9th",
+							"{@spell contagion|phb}, {@spell cloudkill|phb}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Adapted Body|Cleric||Pestilence|NDD|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Putrid Specialization|Cleric||Pestilence|NDD|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Holy Manipulation|Cleric||Pestilence|NDD|1"
+				}
+			]
+		},
+		{
+			"name": "Adapted Body",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, you have advantage on saving throws against the {@condition poisoned|phb} condition, and you have resistance to poison damage."
+			]
+		},
+		{
+			"name": "Putrid Specialization",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Also at 1st level, you gain proficiency with the poisoner's kit."
+			]
+		},
+		{
+			"name": "Holy Manipulation",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Your bond with disease allows you to sense illnesses and interact with them swiftly. As a bonus action, you can target one creature within 30 feet of you that you can see that is poisoned or diseased, producing one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entry": "The creature regains hit points equal to your cleric level, and you may choose to either remove the poisoned condition from it or cure one of its diseases."
+						},
+						{
+							"type": "item",
+							"entry": "You deal poison damage to the creature equal to your cleric level."
+						}
+					]
+				},
+				"You can use this feature a number of times equal to your Wisdom modifier, regaining all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Channel Divinity: Sudden Plague",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"You can use your bonus action to empower your next spell that deals {@b poison damage}. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
+				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition and suffer the effects of the chosen disease.",
+				"This can be applied to a maxium number of creatures equals to your proficiency bonus at one time. If the spell affects more creatures than this limit, you must choose which creatures will be diseased within this limit."
+			]
+		},
+		{
+			"name": "Channel Divinity: Divine Miasma",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can use your bonus action to empower your next spell that deals {@b necrotic damage}. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
+				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition and suffer the effects of the chosen disease.",
+				"This can be applied to a maxium number of creatures equals to your proficiency bonus at one time. If the spell affects more creatures than this limit, you must choose which creatures will be diseased within this limit."
+			]
+		},
+		{
+			"name": "Pestilent Spellcasting",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"When you cast a cleric cantrip, you can choose to either increase the damage dealt by an amount equal to your Wisdom modifier or change the damage type to poison.",
+				"Additionally, the range of your {@b Sacred Manipulation} increases to 60 feet."
+			]
+		},
+		{
+			"name": "Pestilent Nature",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Whenever you use a class feature or spell that deals poison or necrotic damage, a creature is only immune if it is immune to both damage types. The same rule applies to resistance.",
+				"The range of your {@b Sacred Manipulation} increases to 90 feet.",
+				"You can activate both {@b Channel Divinity: Sudden Plague} and {@b Channel Divinity: Divine Miasma} on spells that deal either poison or necrotic damage."
+			]
+		}
 	]
 }
