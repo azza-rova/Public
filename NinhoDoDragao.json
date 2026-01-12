@@ -14,6 +14,11 @@
 				"color": "d80000"
 			}
 		],
+		"_meta": {
+			"internalCopies": [
+				"background"
+			]
+		},
 		"dateAdded": 1754720728,
 		"dateLastModified": 1768009200,
 		"edition": "classic"
@@ -1466,7 +1471,7 @@
 				"If the appendage is being used to hold something, that thing is dropped. ",
 				"If the appendage is necessary for the creature's movement, the creature's speed is halved. ",
 				"If the appendage is used for an attack, such as a tail, or claw attack, that attack is impossible while the spell is held and the spider is alive. ",
-				"The spider starts with 5 HP and moves at the start of the target’s turn. Each round, it consumes part of the limb, dealing {@damage 2d6} piercing damage and gaining 5 HP, growing larger. ",
+				"The spider starts with 5 HP and moves at the start of the target's turn. Each round, it consumes part of the limb, dealing {@damage 2d6} piercing damage and gaining 5 HP, growing larger. ",
 				"The spider has 12 AC and can be killed, but any damage it takes is also taken by the target of the spell. After it dies, it transforms back into the limb it once was. ",
 				"If the target creature dies, the spider detaches itself from the creature and becomes its own creature with its own initiative, obeying your commands. ",
 				"It still has an AC of 12, the HP it had before detaching, and it has a bite attack with +5 to hit and {@damage 2d6} damage. It disappears once the spell ends."
@@ -1993,7 +1998,7 @@
 			"entries": [
 				"A piece of writing of your choice within range is erased. The writing can be mundane or magical, such as glyphs of warding. ",
 				"If magical, it is immediately erased if the spell slot used for this spell is of a level higher than the spell used for the writing. ",
-				"Otherwise, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends."
+				"Otherwise, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends."
 			],
 			"classes": {
 				"fromClassList": [
@@ -2048,7 +2053,7 @@
 				"A version of the Fireball spell that was made for artistic purposes, it can be shaped to the caster's will. ",
 				"When you cast this spell, you can freely draw a line up to 60 ft long. It can curve and even be off the ground. ",
 				"Anyone caught within the line must roll a Dexterity saving throw. A target takes {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one. ",
-				"The fire spreads around corners. It ignites flammable objects in the area that aren’t being worn or carried."
+				"The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2789,7 +2794,7 @@
 			],
 			"entries": [
 				"Crackles of lightning surround your body, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. ",
-				"For the duration, you have resistance to lightning damage, and creatures who step within 5 ft of you must roll a Dexterity saving throw. They take {@damage 3d8} lightning damage and can’t take reactions until the start of its next turn on a failure, half as much damage and no additional effect on a success.",
+				"For the duration, you have resistance to lightning damage, and creatures who step within 5 ft of you must roll a Dexterity saving throw. They take {@damage 3d8} lightning damage and can't take reactions until the start of its next turn on a failure, half as much damage and no additional effect on a success.",
 				"Additionally, for the duration, you can use your action to launch bolts of lightning towards creatures within 60 ft of you. ",
 				"Roll a ranged spell attack. On a hit, it deals {@damage 3d8} lightning damage on a hit."
 			],
@@ -3228,7 +3233,7 @@
 				"On a failure you can also use your action on each of your turns for the duration of the spell to force the target to repeat the saving throw. If it fails, the damage of this spell is increased by {@dice 1d8} until it ends.",
 				"Regardless of success or failure on any saving throws after the first one, the target takes the spell's damage when you use this action.",
 				"The damage increase is cumulative, meaning that when a target fails each saving throw, the damage dice will begin at {@dice 5d8}, then increase to {@dice 6d8}, then {@dice 7d8} and so on until the spell ends.",
-				"The spell ends if you use your action to do anything else or if the target is ever outside the spell’s range. ",
+				"The spell ends if you use your action to do anything else or if the target is ever outside the spell's range. ",
 				"If this spell reduces a creature or object to 0 hit points, it is ripped apart and, if a creature, instantly killed."
 			],
 			"classes": {
@@ -4082,7 +4087,7 @@
 			"entries": [
 				"You attempt to shake a Large or smaller creature's balance. ",
 				"At the end of its turn, it rolls a Dexterity saving throw, falling {@condition prone} on a failure. As an action on following turns, you can use your action to make the target roll this save again. ",
-				"The spell ends if you use your action to do anything else, if the target is ever outside the spell’s range or if it has total cover from you."
+				"The spell ends if you use your action to do anything else, if the target is ever outside the spell's range or if it has total cover from you."
 			],
 			"classes": {
 				"fromClassList": [
@@ -5821,6 +5826,7 @@
 				{
 					"prepared": {
 						"1": [
+							"Sapping Sting",
 							"Detect Poison and Disease",
 							"Ray of Sickness"
 						],
@@ -5829,12 +5835,12 @@
 							"Blindness/Deafness"
 						],
 						"5": [
-							"Bestow Curse",
+							"Comfort",
 							"Stinking Cloud"
 						],
 						"7": [
-							"Blight",
-							"Greater Restoration"
+							"Sickening Radiance",
+							"Agitate Wounds"
 						],
 						"9": [
 							"Contagion",
@@ -5880,7 +5886,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell detect poison and disease|phb}, {@spell ray of sickness|phb}"
+							"{@spell sapping sting|EGW}, {@spell detect poison and disease|phb}, {@spell ray of sickness|phb}"
 						],
 						[
 							"3rd",
@@ -5888,11 +5894,11 @@
 						],
 						[
 							"5th",
-							"{@spell bestow curse|phb}, {@spell stinking cloud|phb}"
+							"{@spell comfort|NDD}, {@spell stinking cloud|phb}"
 						],
 						[
 							"7th",
-							"{@spell blight|phb}, {@spell greater restoration|phb}"
+							"{@spell sickening radiance|xge}, {@spell agitate wounds|NDD}"
 						],
 						[
 							"9th",
@@ -6024,6 +6030,2888 @@
 				"Whenever you use a class feature or spell that deals poison or necrotic damage, a creature is only immune if it is immune to both damage types. The same rule applies to resistance.",
 				"The range of your {@b Sacred Manipulation} increases to 90 feet.",
 				"You can activate both {@b Channel Divinity: Sudden Plague} and {@b Channel Divinity: Divine Miasma} on spells that deal either poison or necrotic damage."
+			]
+		}
+	],
+	"background": [
+		{
+			"name": "Soldier (Heavenly Dawn)",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"persuasion": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"celestial": true,
+					"infernal": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "Letter of recommendation given by a member of the Heavenly Dawn, meant to be delivered to Ramiel"
+						},
+						{
+							"special": "A gift from someone you once helped"
+						},
+						"lamp|phb",
+						"longsword|phb",
+						"traveler's clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Athletics}, {@skill Persuasion}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "{@language Celestial}, {@language Infernal}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A letter of recommendation from the Heavenly Dawn, a gift from someone you helped, a {@item lamp|phb}, a {@item longsword|phb}, a set of {@item traveler's clothes|phb}, and a {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"The fight against the forces of darkness has been part of your life for many years. You may have taken this path after surviving an undead attack, being possessed by a demon, or even breaking a contract with a devil.",
+						"Something within you makes you reject the forces of darkness and dedicate your life to opposing them. The path you chose was to follow the doctrines of the legendary paladin Ramiel, an adventurer of the Dragon's Nest.",
+						"Through his teachings, you learned not only to punish the unjust, but also to protect the innocent, understanding that the best way to fight darkness is to bring light to the hearts of people.",
+						"A confident smile, a heroic stance, and encouraging words can ignite the spark of hope someone needs to stand back up and pursue their own goals."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Light of Tomorrow",
+					"entries": [
+						"As a follower of the Heavenly Dawn's doctrines, you learned to judge evil not only through strength, but by inspiring and empowering the weak.",
+						"You can calm or encourage an individual or a small group devastated by terrifying or desperate situations, such as undead invasions, disasters, or famine."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"The responsibility of protecting the weak and fighting creatures of darkness shaped you with strict discipline, a powerful sense of justice, and unwavering ideals.",
+						{
+							"type": "table",
+							"colLabels": [
+								"1d2",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I always keep an encouraging smile on my face to inspire and motivate those around me."
+								],
+								[
+									"2",
+									"No profane creature shall escape me; I will eradicate darkness and protect those under my care."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d1",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Those who truly repent deserve a second chance. If repentance does not come in life, I pray it comes in death. (Good)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d1",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"The light came to me, and now I give my life to bring light into the lives of others."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d1",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I believe I must be a pillar for the weak; this hero complex places immense pressure and anxiety upon me."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Martial Artist",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"acrobatics": true,
+					"insight": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": 1,
+					"anyInstrument": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"common clothes|phb",
+						{
+							"special": "A gold medal won in a coliseum"
+						},
+						{
+							"special": "A letter from an admirer expressing admiration"
+						},
+						"lyre|phb",
+						"explorer's pack|phb",
+						"hooded lantern|phb",
+						"chain (10 feet)|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Acrobatics}, {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} and one type of {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item common clothes|phb}, a gold medal won in a coliseum, a letter from an admirer, a {@item lyre|phb}, an {@item explorer's pack|phb}, a {@item hooded lantern|phb}, a {@item chain (10 feet)|phb}, and a {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"You are a skilled martial artist with a long history of inspiring people through your performance as a fighter and by passing on your knowledge earned through a harsh life battling formidable opponents.",
+						"You spent a great deal of time immersed in daily combat, whether inside a ring or within an arena, building contacts in the world of fighters.",
+						"You are deeply connected to the world of battles and martial disciplines that permeate civilization, having survived by using your own body as a weapon capable of subduing enemies or providing entertainment to the surrounding audience, earning their acclaim."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Specialty",
+					"entries": [
+						"There are many kinds of martial arts, and within a dojo or ring, individual members develop specialties. Even fighters who operate outside formal schools have strong preferences for certain combat styles over others.",
+						"Choose the role you played in your life as a martial artist, or roll on the table below.",
+						{
+							"type": "table",
+							"colLabels": [
+								"",
+								"Martial Art Style"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Boxing"
+								],
+								[
+									"2",
+									"Judo"
+								],
+								[
+									"3",
+									"Kickboxing"
+								],
+								[
+									"4",
+									"Capoeira"
+								],
+								[
+									"5",
+									"Jiu-Jitsu"
+								],
+								[
+									"6",
+									"Karate"
+								],
+								[
+									"7",
+									"Krav Maga"
+								],
+								[
+									"8",
+									"Kung Fu"
+								],
+								[
+									"9",
+									"Muay Thai"
+								],
+								[
+									"10",
+									"Taekwondo"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Memorable Words",
+					"entries": [
+						"Your experience as a martial fighter has given you the ability to deliver impactful speeches.",
+						"Whenever you give a speech during a social occasion, you can convey your words with enthusiasm and eloquence. Whether it is a motivational speech, a tribute, or even a simple introduction, people will remember your words and appreciate the emotional impact they create."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Your path was shaped by intense martial training, forging both body and mind into a specialist of combat. Fighting is the art of rebuilding life and discovering new perspectives through every action taken.",
+						{
+							"type": "table",
+							"colLabels": [
+								"1d2",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"My passion for martial arts taught me strict discipline in every aspect of life."
+								],
+								[
+									"2",
+									"I easily connect with my audience and understand what they want to see, adapting my performances accordingly."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d1",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I believe martial arts have the power to unite people from different backgrounds and cultures, and I seek to spread this message through my performances. (Good)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d1",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I hold deep respect for a martial master who taught me everything I know, and I continue to seek their approval."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d1",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I become frustrated when I fail to deliver a perfect performance and can be overly harsh on myself."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hermit (Defender)",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"history": true,
+					"insight": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"abyssal",
+							"celestial"
+						]
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"cartographer's tools",
+							"calligrapher's supplies"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "A book containing ancient teachings and forgotten texts"
+						},
+						"traveler's clothes|phb",
+						"dagger|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill History}, {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Choose one between {@language Abyssal} or {@language Celestial}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Choose one between {@item cartographer's tools|phb} or {@item calligrapher's supplies|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A book containing ancient teachings, a set of {@item traveler's clothes|phb}, a {@item dagger|phb}, and a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"You uncovered ancient texts and teachings belonging to a long-lost order. As your studies progressed, you learned that this order was divided into several branches, each devoted to uncovering and preparing to face silent threats that return from time to time.",
+						"Since then, you have sought—by whatever means are coherent and accessible to you—to gather more information about an order that has already vanished, and to stand against something unnameable… and inevitable."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ancient Teachings and Texts",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"",
+								"Doctrine or Text"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Order of the Hunters — Hatred tempered by discipline"
+								],
+								[
+									"2",
+									"Gods Among Us — Spirit and elements as one"
+								],
+								[
+									"3",
+									"The Last Tribe — Bastions of the fortress that defied death"
+								],
+								[
+									"4",
+									"Arcane at the Surface — How to touch, feel, and live the arcane"
+								],
+								[
+									"5",
+									"The Final Crusade — Unshakable faith marching north"
+								],
+								[
+									"6",
+									"Among Them All — Existence in harmony between life and death"
+								],
+								[
+									"7",
+									"The Edge of the Blade — The tireless pursuit of perfect technique"
+								],
+								[
+									"8",
+									"Ancient Rites — False kings, tainted faiths, and failed prophecies"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Fragmented Knowledge",
+					"entries": [
+						"By studying the book you carry—and others you may find throughout your journey—you grow ever closer to understanding the fate awaiting all: a final battle against an evil that will not announce itself.",
+						"Whenever you deal with cults or prophetic texts, you have an easier time identifying hidden connections and meanings between the lines, such as discerning what kind of creature an image represents or recognizing when a text was translated from another language and lost coherence.",
+						"Additionally, at the Dungeon Master's discretion, you may possess a fragment of information relevant to the current situation."
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			]
+		},
+		{
+			"name": "Nerdola (OASIS)",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"count": 2,
+						"from": [
+							"history",
+							"arcana",
+							"insight"
+						]
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"thieves' tools": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"thieves' tools|phb",
+						{
+							"special": "A VR headset that allows access to OASIS"
+						},
+						"traveler's clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Choose two between {@skill History}, {@skill Arcana} and {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item thieves' tools|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One language of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "{@item thieves' tools|phb}, a VR headset that allows access to OASIS, {@item traveler's clothes|phb} (hoodie), and a {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Actually",
+					"entries": [
+						"You were raised in a technological environment, a true Gen Z. As such, you can easily identify technological tools and figure out how to use them. "
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I want to be the main character of my favorite game."
+								],
+								[
+									"2",
+									"Everything can be fixed. In fact—look at my utility belt."
+								],
+								[
+									"3",
+									"I have strange mannerisms and am somewhat antisocial due to limited interaction with the real world."
+								],
+								[
+									"4",
+									"I believe I am a character from an anime or a video game, and I behave accordingly."
+								],
+								[
+									"5",
+									"I forget that most people didn't grow up in the same environment as I did, and I act as if everyone has easy access to technology."
+								],
+								[
+									"6",
+									"I am chronically online and tend to communicate using memes."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Community. You think OASIS is just a game, kid? I live OASIS. I read every patch note, send emails to the owners, and one day I might be among them."
+								],
+								[
+									"2",
+									"Revenge. My account was hacked in my favorite game, and one day I will find the bastard who did it."
+								],
+								[
+									"3",
+									"Idealism. I strive to create a world where people don't have to escape their reality by entering a game."
+								],
+								[
+									"4",
+									"Equality. Everyone has the right to be who they want to be, whether in the real world or the virtual one."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I was once part of a guild in my favorite game, and I will never forget them."
+								],
+								[
+									"2",
+									"I told a friend I would wait until tomorrow, and they never logged in again. I dream of finding them someday."
+								],
+								[
+									"3",
+									"This isn't a team—this is a family."
+								],
+								[
+									"4",
+									"I fell in love with someone online, and my dream is to meet them in real life."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I'm not very sociable, and large crowds frighten me."
+								],
+								[
+									"2",
+									"I am chronically online and struggle to interact with the real world."
+								],
+								[
+									"3",
+									"I am always gaming and forget to take care of my health."
+								],
+								[
+									"4",
+									"I am extremely competitive and will do anything to win."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Descendant of a Legendary Hero",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"perception": true,
+					"performance": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"disguise kit|phb",
+						"fine clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Perception}, {@skill Performance}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item disguise kit|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One language of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "{@item disguise kit|phb}, a set of {@item fine clothes|phb}, and a {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Historical Lineage",
+					"entries": [
+						"You know and have met any number of powerful people across the land—and some of them might even remember you.",
+						"You might be able to wrangle minor assistance from a major figure, at the DM's discretion.",
+						"Additionally, the common folk treat you with deference, and your heritage and the stories you tell might be good for a free meal or a place to sleep."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Descendants of celebrity adventurers must deal with fame that is not theirs, wealth they did not earn, and expectations they can never hope to meet.",
+						"These hardships can have adverse effects, but those who cope with them can arrive at a decent attitude and a grounded worldview. Those who fail become bitter—or worse.",
+						{
+							"type": "table",
+							"colLabels": [
+								"1d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I will never get out of my famous parent's shadow, and no one else will ever understand this burden."
+								],
+								[
+									"2",
+									"I've seen enough of the adventuring life to have realistic expectations and empathy for my peers."
+								],
+								[
+									"3",
+									"Living up to my legacy will be difficult, but I'm going to do it."
+								],
+								[
+									"4",
+									"I'm used to the very best in life, and that's a hard habit to break."
+								],
+								[
+									"5",
+									"My parent taught me a sense of duty. I strive to uphold it, even when the odds are against me."
+								],
+								[
+									"6",
+									"No one can fake a smile, a handshake, or an interested nod like I can."
+								],
+								[
+									"7",
+									"I've been part of the adventuring life since I was old enough to walk. Let me explain a few things to you."
+								],
+								[
+									"8",
+									"No risk is too great for the rewards of defeating my enemies... and taking their stuff."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Power. The only way to get ahead in this world is to attain power and hold onto it with all your might. (Evil)"
+								],
+								[
+									"2",
+									"Peace. Those who can find or make peace in the chaotic world around them have everything. (Lawful)"
+								],
+								[
+									"3",
+									"Fame. I've seen what fame can bring. And I'll do anything to get all that for myself. (Neutral)"
+								],
+								[
+									"4",
+									"Training. Hard work, sacrifice, and training lead to success—and eventually to perfection. (Any)"
+								],
+								[
+									"5",
+									"Anonymity. I want to be successful. And alone. With lots of guards and wards between me and everyone else in the world. (Any)"
+								],
+								[
+									"6",
+									"Wisdom. Material wealth is an illusion. Wisdom is the real treasure. (Good)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"While my parent was out adventuring, a servant raised me, and I care about that person more than anyone."
+								],
+								[
+									"2",
+									"I consider every member of my parent's former adventuring party to be family."
+								],
+								[
+									"3",
+									"Despite their absences, my famous parent was kind and generous. I love them and want to make them proud."
+								],
+								[
+									"4",
+									"My parent once brought a cursed magic item home. It is my obsession."
+								],
+								[
+									"5",
+									"My childhood home holds all my best memories, and its upkeep is my primary concern."
+								],
+								[
+									"6",
+									"Growing up, I had an imaginary friend I could always count on. That friend is still with me."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"You don't know what I'm going through. You never can."
+								],
+								[
+									"2",
+									"You. Fetch my cloak. And maybe rub my feet for a while."
+								],
+								[
+									"3",
+									"My comrades are brave, but I must defeat this threat alone to prove my worth."
+								],
+								[
+									"4",
+									"Oh, yeah, that spell? Named after my parent's best friend. Let me tell you about them."
+								],
+								[
+									"5",
+									"My best days are behind me. Ahead lies only toil, pain, and death."
+								],
+								[
+									"6",
+									"You have to look out for yourself. No one else will."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Primeval Nomad",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"count": 1,
+						"from": [
+							"survival",
+							"perception"
+						]
+					},
+					"nature": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"herbalism kit": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"primordial": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"traveler's clothes|phb",
+						{
+							"special": "A staff carved with symbols of your tribe"
+						},
+						"herbalism kit|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Choose one of {@skill Survival} or {@skill Perception}, {@skill Nature}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item herbalism kit|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "{@language Primordial}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item traveler's clothes|phb}, a {@item staff|phb} carved with symbols of your tribe, an {@item herbalism kit|phb}, and a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"Many rumors claim that the first primeval nomads were beings who lived in harmony with elementals that came directly from their respective Elemental Planes. Others say they protected portals to those planes, or that their affinity with the elements caused them to migrate together in search of such portals.",
+						"Regardless of their origin, primeval nomads are groups of people who share a common elemental affinity and travel the world to remain constantly connected with all of nature.",
+						"There are four primordial elements (Water, Fire, Earth, Air) and many tribes under each of them. Each unique group has its own customs and dogmas, and even their migratory patterns vary.",
+						"Being part of a nomadic group does not mean you are always traveling, but that from time to time the tribe's connection to nature leads everyone to a new temporary home.",
+						"There are not only tribes of the primordial elements, just as there are not only tribes of a single element. Mixed tribes (such as Water + Earth) and unique tribes (such as Night) are rare, but they exist.",
+						"The creatures that form these groups vary greatly, usually favoring life forms that already possess an affinity with a specific energy due to their nature. Still, diversity exists, as what truly matters is the energy your heart resonates with, not your race.",
+						"Even though tribal cultures can differ greatly, one thing is common to all: the ability to live in nature and a fascination with cultural exchange—whether with other tribes or with any society that welcomes them peacefully."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nomadic Tribe",
+					"entries": [
+						"You lived for a time (or still live) in a specific tribe, following its dogmas and customs. Roll a d8, choose one from the table below, or create a new one for your narrative.",
+						{
+							"type": "table",
+							"colLabels": [
+								"",
+								"Tribe"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Water Tribe (Affluent)"
+								],
+								[
+									"2",
+									"Water Tribe (Cove)"
+								],
+								[
+									"3",
+									"Air Tribe (Path)"
+								],
+								[
+									"4",
+									"Air Tribe (Wind Rose)"
+								],
+								[
+									"5",
+									"Fire Tribe (Incandescent)"
+								],
+								[
+									"6",
+									"Fire Tribe (Sun)"
+								],
+								[
+									"7",
+									"Earth Tribe (Mountain Range)"
+								],
+								[
+									"8",
+									"Earth Tribe (Life)"
+								]
+							]
+						},
+						"All tribes listed above have subgroups. Feel free to further refine your narrative."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Primeval Affinity",
+					"entries": [
+						"Whether you were born with it or awakened it during your pilgrimage, your affinity with one of the primeval energies is unquestionable.",
+						"You can reproduce small magical effects a number of times equal to your proficiency bonus per long rest, according to your tribe of origin.",
+						"{@b Water Tribe.} You instantly create hot or cold water sufficient to fill a small container for drinking.",
+						"{@b Air Tribe.} You instantly create a gust of wind strong enough to blow papers off a table or ruffle someone's hair.",
+						"{@b Fire Tribe.} You instantly create and control a small burst of flame capable of lighting a candle, a torch, or a small campfire. Alternatively, you extinguish a flame of the same size.",
+						"{@b Earth Tribe.} You instantly create a small stone the size of a gold coin. The stone appears in your hand and turns to dust after 1 minute.",
+						"If you belong to a mixed tribe, choose which affinity is strongest for your character. If you belong to a unique tribe, choose one of the affinities above and change its practical effect to match your affinity."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Despite their great differences, nomadic tribes tend to share similarities in how their members are shaped.",
+						{
+							"type": "table",
+							"colLabels": [
+								"1d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I like to keep my hands busy, no matter where I am."
+								],
+								[
+									"2",
+									"I love exploring new places and meeting new people."
+								],
+								[
+									"3",
+									"I meditate every day at dawn—and I cannot stand having my routine interrupted."
+								],
+								[
+									"4",
+									"I enjoy observing patterns in the world around me, whether they mean anything or not."
+								],
+								[
+									"5",
+									"I let nothing—nor anyone—stand in the way of my mission."
+								],
+								[
+									"6",
+									"I speak plainly, even to those who outrank me."
+								],
+								[
+									"7",
+									"I always carry a piece of my native element in some form."
+								],
+								[
+									"8",
+									"I speak to everyone as if I have known them my entire life."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Destiny. I believe everyone has a role to play. Now I just need to find mine."
+								],
+								[
+									"2",
+									"Community. It is important to surround yourself with people you can rely on."
+								],
+								[
+									"3",
+									"Knowledge. I want to learn everything I can about the Elemental Planes—and maybe even visit them."
+								],
+								[
+									"4",
+									"Freedom. I do not care what anyone says. The elements should be free, and so should I."
+								],
+								[
+									"5",
+									"Structure. The elements are in harmony when they are free to act as they will. People are much the same."
+								],
+								[
+									"6",
+									"Virtuous Cycle. If I see someone in need, I feel compelled to help. Surely they will return the favor someday."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Corrupturalist",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"intimidation": true,
+					"choose": {
+						"count": 1,
+						"from": [
+							"arcana",
+							"religion",
+							"history"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"infernal": true,
+					"abyssal": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "A profane symbol (an artifact obtained through your pact or studies)"
+						},
+						{
+							"special": "A grimoire with notes about corrupting entities"
+						},
+						"common clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						},
+						"dagger|phb",
+						{
+							"special": "A candle"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Intimidation} and choose one of {@skill Arcana}, {@skill Religion}, or {@skill History}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "{@language Infernal}, {@language Abyssal}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A profane symbol, a grimoire with notes on corrupting entities, {@item common clothes|phb}, a {@item pouch|phb} containing 15 gp, a {@item dagger|phb}, and a candle"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"You have devoted your life to the study of forbidden knowledge and the mysteries of corrupted realms.",
+						"Whether driven by academic curiosity, necessity, or obsession, you act as an intermediary between mortals and the entities that inhabit the Lower Planes.",
+						"You delved into the rituals and secrets required to summon, bind, or communicate with corrupting beings, seeking knowledge, power, or even redemption.",
+						"Your practices are not without risk, as the forces you manipulate can be as treacherous as they are powerful.",
+						"Choose a demonic entity, an archdemon, or another fiendish being or archdevil, and work with the Dungeon Master to define the nature of your pact or studies.",
+						"You may have been an isolated scholar obsessed with uncovering dark secrets, or a member of a shadowy cult, now renounced.",
+						"You might have begun your studies out of desperation, to save someone or stop a threat, or perhaps out of pure fascination with the forbidden.",
+						"Whatever your story, the secrets you carry set you apart—and make you feared by many.",
+						{
+							"type": "inset",
+							"name": "Important",
+							"entries": [
+								"This background is not intended to make a character an expert on every devil or demon in existence. Its purpose is to represent someone who knows how to deal with corrupting creatures and/or use their power through negotiations and rituals."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Dark Knowledge",
+					"entries": [
+						"As a Corrupturalist, you possess a deep understanding of fiendish forces.",
+						"In cities or communities where fiendish cults exist (or once existed), you can identify signs of fiendish activity, such as hidden symbols, unfinished rituals, or places consecrated to darkness, even when only minimal physical traces remain.",
+						"You are also recognized—albeit with suspicion—by cultists and scholars of dark forces, who acknowledge your expertise and may offer information or limited assistance in exchange for favors, money, or equivalent secrets."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I seek knowledge regardless of its nature or the dangers it brings."
+								],
+								[
+									"2",
+									"Curiosity is my greatest virtue and my greatest flaw; I cannot resist mysteries."
+								],
+								[
+									"3",
+									"I see the world as a game of greater forces in which we are mere pawns."
+								],
+								[
+									"4",
+									"I speak with confidence, as if I know truths others could never understand."
+								],
+								[
+									"5",
+									"I have an analytical mind, finding logic even within chaos."
+								],
+								[
+									"6",
+									"I am reserved and rarely reveal my true intentions."
+								],
+								[
+									"7",
+									"I have a dark sense of humor and a peculiar taste for irony and tragedy."
+								],
+								[
+									"8",
+									"I developed strange habits after years of study—such as muttering in forgotten tongues."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Knowledge. All power, even dark power, can be a tool to understand the universe. (Neutral)"
+								],
+								[
+									"2",
+									"Ambition. The power of infernal entities is not to be feared, but mastered. (Evil)"
+								],
+								[
+									"3",
+									"Balance. Even infernal forces have a role in maintaining cosmic balance. (Neutral)"
+								],
+								[
+									"4",
+									"Rebellion. Challenging the dogmas of traditional religions is essential to true freedom. (Chaotic)"
+								],
+								[
+									"5",
+									"Protection. My studies aim to protect the innocent from darkness. (Good)"
+								],
+								[
+									"6",
+									"Power. Knowing infernal secrets is the path to transcending mortal limits. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"A loved one was cursed, and only infernal knowledge can save them."
+								],
+								[
+									"2",
+									"A mentor vanished during dangerous research, and I must discover what happened."
+								],
+								[
+									"3",
+									"I made a pact with an infernal entity and now seek to undo or understand its consequences."
+								],
+								[
+									"4",
+									"I safeguard an object or text containing invaluable demonic secrets."
+								],
+								[
+									"5",
+									"I owe my life to an infernal being who saved me, but I do not know the price it will demand."
+								],
+								[
+									"6",
+									"A demonic cult ruined my life, and I seek revenge against them."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"My obsession with forbidden knowledge leads me to ignore the dangers I face."
+								],
+								[
+									"2",
+									"I struggle to trust others, always expecting ulterior motives."
+								],
+								[
+									"3",
+									"Constant exposure to dark forces has made me indifferent to the suffering of others."
+								],
+								[
+									"4",
+									"I challenged or betrayed a demonic entity and constantly fear its revenge."
+								],
+								[
+									"5",
+									"I take pride in my intellect, underestimating the dangers of the forces I study."
+								],
+								[
+									"6",
+									"I am tempted by power and sometimes abandon my principles for personal gain."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Extraplanar Traveler",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"count": 2,
+						"from": [
+							"insight",
+							"perception",
+							"performance",
+							"survival",
+							"nature"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"count": 1,
+						"from": [
+							"disguise kit"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "A broken magical compass (when you touch it and close your eyes, you have visions of what your plane of origin was like before you left it)"
+						},
+						{
+							"special": "A travel journal (book)"
+						},
+						{
+							"special": "Ink"
+						},
+						{
+							"special": "Pen"
+						},
+						"traveler's clothes|phb",
+						{
+							"special": "A lucky silver coin"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Choose two between {@skill Insight}, {@skill Perception}, {@skill Performance}, {@skill Survival} amnd {@skill Nature}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One language of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Language or Tool:",
+							"entry": "One language of your choice or {@item disguise kit|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A broken magical compass, a travel journal, ink, a pen, a set of {@item traveler's clothes|phb}, and a lucky silver coin"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Sixth Sense",
+					"entries": [
+						"Traveling between multiple planes is part of your nature, and because of this you have an easier time perceiving contrast and conflict between things from different planes.",
+						"Through physical traits, magical signatures, or pure instinct, you are able to analyze and discern when something is not native to the current plane, as long as either the current plane or the native plane of what is being analyzed is familiar to you.",
+						"This feature may or may not, at the Dungeon Master's discretion, reveal information about which plane an analyzed object, creature, or event originated from. Its primary use is determining whether something belongs to the current plane or not."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Shy. I travel without forming bonds with anything other than myself and my own experiences."
+								],
+								[
+									"2",
+									"Bold. I enjoy challenging myself, especially when I can gain fame or a fine reward."
+								],
+								[
+									"3",
+									"Curious. Every place I visit is different from the last, and I cannot wait to discover the next."
+								],
+								[
+									"4",
+									"Wary. I have learned that the world can change in an instant, and the familiar may be an illusion."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d5",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Self-Preservation. I explore many places to prepare myself and ensure I have somewhere to flee if something happens."
+								],
+								[
+									"2",
+									"Power. What matters is spreading my influence, building every kind of contact, and being able to solve any problem."
+								],
+								[
+									"3",
+									"Exploration. The multiverse is far too vast to stand still; I want to see what it has to offer."
+								],
+								[
+									"4",
+									"Collectivity. In every new place there is an opportunity to meet new creatures and build a great community."
+								],
+								[
+									"5",
+									"Altruism. There is always someone in need of help. The planes are vast, and when they need me, I will be there."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d5",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"My family, friends, and the memories I have of them give me strength and guide me through the multiverse."
+								],
+								[
+									"2",
+									"My gods walk with me as I spread their faith everywhere, without fear of form or culture."
+								],
+								[
+									"3",
+									"Each new plane is a new home, a new bond, a new member of my family."
+								],
+								[
+									"4",
+									"Sins committed on distant planes haunt and frighten me, and I hope to flee from them."
+								],
+								[
+									"5",
+									"The past and my home plane are painful memories I left behind."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I can only think that I will never find a place better than my home, even though I can never return to it."
+								],
+								[
+									"2",
+									"Sometimes I pretend not to understand local customs so I do not have to deal with them."
+								],
+								[
+									"3",
+									"I cannot resist the unknown, even when it is a place I have never heard of and may never return from."
+								],
+								[
+									"4",
+									"Now that I am free, I can jump from plane to plane, be whoever I want, however I want—and if it goes wrong, I can just leave."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Time Traveler",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"choose": {
+						"count": 1,
+						"from": [
+							"history",
+							"insight"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "A small hourglass worth 25 gp"
+						},
+						{
+							"special": "A small object from your original time (a jewel, a letter, etc.)"
+						},
+						{
+							"special": "A map of a city that has already fallen or has yet to be built"
+						},
+						{
+							"special": "A set of strange clothes (traveler attire)"
+						},
+						{
+							"special": "A lucky silver coin"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana} and choose one between {@skill History} or {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Two languages of your choice (one from your time of origin and one from the current time)"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A small hourglass worth 25 gp, a small object from your original time, a map of a city that has already fallen or has yet to be built, a set of strange clothes ({@item traveler's clothes}), and a lucky silver coin"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Asynchronous",
+					"entries": [
+						"From time to time, you experience blackouts and strange visions, usually related to the physical location where you currently are.",
+						"These visions may depict the past or the future. They can be vivid or hazy, with or without colors, sounds, or smells; some feel like memories, while others resemble confused dreams.",
+						"You have no control over when these visions occur or what they show, but you can sometimes intuit whether they refer to the past or the future.",
+						{
+							"type": "inset",
+							"name": "Important",
+							"entries": [
+								"This feature is not meant to be activated like an ability. Ideally, you should inform the Dungeon Master at the start of a session that you possess this feature, allowing them to decide whether to grant you a vision during play, if it makes sense for the session."
+							]
+						}
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Shy. Coming from another time with different customs, I struggle to fit in."
+								],
+								[
+									"2",
+									"Bold. Used to surviving alone in the unknown, I know destiny is an idea for fools."
+								],
+								[
+									"3",
+									"Curious. The world I knew is so different from this one that I cannot help but explore every corner."
+								],
+								[
+									"4",
+									"Wary. I fear what the past and the future may hold for me."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d5",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Self-Preservation. I will do everything I can to protect myself in this strange time."
+								],
+								[
+									"2",
+									"Power. With my knowledge of the past and future, I will gain as much power and influence as possible."
+								],
+								[
+									"3",
+									"Exploration. I will spend my days exploring and poking into every corner of this wonderful place."
+								],
+								[
+									"4",
+									"Collectivity. I will blend in with the people of this era, learn their customs, and teach them mine. I am part of a new time now."
+								],
+								[
+									"5",
+									"Altruism. I will use my knowledge to complement that of this era and try to help the beings who live in it."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d5",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"My family, now distant, means everything to me. Their memory and values guide my actions and thoughts."
+								],
+								[
+									"2",
+									"My gods walk with me wherever and whenever I am. There is no time that can break my faith."
+								],
+								[
+									"3",
+									"A new time is a new opportunity to form bonds, friends, and family."
+								],
+								[
+									"4",
+									"I am haunted by mistakes I committed in the future, and I hope to correct them."
+								],
+								[
+									"5",
+									"The past tries to torment me, but it is behind me. I have moved on."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I cannot stop thinking that my time was simply better than this one."
+								],
+								[
+									"2",
+									"Sometimes I pretend not to understand customs or habits just to avoid dealing with them."
+								],
+								[
+									"3",
+									"I cannot resist the unknown, even when disaster awaits me."
+								],
+								[
+									"4",
+									"Now that I am free from my people and family, I can pretend to be what I always wanted—but never was."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Hunter",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"survival": true,
+					"choose": {
+						"count": 1,
+						"from": [
+							"religion",
+							"arcana"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"abyssal": true,
+					"infernal": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "A combat-marked symbol (stake, medallion, or creature tooth)"
+						},
+						{
+							"special": "A vial of holy water"
+						},
+						{
+							"special": "A notebook with notes about creatures you have faced"
+						},
+						"traveler's clothes|phb",
+						{
+							"special": "A silver stake (no monetary value)"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Survival} and choose between {@skill Religion} and {@skill Arcana}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "{@language Abyssal}, {@language Infernal}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A combat-marked symbol, a vial of holy water, a notebook with notes about creatures you have faced, a set of {@item traveler's clothes|phb}, a silver stake (no monetary value), and a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Whispers of the Shadows",
+					"entries": [
+						"You know where to look for rot beneath the surface. In forgotten villages, quiet taverns, or church corridors, you find those who know of creatures of darkness—even if they deny it aloud.",
+						"When you arrive in a new region, you can spend some time identifying and contacting local informants, superstitious folk, or occultists. These individuals may share:",
+						{
+							"type": "list",
+							"items": [
+								"Rumors, legends, or clues about supernatural presences.",
+								"Signs of profaned locations or strange occurrences.",
+								"Information about marks, behaviors, or habits of certain creatures."
+							]
+						},
+						"You also carry signs—such as rings, necklaces, or marks on your weapon—that other shadow hunters can use to recognize you as one of their own.",
+						"By studying a region, you can identify marks and signs used by clerics or scholars and add them to your repertoire, allowing them to recognize you as well. Depending on the context, they may offer help or keep their distance."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Personal Tragedy Table",
+					"entries": [
+						"A tragedy that shaped you.",
+						{
+							"type": "table",
+							"colLabels": [
+								"1d8",
+								"Tragedy"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Your village was destroyed by an ancient vampire—you survived by luck."
+								],
+								[
+									"2",
+									"A werewolf murdered someone dear to you during a full moon. You never forgot the howl."
+								],
+								[
+									"3",
+									"You were captured by witches and used as a test subject in rituals. You escaped, but bear the marks."
+								],
+								[
+									"4",
+									"Your order was exterminated by demons; you are the last survivor."
+								],
+								[
+									"5",
+									"As a child, you saw something in the mirror that never stopped watching you."
+								],
+								[
+									"6",
+									"Your blood is cursed—you are part of the darkness you hunt."
+								],
+								[
+									"7",
+									"You swore to protect a sacred site desecrated by undead."
+								],
+								[
+									"8",
+									"You do not remember your past, but you dream of monsters that seem to know you."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I speak little and listen closely. The night does not forgive fools."
+								],
+								[
+									"2",
+									"I keep meticulous records of every creature I face."
+								],
+								[
+									"3",
+									"I sleep lightly. Any noise could be an attack."
+								],
+								[
+									"4",
+									"I avoid eye contact—you never know who might be possessed."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Redemption. No soul deserves to be devoured by darkness. (Good)"
+								],
+								[
+									"2",
+									"The Hunt. True justice is the blade that finds the heart. (Neutral)"
+								],
+								[
+									"3",
+									"Knowledge. Only truth can free us from fear. (Order)"
+								],
+								[
+									"4",
+									"Purification. Where there is corruption, there must be fire. (Lawful)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I keep a journal with the names of everyone I lost—and who caused it."
+								],
+								[
+									"2",
+									"The creature that killed my mentor is still out there. I will find it."
+								],
+								[
+									"3",
+									"I swore no one else would suffer what I did."
+								],
+								[
+									"4",
+									"I carry the weapon of the one who saved me. It guides me."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I do not trust anyone who walks at night."
+								],
+								[
+									"2",
+									"I sleep with a knife in hand—and sometimes wake up using it."
+								],
+								[
+									"3",
+									"I become obsessed until I kill what I am hunting."
+								],
+								[
+									"4",
+									"I see signs where none exist. I have caused tragedies because of it."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sentinel",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"count": 2,
+						"from": [
+							"insight",
+							"perception",
+							"investigation",
+							"intimidation"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "A notebook"
+						},
+						{
+							"special": "A key ring"
+						},
+						{
+							"special": "A gaming set with which you are proficient"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Choose two between {@skill Insight}, {@skill Perception}, {@skill Investigation} and {@skill Intimidation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One {@item gaming set|phb} of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One language of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A notebook, a key ring, a {@item gaming set|phb} with which you are proficient, and a {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"For a large part of your life, you defended a post—be it a castle, a fortress, a palace, or any other location that required permanent defense.",
+						"You were tasked with protecting this place, honing your skills to keep it safe under your watch.",
+						"Choose one of the following locations you defended: Sacred Temple, Fortress, Palace, Forest, Monastery, or Library."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Alert Sense",
+					"entries": [
+						"You know how to recognize certain signs of danger before most people. Suspicious creatures, unusual movements, or changes in the environment catch your attention almost instinctively.",
+						"After remaining in a location for a brief period of time (determined by the Dungeon Master), you may ask whether there is any strange activity in the surroundings, even if you are not actively searching.",
+						"The Dungeon Master may offer you a subtle observation, an uneasy feeling, or a relevant memory—even if the danger is not revealed directly."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"You defended a region that was frequently attacked, which may have left you traumatized or granted you vast combat experience. This can make you calm, as you already know danger."
+								],
+								[
+									"2",
+									"You were always faithful to the sentinel position, waiting at your post for something to happen. You are patient and can remain focused through long periods of inactivity."
+								],
+								[
+									"3",
+									"You fought for what you believed was right, performing your role splendidly. You are known in the region you defended, which makes you confident."
+								],
+								[
+									"4",
+									"Even under the pressure of an imminent attack, you never lost focus or calm. You are extremely composed and can easily defend what is necessary without suffering great stress."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Duty. I perform my work out of a sense of duty, placing others behind me—the enemy must pass through me before reaching them. (Good)"
+								],
+								[
+									"2",
+									"Redemption. I defend this place due to a punishment I imposed upon myself after committing a great failure. (Lawful)"
+								],
+								[
+									"3",
+									"Prevention. I always seek to protect this place to prevent a greater evil. (Good)"
+								],
+								[
+									"4",
+									"Freedom. I fight so that others may be free from enemy threats. (Chaotic)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Iron Honor. This position has been passed down through generations of my family. I cannot dishonor them."
+								],
+								[
+									"2",
+									"Promise. I promised a loved one that I would protect this place as my final vow."
+								],
+								[
+									"3",
+									"Oath. I swore to protect this place until my death. My loyalty has no price."
+								],
+								[
+									"4",
+									"Fallen Guardian. An ally died protecting this place. Now it is my turn."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Obsession. I trust no one—or almost no one—to take the position I guard, even when I should rest."
+								],
+								[
+									"2",
+									"Morality. My morals prevent me from straying far from the place I protect, except in special cases of true necessity."
+								],
+								[
+									"3",
+									"Intolerance of Failure. Failure is unacceptable to me. I cannot fail; others depend on me."
+								],
+								[
+									"4",
+									"Excessive Caution. I am always extremely cautious; only those I deeply trust are sometimes allowed past this caution."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ninja",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"stealth": true,
+					"acrobatics": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "A set of discreet clothes"
+						},
+						"dagger|phb",
+						"dagger|phb",
+						{
+							"special": "A climbing kit"
+						},
+						{
+							"special": "A smoke grenade"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Stealth}, {@skill Acrobatics}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One {@item gaming set|phb} of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One language of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of discreet clothes, two {@item dagger|phb}s, a climbing kit, a {@item smoke grenade|dmg}, and a {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"You were born into the obscure and mysterious tradition of your clan, a sect of ninjas that patrol the darkness, protecting ancient secrets and facing threats unseen by ordinary eyes.",
+						"Your training was intense, involving stealth techniques, martial arts, and mastery of abilities that leave your enemies in the dark.",
+						"Your life has been marked by secret missions, silent betrayals, and a constant struggle against forces that would rather you had never been born."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Master of Shadows",
+					"entries": [
+						"Your training grants you a sharp and calm mind; infiltration and espionage are almost as natural to you as breathing.",
+						"You naturally draw less attention when moving through large crowds, as your adaptability grants you a form of natural social camouflage.",
+						"You also have an easier time identifying signs of activity from other ninjas and general elements of this culture, such as ninjutsu techniques, weapons, and clans."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"You trained in the shadows of a secret clan, learning to hide your emotions and maintain a calm facade even in the most dangerous situations. This makes you unflappable and accustomed to constant danger."
+								],
+								[
+									"2",
+									"You are patient and observant, waiting for the right moment to act, often remaining silent for long periods while monitoring targets or the environment."
+								],
+								[
+									"3",
+									"You fought for a greater purpose, earning respect and admiration among your peers. Your confidence comes from mastery of techniques and the ancestral knowledge of your clan."
+								],
+								[
+									"4",
+									"Even under pressure, you remain calm and in control, using discipline to maintain focus regardless of the chaos around you."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Duty. As a ninja, my duty is to protect my clan and allies, facing any threat from the shadows to ensure everyone’s safety. (Good)"
+								],
+								[
+									"2",
+									"Redemption. I carry guilt for a mission that went wrong, and now seek redemption by protecting those who cannot defend themselves. (Lawful)"
+								],
+								[
+									"3",
+									"Prevention. I believe true power lies in preventing conflicts before they happen, using my skills to maintain peace in my land. (Good)"
+								],
+								[
+									"4",
+									"Freedom. I fight so that all may live without fear of hidden threats, using my techniques to ensure freedom of expression and movement. (Chaotic)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Obsession with Vigilance. I do not fully trust anyone to take my guard position. Even when I need rest, I remain alert, fearing betrayal or exploitation of weakness."
+								],
+								[
+									"2",
+									"Code Restrictions. My ninja code prevents me from leaving the place I protect unless under extreme necessity or direct orders. This rigid morality sometimes limits my actions."
+								],
+								[
+									"3",
+									"Fear of Failure. For a ninja, failure can mean death or the downfall of my clan. I cannot allow myself to fail, as the responsibility is too great."
+								],
+								[
+									"4",
+									"Excessive Caution. I am extremely cautious when trusting others. Only those who have proven loyalty and skill may pass my vigilance without hesitation."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Follower of the Raven Queen",
+			"source": "NDD",
+			"hasFluff": true,
+			"skillProficiencies": [
+				{
+					"religion": true,
+					"choose": {
+						"count": 1,
+						"from": [
+							"intimidation",
+							"perception"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "A sacred symbol of the Raven Queen (a raven carved from bone or obsidian)"
+						},
+						{
+							"special": "A small diary"
+						},
+						{
+							"special": "Common clothes or a black ceremonial mantle"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Religion} and choose between {@skill Intimidation} and {@skill Perception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "One {@item artisan's tools|phb} or one musical instrument of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One language of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A sacred symbol of the Raven Queen, a small diary, common clothes or a black ceremonial mantle, and a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"You chose to carry the word of the Raven Queen, lady of fate and the dead.",
+						"Her scriptures speak of balance and its preservation, of guiding lost souls and offering comfort to those who mourn, for you are one who accompanies the omen of death and rebirth.",
+						"Those who pray to the Lady do not flaunt garments nor demand courtesy. Your calm demeanor in unsettling moments may create whispers and superstitions about your intentions, but a true follower remains firm in their ideals, for this is the Queen’s will and the blessing your heart carries."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Funereal Whispers",
+					"entries": [
+						"Due to your intrinsic proximity to death, you are rarely shaken by extreme situations or tragic stories.",
+						"Your demeanor shows that dealing with such matters is routine for you, granting you ease when interacting with those touched by death.",
+						"You find it easier to extract information from or communicate ideas to people in shock due to recent events related to death, or who are experiencing stages of grief (denial, anger, bargaining, depression, or acceptance).",
+						"You also have some facility in calming and influencing these individuals."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Following the Raven Queen shapes your behavior with either cold serenity or near-fanatical zeal.",
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I see death as a release from suffering and seek to bring peace to the afflicted."
+								],
+								[
+									"2",
+									"I speak in a calm, quiet tone, as if each word were a whisper of death."
+								],
+								[
+									"3",
+									"I collect stories about how people face death."
+								],
+								[
+									"4",
+									"I hate those who try to cheat death through vile necromancy."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Destiny. Everyone has their time, and it is my duty to respect it. (Lawful)"
+								],
+								[
+									"2",
+									"Balance. Life and death are two sides of the same coin. (Neutral)"
+								],
+								[
+									"3",
+									"Mystery. Fear of death keeps the living humble. (Any)"
+								],
+								[
+									"4",
+									"Justice. Those who profane the dead must be punished. (Chaotic)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"A raven has accompanied me since childhood, sent by the Raven Queen."
+								],
+								[
+									"2",
+									"I lost someone I loved and swore to help other souls find peace."
+								],
+								[
+									"3",
+									"A temple of the Raven Queen sheltered me when I was an orphan."
+								],
+								[
+									"4",
+									"I swore devotion to the Raven Queen after an unfortunate incident involving death."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I am cold and distant; attachments only bring pain."
+								],
+								[
+									"2",
+									"I hate seeing someone escape their destiny, even if they are an ally."
+								],
+								[
+									"3",
+									"Sometimes I overinterpret the Raven Queen’s 'signs,' even when they do not exist."
+								],
+								[
+									"4",
+									"I envy the dead, who no longer bear the burden of life."
+								]
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"backgroundFluff": [
+		{
+			"name": "Corrupturalist",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo jogador Plutão, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Descendant of a Legendary Hero",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pela jogadora Jade, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Extraplanar Traveler",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo mestre Azzarova, que atingiu o rank Topaz Dragon."
+			]
+		},
+		{
+			"name": "Follower of the Raven Queen",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo mestre Dann, que atingiu o rank Topaz Dragon."
+			]
+		},
+		{
+			"name": "Hermit (Defender)",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo jogador Tarisu, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Martial Artist",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo jogador Matheus, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Nerdola (OASIS)",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo jogador Otto, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Ninja",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo jogador Matheus, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Primeval Nomad",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pela jogadora Helena, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Sentinel",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo jogador Dann, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Shadow Hunter",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pela jogadora Carol, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Soldier (Heavenly Dawn)",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo jogador Plutão, que atingiu o nível 20."
+			]
+		},
+		{
+			"name": "Time Traveler",
+			"source": "NDD",
+			"entries": [
+				"Esse antecedente foi disponibilizado no servidor pelo jogador Azzarova, que atingiu o nível 20."
 			]
 		}
 	]
