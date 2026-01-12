@@ -16,7 +16,10 @@
 		],
 		"_meta": {
 			"internalCopies": [
-				"background"
+				"background",
+				"subclass",
+				"subclassFeature",
+				"spell"
 			]
 		},
 		"dateAdded": 1754720728,
@@ -170,7 +173,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -178,23 +181,23 @@
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -239,11 +242,11 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -302,19 +305,32 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Pestilence",
+							"shortName": "Pestilence",
+							"source": "NDD"
+						}
 					}
 				]
 			}
@@ -368,11 +384,11 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -525,27 +541,27 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -598,19 +614,19 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			},
@@ -775,19 +791,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -832,11 +848,11 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -883,11 +899,11 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -945,15 +961,15 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			},
@@ -996,11 +1012,11 @@
 				"fromClassList": [
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Paladin",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1046,23 +1062,23 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1103,19 +1119,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1162,15 +1178,15 @@
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1214,7 +1230,7 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1266,23 +1282,23 @@
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1328,7 +1344,7 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1369,7 +1385,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1416,19 +1432,32 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Paladin",
-						"source": "PHB'14"
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Pestilence",
+							"shortName": "Pestilence",
+							"source": "NDD"
+						}
 					}
 				]
 			}
@@ -1489,23 +1518,23 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1554,19 +1583,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1613,11 +1642,11 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			},
@@ -1666,19 +1695,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			},
@@ -1734,7 +1763,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -1742,11 +1771,11 @@
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -1955,7 +1984,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -1963,7 +1992,7 @@
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2004,7 +2033,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -2012,11 +2041,11 @@
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2068,7 +2097,7 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2123,7 +2152,7 @@
 				"fromClassList": [
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2164,7 +2193,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -2172,23 +2201,23 @@
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Paladin",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2245,7 +2274,7 @@
 				"fromClassList": [
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2290,15 +2319,15 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2347,7 +2376,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -2355,7 +2384,7 @@
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2402,35 +2431,35 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2470,11 +2499,11 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2599,15 +2628,15 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2750,11 +2779,11 @@
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2811,7 +2840,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -2819,15 +2848,15 @@
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -2886,19 +2915,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3032,15 +3061,15 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3085,7 +3114,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3122,15 +3151,15 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3172,23 +3201,23 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3240,11 +3269,11 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3291,7 +3320,7 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3348,15 +3377,15 @@
 				"fromClassList": [
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3408,19 +3437,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -3592,23 +3621,23 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3657,19 +3686,19 @@
 					},
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3720,23 +3749,23 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3785,19 +3814,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3842,7 +3871,7 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -3850,19 +3879,19 @@
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3921,15 +3950,15 @@
 				"fromClassList": [
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -3979,11 +4008,11 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -4033,19 +4062,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -4093,19 +4122,19 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -4162,23 +4191,23 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Bard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Artificer",
@@ -4230,15 +4259,15 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Cleric",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -4291,15 +4320,15 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -4348,23 +4377,23 @@
 				"fromClassList": [
 					{
 						"name": "Wizard",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Druid",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Sorcerer",
-						"source": "PHB'14"
+						"source": "PHB"
 					},
 					{
 						"name": "Warlock",
-						"source": "PHB'14"
+						"source": "PHB"
 					}
 				]
 			}
@@ -4890,7 +4919,8 @@
 				"If the save fails, the disease worsens and triggers its Aggravation effect, otherwise it slows down and triggers its Relief effect.",
 				"Creatures that are immune to mundane diseases have advantage on aggravation saving throws against magical diseases.",
 				"Three successful aggravation saving throws (consecutive or not) will cure the creature and make it immune to that disease for 24 hours.",
-				"A creature can be affected by multiple diseases at the same time: in that case, aggravation saving throws are rolled separately, and it counts as having multiple (and separate) stacks of this condition."
+				"A creature can be affected by multiple diseases at the same time: in that case, aggravation saving throws are rolled separately, and it counts as having multiple (and separate) stacks of this condition.",
+				"This condition may be removed by a Greater Restoration, Heal or Power Word: Heal spell."
 			]
 		}
 	],
@@ -4924,7 +4954,7 @@
 			"source": "NDD",
 			"entries": [
 				"The creature loses its sense of balance and spatial awareness, with its senses heavily distorted.",
-				"Its movement speeds are reduced by 10 feet, and it has disadvantage on Acrobatics checks, as well as on checks or saving throws made to resist being pushed, knocked prone, or escaping grapples.",
+				"Its movement speeds are reduced by 10 feet, and it has disadvantage on Acrobatics checks, as well as on checks or saving throws made to push a creature or being pushed, grappling a creature or escaping a grapple and against being knocked prone.",
 				{
 					"type": "list",
 					"items": [
@@ -5826,7 +5856,7 @@
 				{
 					"prepared": {
 						"1": [
-							"Sapping Sting",
+							"sapping sting|EGW",
 							"Detect Poison and Disease",
 							"Ray of Sickness"
 						],
@@ -5835,12 +5865,12 @@
 							"Blindness/Deafness"
 						],
 						"5": [
-							"Comfort",
+							"Comfort|NDD",
 							"Stinking Cloud"
 						],
 						"7": [
 							"Sickening Radiance",
-							"Agitate Wounds"
+							"Agitate Wounds|NDD"
 						],
 						"9": [
 							"Contagion",
@@ -5853,8 +5883,9 @@
 				"Pestilence Domain|Cleric|PHB|Pestilence|NDD|1",
 				"Channel Divinity: Sudden Plague|Cleric|PHB|Pestilence|NDD|2",
 				"Channel Divinity: Divine Miasma|Cleric|PHB|Pestilence|NDD|6",
-				"Pestilent Spellcasting|Cleric|PHB|Pestilence|NDD|8",
-				"Pestilent Nature|Cleric|PHB|Pestilence|NDD|17"
+				"Level 6: Putrid Specialization|Cleric|PHB|Pestilence|NDD|6",
+				"Contagious Spellcasting|Cleric|PHB|Pestilence|NDD|8",
+				"Champion of Blight|Cleric|PHB|Pestilence|NDD|17"
 			],
 			"hasFluffImages": true
 		}
@@ -5906,22 +5937,19 @@
 						]
 					]
 				},
+				"You may use Lost Grimoire spells from the Pestilence Domain Spells list regardless of having access to the Lost Grimoire.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Adapted Body|Cleric||Pestilence|NDD|1"
+					"subclassFeature": "Vile Specialization|Cleric||Pestilence|NDD|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Putrid Specialization|Cleric||Pestilence|NDD|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Holy Manipulation|Cleric||Pestilence|NDD|1"
+					"subclassFeature": "Rotten Manipulation|Cleric||Pestilence|NDD|1"
 				}
 			]
 		},
 		{
-			"name": "Adapted Body",
+			"name": "Vile Specialization",
 			"source": "NDD",
 			"className": "Cleric",
 			"classSource": "PHB",
@@ -5930,11 +5958,12 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting at 1st level, you have advantage on saving throws against the {@condition poisoned|phb} condition, and you have resistance to poison damage."
+				"You learned many skills and even changed your own body while the path offered by your god.",
+				"Starting at 1st level, you have advantage on saving throws against the {@condition poisoned|phb} condition and have proficiency with the poisoner's kit."
 			]
 		},
 		{
-			"name": "Putrid Specialization",
+			"name": "Rotten Manipulation",
 			"source": "NDD",
 			"className": "Cleric",
 			"classSource": "PHB",
@@ -5943,20 +5972,9 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Also at 1st level, you gain proficiency with the poisoner's kit."
-			]
-		},
-		{
-			"name": "Holy Manipulation",
-			"source": "NDD",
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Pestilence",
-			"subclassSource": "NDD",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"Your bond with disease allows you to sense illnesses and interact with them swiftly. As a bonus action, you can target one creature within 30 feet of you that you can see that is poisoned or diseased, producing one of the following effects:",
+				"Your bond with disease allows you to sense illnesses and interact with them swiftly.",
+				"As a bonus action, you can target one creature within 30 feet of you that you can see and force it to succeed on a Constitution saving throw against your spell save DC or become {@condition poisoned|phb} for one minute.",
+				"If the creature is already poisoned, you can produce one of the following effects on it instead: ",
 				{
 					"type": "list",
 					"items": [
@@ -5984,7 +6002,7 @@
 			"header": 2,
 			"entries": [
 				"You can use your bonus action to empower your next spell that deals {@b poison damage}. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
-				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition and suffer the effects of the chosen disease.",
+				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
 				"This can be applied to a maxium number of creatures equals to your proficiency bonus at one time. If the spell affects more creatures than this limit, you must choose which creatures will be diseased within this limit."
 			]
 		},
@@ -5999,12 +6017,26 @@
 			"header": 2,
 			"entries": [
 				"You can use your bonus action to empower your next spell that deals {@b necrotic damage}. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
-				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition and suffer the effects of the chosen disease.",
+				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
 				"This can be applied to a maxium number of creatures equals to your proficiency bonus at one time. If the spell affects more creatures than this limit, you must choose which creatures will be diseased within this limit."
 			]
 		},
 		{
-			"name": "Pestilent Spellcasting",
+			"name": "Level 6: Putrid Specialization",
+			"source": "NDD",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Pestilence",
+			"subclassSource": "NDD",
+			"header": 2,
+			"level": 6,
+			"entries": [
+				"You become resistant to poison damage.",
+				"You also have advantage on saving throws made to avoid diseases or the {@condition diseased|NDD} condition. This advantage also applies to saving throws made against disease aggravation and against activating or worsening a disease's effect."
+			]
+		},
+		{
+			"name": "Contagious Spellcasting",
 			"source": "NDD",
 			"className": "Cleric",
 			"classSource": "PHB",
@@ -6013,12 +6045,12 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"When you cast a cleric cantrip, you can choose to either increase the damage dealt by an amount equal to your Wisdom modifier or change the damage type to poison.",
-				"Additionally, the range of your {@b Sacred Manipulation} increases to 60 feet."
+				"When you cast a cleric cantrip, you can choose to either increase the damage dealt by an amount equal to your Wisdom modifier or change the damage type to poison or necrotic.",
+				"Additionally, the range of your {@b Rotten Manipulation} increases to 60 feet."
 			]
 		},
 		{
-			"name": "Pestilent Nature",
+			"name": "Champion of Blight",
 			"source": "NDD",
 			"className": "Cleric",
 			"classSource": "PHB",
@@ -6027,8 +6059,9 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Whenever you use a class feature or spell that deals poison or necrotic damage, a creature is only immune if it is immune to both damage types. The same rule applies to resistance.",
-				"The range of your {@b Sacred Manipulation} increases to 90 feet.",
+				"Whenever you cast a spell that deals damage, you may change that damage type to poison or necrotic.",
+				"Your class abilities and spells ignore resistance to poison damage.",
+				"The range of your {@b Rotten Manipulation} increases to 90 feet, and when a creature gets {@condition poisoned|phb} from it you may spend one extra use of {@b Rotten Manipulation} to inflict one of the extra effects as a part of the same bonus action.",
 				"You can activate both {@b Channel Divinity: Sudden Plague} and {@b Channel Divinity: Divine Miasma} on spells that deal either poison or necrotic damage."
 			]
 		}
