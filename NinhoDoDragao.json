@@ -4942,7 +4942,7 @@
 						{
 							"type": "item",
 							"name": "Relief",
-							"entry": "On the first failure, the effect also applies to Dexterity saving throws. On the second failure, it also applies to Constitution saving throws. Starting with the third failure, the creature gains a cumulative –2 penalty to physical saving throws."
+							"entry": "The creature receives a cumulative +1 modifier on saving throws affected by this disease."
 						}
 					]
 				},
