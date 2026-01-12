@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.9",
+				"version": "1.10",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -5883,7 +5883,7 @@
 				"Pestilence Domain|Cleric|PHB|Pestilence|NDD|1",
 				"Channel Divinity: Sudden Plague|Cleric|PHB|Pestilence|NDD|2",
 				"Channel Divinity: Divine Miasma|Cleric|PHB|Pestilence|NDD|6",
-				"Level 6: Putrid Specialization|Cleric|PHB|Pestilence|NDD|6",
+				"Putrid Specialization|Cleric|PHB|Pestilence|NDD|6",
 				"Contagious Spellcasting|Cleric|PHB|Pestilence|NDD|8",
 				"Champion of Blight|Cleric|PHB|Pestilence|NDD|17"
 			],
@@ -6022,7 +6022,7 @@
 			]
 		},
 		{
-			"name": "Level 6: Putrid Specialization",
+			"name": "Putrid Specialization",
 			"source": "NDD",
 			"className": "Cleric",
 			"classSource": "PHB",
