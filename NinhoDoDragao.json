@@ -1,12 +1,12 @@
 {
-	"siteVersion": "2.10.2",
+	"siteVersion": "2.113.1",
 	"_meta": {
 		"sources": [
 			{
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.7",
+				"version": "1.8",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
