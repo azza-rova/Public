@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.11",
+				"version": "1.12",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -6001,9 +6001,19 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
-				"You can use your bonus action to empower the next spell you cast within a minute that deals {@b poison damage}. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
-				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
-				"This can be applied to a maxium number of creatures equals to your proficiency bonus at one time. If the spell affects more creatures than this limit, you must choose which creatures will be diseased within this limit."
+				"You can spend your bonus action to empower the next use of the next spell you cast within a minute that deals {@b poison damage}. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
+				"The first time that spell {@b affects} one or more creatures, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
+				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use) you must choose a number of creatures no bigger than your proficiency bonus to be diseased.",
+				{
+					"type":"inset",
+					"name": "What creatures are considered affected by a spell in this context?",
+					"entries": [
+						"The following scenarios cover most situations, and if a spell cause more than one of those scenarios, any of them will make a creature be considered affected:",
+						"A creature is hit by a spell that produce spell attack rolls to cause damage, like {@spell ray of sickness|phb}.",
+						"A creature fails a saving throw of a spell against damage, like {@spell cloudkill|phb}.",
+						"A creature is hit by an attack using the effect or fails a save against the effect of a spell that imbues something with magic to cause damage, like {@spell holy weapon|xge}."
+					]
+				}
 			]
 		},
 		{
@@ -6016,9 +6026,19 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You can use your bonus action to empower the next spell you cast within a minute that deals {@b necrotic damage}. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
-				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
-				"This can be applied to a maxium number of creatures equals to your proficiency bonus at one time. If the spell affects more creatures than this limit, you must choose which creatures will be diseased within this limit."
+				"You can spend your bonus action to empower the next use of the next spell you cast within a minute that deals {@b necrotic damage}. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
+				"The first time that spell {@b affects} one or more creatures, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
+				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use) you must choose a number of creatures no bigger than your proficiency bonus to be diseased.",
+				{
+					"type":"inset",
+					"name": "What creatures are considered affected by a spell in this context?",
+					"entries": [
+						"The following scenarios cover most situations, and if a spell cause more than one of those scenarios, any of them will make a creature be considered affected:",
+						"A creature is hit by a spell that produce spell attack rolls to cause damage, like {@spell ray of sickness|phb}.",
+						"A creature fails a saving throw of a spell against damage, like {@spell cloudkill|phb}.",
+						"A creature is hit by an attack using the effect or fails a save against the effect of a spell that imbues something with magic to cause damage, like {@spell holy weapon|xge}."
+					]
+				}
 			]
 		},
 		{
