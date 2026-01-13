@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.10",
+				"version": "1.11",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -5974,7 +5974,7 @@
 			"entries": [
 				"Your bond with disease allows you to sense illnesses and interact with them swiftly.",
 				"As a bonus action, you can target one creature within 30 feet of you that you can see and force it to succeed on a Constitution saving throw against your spell save DC or become {@condition poisoned|phb} for one minute.",
-				"If the creature is already poisoned, you can produce one of the following effects on it instead: ",
+				"If the creature is already {@condition poisoned}, {@condition diseased|NDD} or is suffering from illness you can produce one of the following effects on it instead: ",
 				{
 					"type": "list",
 					"items": [
@@ -6001,7 +6001,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
-				"You can use your bonus action to empower your next spell that deals {@b poison damage}. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
+				"You can use your bonus action to empower the next spell you cast within a minute that deals {@b poison damage}. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
 				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
 				"This can be applied to a maxium number of creatures equals to your proficiency bonus at one time. If the spell affects more creatures than this limit, you must choose which creatures will be diseased within this limit."
 			]
@@ -6016,7 +6016,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You can use your bonus action to empower your next spell that deals {@b necrotic damage}. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
+				"You can use your bonus action to empower the next spell you cast within a minute that deals {@b necrotic damage}. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
 				"If the targets of the spell are affected by it (by being hit by a spell attack or failing a saving throw), they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
 				"This can be applied to a maxium number of creatures equals to your proficiency bonus at one time. If the spell affects more creatures than this limit, you must choose which creatures will be diseased within this limit."
 			]
@@ -6062,7 +6062,7 @@
 				"Whenever you cast a spell that deals damage, you may change that damage type to poison or necrotic.",
 				"Your class abilities and spells ignore resistance to poison damage.",
 				"The range of your {@b Rotten Manipulation} increases to 90 feet, and when a creature gets {@condition poisoned|phb} from it you may spend one extra use of {@b Rotten Manipulation} to inflict one of the extra effects as a part of the same bonus action.",
-				"You can activate both {@b Channel Divinity: Sudden Plague} and {@b Channel Divinity: Divine Miasma} on spells that deal either poison or necrotic damage."
+				"{@b Channel Divinity: Sudden Plague} can also be used with spells that deal necrotic damage and {@b Channel Divinity: Divine Miasma} can also be used with spells that deal poison damage."
 			]
 		}
 	],
