@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.12",
+				"version": "1.13",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -4922,9 +4922,152 @@
 				"A creature can be affected by multiple diseases at the same time: in that case, aggravation saving throws are rolled separately, and it counts as having multiple (and separate) stacks of this condition.",
 				"This condition may be removed by a Greater Restoration, Heal or Power Word: Heal spell."
 			]
+		},
+		{
+			"name": "Desecrated",
+			"source": "NDD",
+			"entries": [
+				"The Desecrated were once living beings that were transformed by the Desecreated Earth. While being transformed, they used the Moon's Blessing energy to empower their souls, keeping sanity and control over their mutated bodies.", 
+				{
+					"type": "entries",
+					"name": "Creature Type: Undead",
+					"entries": [
+						"You are considered an undead creature for all mechanical purposes of the game, while still keeping your original creature type.",
+						"Other undead originating from the Profane Rising do not see you as a threat and are not hostile toward you unless you attack them, making you the perfect infiltration tool.",
+						"In contrast, some creatures that would normally not be hostile toward you may become aggressive or suspicious due to your nature.",
+						"Your appearance also changes (in a customizable way), reflecting your state of necrosis."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Profane Constitution",
+					"entries": [
+						"You have resistance to necrotic and poison damage, but you are vulnerable to radiant damage.",
+						"You cannot be healed nor have your life preserved by effects that would not normally work on undead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Putrid Nature",
+					"entries": [
+						"You cannot be poisoned, and you do not need to eat, drink, or breathe."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tireless",
+					"entries": [
+						"You do not need to sleep, and magic cannot put you to sleep. You can finish a long rest in 4 hours if you spend that time inactive and motionless, while still remaining conscious.",
+						"You have advantage on saving throws against all forms of exhaustion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Undead Resilience",
+					"entries": [
+						"If any source of damage would reduce you to 0 hit points and that damage is neither radiant nor from a critical hit, you must make a Constitution saving throw with a DC equal to 5 + the damage taken − PB. On a success, you drop to 1 hit point instead of 0.",
+						"The DC of this saving throw increases by 5 each time this feature is triggered, and resets to its base value after a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Touched by the Profane",
+					"entries": [
+						"You have disadvantage on Charisma checks involving non-undead creatures."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Walking Corpse",
+					"entries": [
+						"You constantly exude the rotten stench of a corpse.",
+						"In an area with other rotting bodies, you have advantage on Stealth checks, while you have disadvantage on the same checks in other areas."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Close to Death",
+					"entries": [
+						"You have disadvantage on death saving throws.",
+						"Upon dying, your body automatically crumbles into ashes."
+					]
+				},
+				"Upon choosing to become Desacrated, you automatically gain all characteristics above and your hit points are restored to 50% of their maximum.",
+				"This transformation cannot be undone by any means other than death.",
+				"{@note This condition was created to be inflicted upon a character when it dies inside a Desecrated Area while wearing his adventurer pin, during The Profane Rising season.}"
+			]
 		}
 	],
 	"disease": [
+		{
+			"name": "Scarlet Mist's Plague",
+			"source": "NDD",
+			"entries": [
+				"The Scarlet Mist's Plague was a mysterious disease that struck the continent, spreading rapidly, mutating, and killing thousands of people. It is divided into different stages, each with its own symptoms and mechanical effects.", 
+				{
+					"type": "entries",
+					"name": "Stage I",
+					"entries": [
+						"{@b Duration. }1d10+4 days.",
+						"{@b Symptoms. }Low-grade fever, a mild but persistent cough, and slightly reddened eyes. At night, the victim hears muffled whispers, as if something were breathing beside them.",
+						"{@b Effects}",
+						{
+							"type": "list",
+							"items": [
+								"Movement speed is reduced by 5 feet.",
+								"The creature receives 1 level of exhaustion at dawn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stage II",
+					"entries": [
+						"{@b Duration. }1d10+4 days.",
+						"{@b Symptoms. }High fever, violent coughing, breath tinted red like hot smoke, intense chest pain, and difficulty breathing.",
+						"{@b Effects}",
+						{
+							"type": "list",
+							"items": [
+								"Movement speed is reduced by 10 feet.",
+								"The creature receives 1 level of exhaustion at dawn.",
+								"Attack rolls suffer a negative attack modifier equal to half the creature's PB, rounded down."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stage III",
+					"entries": [
+						"{@b Duration. }1d12+ constitution modifier days.",
+						"{@b Symptoms. }Pale skin marked by glowing, reddish veins, and labored breathing that releases small sparks and heat.",
+						"{@b Effects}",
+						{
+							"type": "list",
+							"items": [
+								"Movement speed is reduced by 10 feet.",
+								"The creature receives 1 level of exhaustion at dawn.",
+								"Attack rolls suffer a negative attack modifier equal to half the creature's PB, rounded down.",
+								"Disadvantage on Stealth checks.",
+								"At the start of each combat, the creature must succeed on a Constitution saving throw or receive 1 level of exhaustion (the DC will float between 15 and 25 accordingly to the intensity or mutation of the disease)."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Progression",
+					"entries": [
+						"At the end of the stage's duration, the creature must succeed on a Constitution saving throw (the DC will float between 15 and 25 accordingly to the intensity or mutation of the disease).",
+						"On a success, the creature rolls a new duration time, remaining at the same stage for that time and then repeating the progression test.",
+						"On a failure, the creature moves to the next stage. After Stage III, the creature dies."
+					]
+				},
+				"{@note This disease was created to be inflicted upon a character in several ways during Scarlet Mist's Plague season.}"
+			]
+		},
 		{
 			"name": "Withering Flash",
 			"source": "NDD",
