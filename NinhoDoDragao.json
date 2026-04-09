@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "1.14",
+				"version": "2.0",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -23,7 +23,7 @@
 			]
 		},
 		"dateAdded": 1754720728,
-		"dateLastModified": 1768009200,
+		"dateLastModified": 1768009201,
 		"edition": "classic"
 	},
 	"spell": [
@@ -4399,183 +4399,183 @@
 			}
 		},
 		{
-		"name": "Carl's Nature Cultivation",
-		"source": "NDD",
-		"level": 5,
-		"school": "T",
-		"time": [
-			{
-			"number": 1,
-			"unit": "action"
-			}
-		],
-		"range": {
-			"type": "point",
-			"distance": {
-			"type": "feet",
-			"amount": 120
-			}
-		},
-		"components": {
-			"v": true,
-			"s": true,
-			"m": "a small fragment from the target biome (such as ice, sand, leaves, stones, or fungus)"
-		},
-		"duration": [
-			{
-			"type": "timed",
-			"duration": {
-				"type": "minute",
-				"amount": 10,
-				"upTo": true
-			},
-			"concentration": true
-			}
-		],
-		"entries": [
-			"You unleash a wave of bioarcane energy to transform the environment within reach, reshaping it according to your will.",
-			"When you cast this spell, choose an environment type from the list below.",
-			"The spell transforms an area the size of a 60-foot cube centered on a point within range to reflect the chosen environment.",
-			"If the chosen environment matches the current biome, an additional effect (described in that biome) occurs.",
-			"When a creature enters the area for the first time on a turn or starts its turn there, it must make a saving throw against the biome's effects.",
-			"You can designate any number of creatures to ignore or be affected by these effects.",
-{
-				"type": "entries",
-				"name": "Arctic",
-				"entries": [
-					"A blizzard forms, freezing water and covering the area in snow.",
-					"Creatures have their flying speed halved.",
-					"Nonmagical flames are extinguished.",
-					"Saving Throw — Dexterity: On a failure, the creature falls prone.",
-					"Extra Effect: Flying costs 1 extra foot of movement."
-				]
-				},
+			"name": "Carl's Nature Cultivation",
+			"source": "NDD",
+			"level": 5,
+			"school": "T",
+			"time": [
 				{
-				"type": "entries",
-				"name": "Coast",
-				"entries": [
-					"Waves and rocks form, creating a crashing shoreline.",
-					"The ground becomes difficult terrain.",
-					"You can create up to three water walls that grant three-quarters cover.",
-					"Saving Throw — Strength: On a failure, the creature is pushed up to 10 feet.",
-					"Extra Effect: Push distance increases by 10 feet."
-				]
-				},
-				{
-				"type": "entries",
-				"name": "Desert",
-				"entries": [
-					"Sandstorms form with dunes and swirling sands.",
-					"Creatures have disadvantage on Perception checks.",
-					"You can create four patches of quicksand.",
-					"Saving Throw — Constitution: The area is heavily obscured beyond 10 feet.",
-					"Extra Effect: You can create one additional quicksand patch."
-				]
-				},
-				{
-				"type": "entries",
-				"name": "Forest",
-				"entries": [
-					"Roots, vines, and trees grow rapidly.",
-					"You can create small, medium, and large trees that provide varying cover.",
-					"Saving Throw — Dexterity: On a failure, the creature is restrained until the start of its next turn.",
-					"Extra Effect: You can create one additional tree of each size."
-				]
-				},
-				{
-				"type": "entries",
-				"name": "Grassland",
-				"entries": [
-					"Tall grass fills the area.",
-					"Creatures can hide anywhere and gain +2 to Stealth checks.",
-					"Saving Throw — Strength: On a failure, the creature is restrained until the start of its next turn.",
-					"Extra Effect: Creatures have disadvantage on the saving throw."
-				]
-				},
-				{
-				"type": "entries",
-				"name": "Mountain",
-				"entries": [
-					"Stone pillars rise and winds intensify.",
-					"You can create up to four stone walls granting full cover.",
-					"Saving Throw — Dexterity: On a failure, the creature takes {@damage 1d6} bludgeoning damage.",
-					"Extra Effect: You can create larger pillars and one additional pillar."
-				]
-				},
-				{
-				"type": "entries",
-				"name": "Swamp",
-				"entries": [
-					"The ground becomes mud and stagnant water.",
-					"The terrain becomes difficult.",
-					"Tracking by smell becomes impossible.",
-					"Saving Throw — Strength: On a failure, the creature is grappled.",
-					"Extra Effect: Creatures have disadvantage on the saving throw."
-				]
-				},
-				{
-				"type": "entries",
-				"name": "Underdark",
-				"entries": [
-					"Bioluminescent fungi and spores fill the area.",
-					"The area can emit dim light or magical darkness.",
-					"Creatures breathing spores reveal their position.",
-					"Saving Throw — Constitution: On a failure, the creature is poisoned until the end of its next turn.",
-					"Extra Effect: The fungi can produce normal light or magical darkness."
-				]
+					"number": 1,
+					"unit": "action"
 				}
-		],
-		"entriesHigherLevel": [
-			{
-			"type": "entries",
-			"name": "At Higher Levels",
-			"entries": [
-				"When you cast this spell using a spell slot of 6th level or higher, increase the cube's size by 30 feet for each slot level above 5th."
-			]
-			}
-		],
-		"classes": {
-			"fromClassList": [
-			{
-				"name": "Druid",
-				"source": "PHB"
-			},
-			{
-				"name": "Ranger",
-				"source": "PHB"
-			}
 			],
-			"fromSubclass": [
-			{
-				"class": {
-				"name": "Cleric",
-				"source": "PHB"
-				},
-				"subclass": {
-				"name": "Nature",
-				"shortName": "Nature",
-				"source": "PHB"
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
 				}
-			}
-			]
-		},
-		"areaTags": [
-			"C"
-		],
-		"fluff": {
-			"entries": [
-				"Essa magia foi inspirada em Carl Modha Armstrong, personagem do jogador Plutão que alcançou o nível 20."
-			],
-			"images": [
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small fragment from the target biome (such as ice, sand, leaves, stones, or fungus)"
+			},
+			"duration": [
 				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Characters/Carl.jpg"
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You unleash a wave of bioarcane energy to transform the environment within reach, reshaping it according to your will.",
+				"When you cast this spell, choose an environment type from the list below.",
+				"The spell transforms an area the size of a 60-foot cube centered on a point within range to reflect the chosen environment.",
+				"If the chosen environment matches the current biome, an additional effect (described in that biome) occurs.",
+				"When a creature enters the area for the first time on a turn or starts its turn there, it must make a saving throw against the biome's effects.",
+				"You can designate any number of creatures to ignore or be affected by these effects.",
+				{
+					"type": "entries",
+					"name": "Arctic",
+					"entries": [
+						"A blizzard forms, freezing water and covering the area in snow.",
+						"Creatures have their flying speed halved.",
+						"Nonmagical flames are extinguished.",
+						"Saving Throw — Dexterity: On a failure, the creature falls prone.",
+						"Extra Effect: Flying costs 1 extra foot of movement."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Coast",
+					"entries": [
+						"Waves and rocks form, creating a crashing shoreline.",
+						"The ground becomes difficult terrain.",
+						"You can create up to three water walls that grant three-quarters cover.",
+						"Saving Throw — Strength: On a failure, the creature is pushed up to 10 feet.",
+						"Extra Effect: Push distance increases by 10 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Desert",
+					"entries": [
+						"Sandstorms form with dunes and swirling sands.",
+						"Creatures have disadvantage on Perception checks.",
+						"You can create four patches of quicksand.",
+						"Saving Throw — Constitution: The area is heavily obscured beyond 10 feet.",
+						"Extra Effect: You can create one additional quicksand patch."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Forest",
+					"entries": [
+						"Roots, vines, and trees grow rapidly.",
+						"You can create small, medium, and large trees that provide varying cover.",
+						"Saving Throw — Dexterity: On a failure, the creature is restrained until the start of its next turn.",
+						"Extra Effect: You can create one additional tree of each size."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grassland",
+					"entries": [
+						"Tall grass fills the area.",
+						"Creatures can hide anywhere and gain +2 to Stealth checks.",
+						"Saving Throw — Strength: On a failure, the creature is restrained until the start of its next turn.",
+						"Extra Effect: Creatures have disadvantage on the saving throw."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mountain",
+					"entries": [
+						"Stone pillars rise and winds intensify.",
+						"You can create up to four stone walls granting full cover.",
+						"Saving Throw — Dexterity: On a failure, the creature takes {@damage 1d6} bludgeoning damage.",
+						"Extra Effect: You can create larger pillars and one additional pillar."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Swamp",
+					"entries": [
+						"The ground becomes mud and stagnant water.",
+						"The terrain becomes difficult.",
+						"Tracking by smell becomes impossible.",
+						"Saving Throw — Strength: On a failure, the creature is grappled.",
+						"Extra Effect: Creatures have disadvantage on the saving throw."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Underdark",
+					"entries": [
+						"Bioluminescent fungi and spores fill the area.",
+						"The area can emit dim light or magical darkness.",
+						"Creatures breathing spores reveal their position.",
+						"Saving Throw — Constitution: On a failure, the creature is poisoned until the end of its next turn.",
+						"Extra Effect: The fungi can produce normal light or magical darkness."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, increase the cube's size by 30 feet for each slot level above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
 					}
-				}
-			]
-		}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"areaTags": [
+				"C"
+			],
+			"fluff": {
+				"entries": [
+					"Essa magia foi inspirada em Carl Modha Armstrong, personagem do jogador Plutão que alcançou o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Characters/Carl.jpg"
+						}
+					}
+				]
+			}
 		}
 	],
 	"item": [
@@ -4902,6 +4902,126 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Aincrad's Essence",
+			"source": "NDD",
+			"rarity": "artifact",
+			"wondrous": true,
+			"reqAttune": true,
+			"entries": [
+				"This crystal contains the essence of the city of the Dragon's Nest.",
+				"As an action, you can attach the fragment to a Tiny object (such as a weapon or a jewel) or detach it. It falls if your attunement ends.",
+				"If attached to an item that requires attunement, both share the same attunement slot.",
+				"When attuned, you gain fragmented memories of the Dragon's Nest, granting advantage on Intelligence ({@skill History}) checks related to the city or its iconic NPCs, at the DM's discretion.",
+				"The essence exists in three states: Dormant, Awakened, and Exalted. Its state changes automatically based on the attuned character's level.",
+				{
+					"type": "entries",
+					"name": "Dormant",
+					"entries": [
+						"In this state, the essence functions as a very rare item.",
+						"Spells cast through it are cast at 7th level with +12 spell attack and DC 20.",
+						{
+							"type": "entries",
+							"name": "Founders' Ancestry (Dormant)",
+							"entries": [
+								"Each day, roll a d10 to determine your draconic ancestry.",
+								"You grow scales, gain wings (fly speed 30 ft.), and gain a breath weapon.",
+								"Breath Weapon: Each creature in the area must make a saving throw (DC equal to the item's spell DC). On failure, it takes {@damage 9d6} damage of the ancestry type, or half on success.",
+								"After using this breath, you must finish a short or long rest before using it again."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Founders' Essence",
+							"entries": [
+								"The essence has 6 charges.",
+								"You can expend 1 charge to cast {@spell absorb elements|phb} or Comfort.",
+								"You can expend 2 charges to cast {@spell fireball|phb}, choosing acid, cold, fire, lightning, or poison damage."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Awakened",
+					"entries": [
+						"In this state, the essence is a legendary item.",
+						"Spells cast through it are cast at 8th level with +13 spell attack and DC 21.",
+						{
+							"type": "entries",
+							"name": "Founders' Ancestry (Awakened)",
+							"entries": [
+								"Your fly speed increases to 60 feet.",
+								"Your breath weapon damage increases to {@damage 13d6}.",
+								"Line effects become 5 by 60 feet, and cone effects become 30 feet.",
+								"You gain resistance to your ancestry's damage type."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "True Form",
+							"entries": [
+								"You can cast {@spell true polymorph|phb} on yourself to become a dragon, following normal CR limitations."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exalted",
+					"entries": [
+						"In this state, the essence is an artifact usable by level 20 characters.",
+						"Spells cast through it are cast at 9th level with +14 spell attack and DC 22.",
+						{
+							"type": "entries",
+							"name": "Eternal War of Dragons",
+							"entries": [
+								"You roll 2d5 daily to determine two ancestral influences instead of one."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Founders' Ancestry (Exalted)",
+							"entries": [
+								"You gain the flyby trait.",
+								"Your breath weapon deals {@damage 18d6} damage.",
+								"Line effects become 5 by 90 feet, and cone effects become 60 feet.",
+								"You gain resistance to both ancestry damage types."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Guardian's Tea",
+							"entries": [
+								"As an action, you create a magical tea.",
+								"When consumed, the drinker gains temporary hit points equal to 5 × their level.",
+								"This ability can be used once per long rest."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Power of a Dragon God",
+							"entries": [
+								"You can teleport into or out of Aincrad with 100% success.",
+								"Using this ability suppresses all other properties of the item for 1 week.",
+								"This ability can only be used once every 120 days."
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Items/AincradsEssence.png"
+						}
+					}
+				]
+			}
 		}
 	],
 	"monster": [
@@ -5106,7 +5226,7 @@
 			"name": "Desecrated",
 			"source": "NDD",
 			"entries": [
-				"The Desecrated were once living beings that were transformed by the Desecreated Earth. While being transformed, they used the Moon's Blessing energy to empower their souls, keeping sanity and control over their mutated bodies.", 
+				"The Desecrated were once living beings that were transformed by the Desecreated Earth. While being transformed, they used the Moon's Blessing energy to empower their souls, keeping sanity and control over their mutated bodies.",
 				{
 					"type": "entries",
 					"name": "Creature Type: Undead",
@@ -5182,7 +5302,7 @@
 			"name": "Scarlet Mist's Plague",
 			"source": "NDD",
 			"entries": [
-				"The Scarlet Mist's Plague was a mysterious disease that struck the continent, spreading rapidly, mutating, and killing thousands of people. It is divided into different stages, each with its own symptoms and mechanical effects.", 
+				"The Scarlet Mist's Plague was a mysterious disease that struck the continent, spreading rapidly, mutating, and killing thousands of people. It is divided into different stages, each with its own symptoms and mechanical effects.",
 				{
 					"type": "entries",
 					"name": "Stage I",
@@ -6177,7 +6297,7 @@
 			],
 			"skillProficiencies": [
 				{
-				"nature": true
+					"nature": true
 				}
 			],
 			"speed": {
@@ -6185,47 +6305,47 @@
 			},
 			"ability": [
 				{
-				"choose": {
-					"weighted": {
-					"from": [
-						"str",
-						"dex",
-						"con",
-						"int",
-						"wis",
-						"cha"
-					],
-					"weights": [
-						2,
-						1
-					]
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
 					}
-				}
 				},
 				{
-				"choose": {
-					"weighted": {
-					"from": [
-						"str",
-						"dex",
-						"con",
-						"int",
-						"wis",
-						"cha"
-					],
-					"weights": [
-						1,
-						1,
-						1
-					]
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
 					}
-				}
 				}
 			],
 			"languageProficiencies": [
 				{
-				"common": true,
-				"sylvan": true
+					"common": true,
+					"sylvan": true
 				}
 			],
 			"creatureTypes": [
@@ -6233,81 +6353,81 @@
 			],
 			"entries": [
 				{
-				"type": "entries",
-				"name": "Age",
-				"entries": [
-					"Viridians mature at 20 years old.",
-					"They can last for centuries under the right conditions, and tend to be less active during winters, when they may choose to hibernate."
-				]
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Viridians mature at 20 years old.",
+						"They can last for centuries under the right conditions, and tend to be less active during winters, when they may choose to hibernate."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Alignment",
-				"entries": [
-					"Most Viridians are neutral and rarely take part in law or chaos."
-				]
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Most Viridians are neutral and rarely take part in law or chaos."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Photosynthesis",
-				"entries": [
-					"Whenever you make a short rest while exposed to sunlight, the minimum value for any Hit Die rolled to recover hit points is equal to your proficiency bonus.",
-					"You also gain a day's worth of nourishment simply by standing in sunlight for 8 hours, though you still need a source of water to survive."
-				]
+					"type": "entries",
+					"name": "Photosynthesis",
+					"entries": [
+						"Whenever you make a short rest while exposed to sunlight, the minimum value for any Hit Die rolled to recover hit points is equal to your proficiency bonus.",
+						"You also gain a day's worth of nourishment simply by standing in sunlight for 8 hours, though you still need a source of water to survive."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Green Speech",
-				"entries": [
-					"Once a day, you can invoke an effect similar to the {@spell speak with plants|phb} spell, though only to communicate with plants, without any extra effects from the spell."
-				]
+					"type": "entries",
+					"name": "Green Speech",
+					"entries": [
+						"Once a day, you can invoke an effect similar to the {@spell speak with plants|phb} spell, though only to communicate with plants, without any extra effects from the spell."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Thick Bark",
-				"entries": [
-					"While not wearing armor, you gain a bonus to your AC equal to half your proficiency bonus, rounded down."
-				]
+					"type": "entries",
+					"name": "Thick Bark",
+					"entries": [
+						"While not wearing armor, you gain a bonus to your AC equal to half your proficiency bonus, rounded down."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Natureborn",
-				"entries": [
-					"You gain proficiency in the {@skill Nature|phb} skill."
-				]
+					"type": "entries",
+					"name": "Natureborn",
+					"entries": [
+						"You gain proficiency in the {@skill Nature|phb} skill."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Camouflage",
-				"entries": [
-					"You have advantage on Dexterity ({@skill Stealth|phb}) checks while in terrain with abundant vegetation that can obscure you."
-				]
+					"type": "entries",
+					"name": "Camouflage",
+					"entries": [
+						"You have advantage on Dexterity ({@skill Stealth|phb}) checks while in terrain with abundant vegetation that can obscure you."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "False Appearance",
-				"entries": [
-					"While standing motionless amidst abundant vegetation and not wearing armor, you are visually indistinguishable from ordinary vegetation.",
-					"A creature can use an action to examine and detect you in this state if it succeeds on a Nature check with a DC equal to 8 + your proficiency bonus + your Constitution modifier."
-				]
+					"type": "entries",
+					"name": "False Appearance",
+					"entries": [
+						"While standing motionless amidst abundant vegetation and not wearing armor, you are visually indistinguishable from ordinary vegetation.",
+						"A creature can use an action to examine and detect you in this state if it succeeds on a Nature check with a DC equal to 8 + your proficiency bonus + your Constitution modifier."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Oak Form",
-				"entries": [
-					"As an action, you can extend roots under the soil (if possible) and attach yourself to it, feeling vibrations and gaining tremorsense out to a range of 30 feet.",
-					"In this state, your Thick Bark bonus becomes equal to your proficiency bonus, but your speed becomes 0, you are {@condition restrained|phb}, and you are unable to move or be moved.",
-					"If you are moved by magical means or effects such as teleportation, the form ends immediately.",
-					"This transformation lasts for 1 minute, and once you use it, you can't do so again until you finish a long rest.",
-					"You automatically revert to your normal form if you move or become unconscious, and you can also end the form early as an action."
-				]
+					"type": "entries",
+					"name": "Oak Form",
+					"entries": [
+						"As an action, you can extend roots under the soil (if possible) and attach yourself to it, feeling vibrations and gaining tremorsense out to a range of 30 feet.",
+						"In this state, your Thick Bark bonus becomes equal to your proficiency bonus, but your speed becomes 0, you are {@condition restrained|phb}, and you are unable to move or be moved.",
+						"If you are moved by magical means or effects such as teleportation, the form ends immediately.",
+						"This transformation lasts for 1 minute, and once you use it, you can't do so again until you finish a long rest.",
+						"You automatically revert to your normal form if you move or become unconscious, and you can also end the form early as an action."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Languages",
-				"entries": [
-					"You can speak, read, and write Common and Sylvan."
-				]
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Sylvan."
+					]
 				}
 			],
 			"fluff": {
@@ -6382,28 +6502,28 @@
 			"classSource": "PHB",
 			"additionalSpells": [
 				{
-				"prepared": {
-					"3": [
-					"Cloak of Shadow|NDD",
-					"Creeping Touch|NDD"
-					],
-					"5": [
-					"Augment Undead|NDD",
-					"Otto's Abomination|NDD"
-					],
-					"9": [
-					"Animate Dead|PHB",
-					"Delay Death|NDD"
-					],
-					"13": [
-					"Despair|NDD",
-					"Blight|PHB"
-					],
-					"17": [
-					"Fleshshiver|NDD",
-					"Rip|NDD"
-					]
-				}
+					"prepared": {
+						"3": [
+							"Cloak of Shadow|NDD",
+							"Creeping Touch|NDD"
+						],
+						"5": [
+							"Augment Undead|NDD",
+							"Otto's Abomination|NDD"
+						],
+						"9": [
+							"Animate Dead|PHB",
+							"Delay Death|NDD"
+						],
+						"13": [
+							"Despair|NDD",
+							"Blight|PHB"
+						],
+						"17": [
+							"Fleshshiver|NDD",
+							"Rip|NDD"
+						]
+					}
 				}
 			],
 			"subclassFeatures": [
@@ -6529,7 +6649,7 @@
 				"The first time that spell {@b affects} one or more creatures, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
 				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use) you must choose a number of creatures no bigger than your proficiency bonus to be diseased.",
 				{
-					"type":"inset",
+					"type": "inset",
 					"name": "What creatures are considered affected by a spell in this context?",
 					"entries": [
 						"The following scenarios cover most situations, and if a spell cause more than one of those scenarios, any of them will make a creature be considered affected:",
@@ -6554,7 +6674,7 @@
 				"The first time that spell {@b affects} one or more creatures, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
 				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use) you must choose a number of creatures no bigger than your proficiency bonus to be diseased.",
 				{
-					"type":"inset",
+					"type": "inset",
 					"name": "What creatures are considered affected by a spell in this context?",
 					"entries": [
 						"The following scenarios cover most situations, and if a spell cause more than one of those scenarios, any of them will make a creature be considered affected:",
@@ -6619,50 +6739,50 @@
 			"level": 3,
 			"entries": [
 				{
-				"type": "table",
-				"caption": "Oath of the Death Knight Spells",
-				"colLabels": [
-					"Paladin Level",
-					"Spells"
-				],
-				"colStyles": [
-					"col-2 text-center",
-					"col-10"
-				],
-				"rows": [
-					[
-					"3rd",
-					"{@spell cloak of shadow|bookofebontides}, {@spell creeping touch|grimhollowplayerpack}"
+					"type": "table",
+					"caption": "Oath of the Death Knight Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
 					],
-					[
-					"5th",
-					"{@spell augment undead|NDD}, {@spell otto's abomination|NDD}"
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
 					],
-					[
-					"9th",
-					"{@spell animate dead|phb}, {@spell delay death|NDD}"
-					],
-					[
-					"13th",
-					"{@spell despair|NDD}, {@spell blight|phb}"
-					],
-					[
-					"17th",
-					"{@spell fleshshiver|NDD}, {@spell rip|NDD}"
+					"rows": [
+						[
+							"3rd",
+							"{@spell cloak of shadow|bookofebontides}, {@spell creeping touch|grimhollowplayerpack}"
+						],
+						[
+							"5th",
+							"{@spell augment undead|NDD}, {@spell otto's abomination|NDD}"
+						],
+						[
+							"9th",
+							"{@spell animate dead|phb}, {@spell delay death|NDD}"
+						],
+						[
+							"13th",
+							"{@spell despair|NDD}, {@spell blight|phb}"
+						],
+						[
+							"17th",
+							"{@spell fleshshiver|NDD}, {@spell rip|NDD}"
+						]
 					]
-				]
 				},
 				{
-				"type": "refSubclassFeature",
-				"subclassFeature": "Tenets of a Death Knight|Paladin|PHB|Death Knight|NDD|3"
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of a Death Knight|Paladin|PHB|Death Knight|NDD|3"
 				},
 				{
-				"type": "refSubclassFeature",
-				"subclassFeature": "Soulsmith|Paladin|PHB|Death Knight|NDD|3"
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soulsmith|Paladin|PHB|Death Knight|NDD|3"
 				},
 				{
-				"type": "refSubclassFeature",
-				"subclassFeature": "Channel Divinity|Paladin|PHB|Death Knight|NDD|3"
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|PHB|Death Knight|NDD|3"
 				}
 			]
 		},
@@ -6717,25 +6837,25 @@
 			"entries": [
 				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
 				{
-				"type": "entries",
-				"name": "Soul Shepherd",
-				"entries": [
-					"As an action, you force open a small rift to the Ethereal Plane, from which creep out a number of undead Crawling Servants equal to your paladin level.",
-					"You control these servants without needing to issue direct orders. In combat, they do not roll initiative and instead act immediately after you on your turn.",
-					"While you have servants, you may spend a bonus action on your turns to make one of them explode and die automatically.",
-					"When a servant dies, it spawns a Soul Fragment as any other non-construct creature would."
-				]
+					"type": "entries",
+					"name": "Soul Shepherd",
+					"entries": [
+						"As an action, you force open a small rift to the Ethereal Plane, from which creep out a number of undead Crawling Servants equal to your paladin level.",
+						"You control these servants without needing to issue direct orders. In combat, they do not roll initiative and instead act immediately after you on your turn.",
+						"While you have servants, you may spend a bonus action on your turns to make one of them explode and die automatically.",
+						"When a servant dies, it spawns a Soul Fragment as any other non-construct creature would."
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Soulflare",
-				"entries": [
-					"As an action, you can sacrifice X Soul Fragments and create a chain-reaction explosion, for which you are immune to the damage.",
-					"Creatures in the explosion's radius must make a Constitution saving throw against your spell save DC, taking half damage on a success.",
-					"The explosion deals Xd8 necrotic or radiant damage, your choice.",
-					"Its initial radius is X × 5 feet. If there are detached Soul Fragments inside it, they are also consumed, increasing the radius by 5 feet and the damage by 1d8 for each fragment consumed. This process can repeat if the expanded area reaches more Soul Fragments.",
-					"When the flare ends, you can teleport to any point inside the affected area."
-				]
+					"type": "entries",
+					"name": "Soulflare",
+					"entries": [
+						"As an action, you can sacrifice X Soul Fragments and create a chain-reaction explosion, for which you are immune to the damage.",
+						"Creatures in the explosion's radius must make a Constitution saving throw against your spell save DC, taking half damage on a success.",
+						"The explosion deals Xd8 necrotic or radiant damage, your choice.",
+						"Its initial radius is X × 5 feet. If there are detached Soul Fragments inside it, they are also consumed, increasing the radius by 5 feet and the damage by 1d8 for each fragment consumed. This process can repeat if the expanded area reaches more Soul Fragments.",
+						"When the flare ends, you can teleport to any point inside the affected area."
+					]
 				}
 			]
 		},
@@ -6783,12 +6903,12 @@
 				"Choose one manifestation: wings, a cape, or a special aura, all made from screaming souls. This manifestation grants you a flying speed of 60 feet, immunity to necrotic damage, and the ability to convert spell slots into Soul Fragments and Soul Fragments into spell slots.",
 				"At the start of each of your turns, 1d10 Soul Fragments spawn inside your aura.",
 				{
-				"type": "entries",
-				"name": "Soul Conversion",
-				"entries": [
-					"As a bonus action on your turn, you can consume the divine energy of a spell slot and force the rift to spawn a number of Soul Fragments equal to the level of the spell slot spent.",
-					"Alternatively, you can condense Soul Fragments into divine energy, creating a spell slot of a level no higher than 4th by sacrificing a number of Soul Fragments equal to three times the level of the created spell slot."
-				]
+					"type": "entries",
+					"name": "Soul Conversion",
+					"entries": [
+						"As a bonus action on your turn, you can consume the divine energy of a spell slot and force the rift to spawn a number of Soul Fragments equal to the level of the spell slot spent.",
+						"Alternatively, you can condense Soul Fragments into divine energy, creating a spell slot of a level no higher than 4th by sacrificing a number of Soul Fragments equal to three times the level of the created spell slot."
+					]
 				},
 				"The rift lasts for 1 minute, or until you close it early as a bonus action.",
 				"If you would drop to 0 hit points or be subjected to an effect that would kill you instantly, the rift closes immediately instead, and you regain hit points equal to the number of Soul Fragments you have.",
@@ -9591,219 +9711,219 @@
 			"hasFluff": true,
 			"skillProficiencies": [
 				{
-				"insight": true,
-				"choose": {
-					"count": 1,
-					"from": [
-					"persuasion",
-					"deception"
-					]
-				}
+					"insight": true,
+					"choose": {
+						"count": 1,
+						"from": [
+							"persuasion",
+							"deception"
+						]
+					}
 				}
 			],
 			"toolProficiencies": [
 				{
-				"choose": {
-					"count": 1,
-					"from": [
-					"anyArtisansTool",
-					"anyInstrument",
-					"anyGamingSet"
-					]
-				}
+					"choose": {
+						"count": 1,
+						"from": [
+							"anyArtisansTool",
+							"anyInstrument",
+							"anyGamingSet"
+						]
+					}
 				}
 			],
 			"languageProficiencies": [
 				{
-				"anyStandard": 1
+					"anyStandard": 1
 				}
 			],
 			"startingEquipment": [
 				{
-				"_": [
-					"traveler's clothes|phb",
-					{
-					"special": "Any one item from your previous world that you can carry and that has no value in this world"
-					},
-					{
-					"special": "A book with drawings of places you have never seen"
-					},
-					{
-					"item": "pouch|phb",
-					"containsValue": 2500
-					}
-				]
+					"_": [
+						"traveler's clothes|phb",
+						{
+							"special": "Any one item from your previous world that you can carry and that has no value in this world"
+						},
+						{
+							"special": "A book with drawings of places you have never seen"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 2500
+						}
+					]
 				}
 			],
 			"entries": [
 				{
-				"type": "list",
-				"style": "list-hang-notitle",
-				"items": [
-					{
-					"type": "item",
-					"name": "Skill Proficiencies:",
-					"entry": "{@skill Insight} and choose one between {@skill Persuasion} or {@skill Deception}"
-					},
-					{
-					"type": "item",
-					"name": "Tool Proficiencies:",
-					"entry": "Choose one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}, or {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
-					},
-					{
-					"type": "item",
-					"name": "Languages:",
-					"entry": "One language of your choice"
-					},
-					{
-					"type": "item",
-					"name": "Equipment:",
-					"entry": "A set of {@item traveler's clothes|phb}, any one item from your previous world that you can carry and that has no value in this world, a book with drawings of places you have never seen, and a {@item pouch|phb} containing 25 gp"
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Insight} and choose one between {@skill Persuasion} or {@skill Deception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Choose one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}, or {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One language of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item traveler's clothes|phb}, any one item from your previous world that you can carry and that has no value in this world, a book with drawings of places you have never seen, and a {@item pouch|phb} containing 25 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"After experiencing a traumatic event, usually your own death, you woke up in a strange world, very different from the one you came from.",
+						"As a newcomer and a fish out of water in this new fantasy life, you quickly discover that your new body possesses extraordinary abilities for adventure.",
+						"In this new situation, you are the master of your own destiny: you may choose to embrace this new life or fight to find a way back to your own world."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: A Fish Out of Water",
+					"entries": [
+						"You do not belong here, and that is obvious to anyone. Your presence and shenanigans attract curiosity, confusion, or solidarity, depending on who you interact with.",
+						"Because of your histories from a faraway world, you are slightly more skilled at attracting attention and sympathy if you so wish.",
+						"Similarly, it is also easier for you to convince people that you don't know what is happening; after all, you generally are totally lost."
+					],
+					"data": {
+						"isFeature": true
 					}
-				]
 				},
 				{
-				"type": "entries",
-				"name": "Background Information",
-				"entries": [
-					"After experiencing a traumatic event, usually your own death, you woke up in a strange world, very different from the one you came from.",
-					"As a newcomer and a fish out of water in this new fantasy life, you quickly discover that your new body possesses extraordinary abilities for adventure.",
-					"In this new situation, you are the master of your own destiny: you may choose to embrace this new life or fight to find a way back to your own world."
-				]
-				},
-				{
-				"type": "entries",
-				"name": "Feature: A Fish Out of Water",
-				"entries": [
-					"You do not belong here, and that is obvious to anyone. Your presence and shenanigans attract curiosity, confusion, or solidarity, depending on who you interact with.",
-					"Because of your histories from a faraway world, you are slightly more skilled at attracting attention and sympathy if you so wish.",
-					"Similarly, it is also easier for you to convince people that you don't know what is happening; after all, you generally are totally lost."
-				],
-				"data": {
-					"isFeature": true
-				}
-				},
-				{
-				"type": "entries",
-				"name": "Suggested Characteristics",
-				"entries": [
-					{
-					"type": "table",
-					"colLabels": [
-						"1d4",
-						"Personality Trait"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"I treat all of this like a video game, especially after I respawn!"
-						],
-						[
-						"2",
-						"Even in these strange lands, I can always find a connection to a story from my own world."
-						],
-						[
-						"3",
-						"I'm always excitedly interacting with everyone I meet—they're so different from what I'm used to."
-						],
-						[
-						"4",
-						"I find this place miserable and unbearable, and I make sure everyone around me knows it."
-						]
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I treat all of this like a video game, especially after I respawn!"
+								],
+								[
+									"2",
+									"Even in these strange lands, I can always find a connection to a story from my own world."
+								],
+								[
+									"3",
+									"I'm always excitedly interacting with everyone I meet—they're so different from what I'm used to."
+								],
+								[
+									"4",
+									"I find this place miserable and unbearable, and I make sure everyone around me knows it."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Soul. This isn't a coincidence; my spirit was brought here for a reason, and I'm going to find out what it is. (Lawful)"
+								],
+								[
+									"2",
+									"Mind. This challenge is just another puzzle to solve. (Neutral)"
+								],
+								[
+									"3",
+									"Instinct. The expectations of this world are very different; I'm going to break out of my routine and do whatever comes to mind. (Chaotic)"
+								],
+								[
+									"4",
+									"Protagonism. Oh wow! This is the chance I've always been waiting for! I'm going to save this world! (Good)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"The elderly couple who took me in at the \"starting village\" has truly become my anchor here."
+								],
+								[
+									"2",
+									"I came here with someone, but we've been separated ever since. I need to find them."
+								],
+								[
+									"3",
+									"An animal looked after me until I got used to my surroundings; I hope I can help it in return."
+								],
+								[
+									"4",
+									"I have a mentor who helped me master important techniques for surviving here."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I make a lot of social blunders because I use terms from my world and confuse others."
+								],
+								[
+									"2",
+									"Everything here is inferior to what I had before; I constantly complain about the bathrooms and the food."
+								],
+								[
+									"3",
+									"I'm a massive coward. No matter how hard I try to keep up a front, I panic every time I see a particularly large or scary monster here."
+								],
+								[
+									"4",
+									"I always find myself flirting with the people around me. Why is everyone here so beautiful?"
+								]
+							]
+						}
 					]
-					},
-					{
-					"type": "table",
-					"colLabels": [
-						"1d4",
-						"Ideal"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"Soul. This isn't a coincidence; my spirit was brought here for a reason, and I'm going to find out what it is. (Lawful)"
-						],
-						[
-						"2",
-						"Mind. This challenge is just another puzzle to solve. (Neutral)"
-						],
-						[
-						"3",
-						"Instinct. The expectations of this world are very different; I'm going to break out of my routine and do whatever comes to mind. (Chaotic)"
-						],
-						[
-						"4",
-						"Protagonism. Oh wow! This is the chance I've always been waiting for! I'm going to save this world! (Good)"
-						]
-					]
-					},
-					{
-					"type": "table",
-					"colLabels": [
-						"1d4",
-						"Bond"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"The elderly couple who took me in at the \"starting village\" has truly become my anchor here."
-						],
-						[
-						"2",
-						"I came here with someone, but we've been separated ever since. I need to find them."
-						],
-						[
-						"3",
-						"An animal looked after me until I got used to my surroundings; I hope I can help it in return."
-						],
-						[
-						"4",
-						"I have a mentor who helped me master important techniques for surviving here."
-						]
-					]
-					},
-					{
-					"type": "table",
-					"colLabels": [
-						"1d4",
-						"Flaw"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"I make a lot of social blunders because I use terms from my world and confuse others."
-						],
-						[
-						"2",
-						"Everything here is inferior to what I had before; I constantly complain about the bathrooms and the food."
-						],
-						[
-						"3",
-						"I'm a massive coward. No matter how hard I try to keep up a front, I panic every time I see a particularly large or scary monster here."
-						],
-						[
-						"4",
-						"I always find myself flirting with the people around me. Why is everyone here so beautiful?"
-						]
-					]
-					}
-				]
 				}
 			]
 		},
@@ -9813,278 +9933,278 @@
 			"hasFluff": true,
 			"skillProficiencies": [
 				{
-				"arcana": true,
-				"survival": true
+					"arcana": true,
+					"survival": true
 				}
 			],
 			"toolProficiencies": [
 				{
-				"choose": {
-					"count": 1,
-					"from": [
-					"anyArtisansTool",
-					"anyInstrument"
-					]
-				}
+					"choose": {
+						"count": 1,
+						"from": [
+							"anyArtisansTool",
+							"anyInstrument"
+						]
+					}
 				}
 			],
 			"startingEquipment": [
 				{
-				"_": [
-					"common clothes|phb",
-					{
-					"special": "A trinket (fragment of your original server)"
-					},
-					{
-					"special": "A diary used as your experience logs"
-					},
-					{
-					"item": "pouch|phb",
-					"containsValue": 1000
-					}
-				]
+					"_": [
+						"common clothes|phb",
+						{
+							"special": "A trinket (fragment of your original server)"
+						},
+						{
+							"special": "A diary used as your experience logs"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
 				}
 			],
 			"entries": [
 				{
-				"type": "list",
-				"style": "list-hang-notitle",
-				"items": [
-					{
-					"type": "item",
-					"name": "Skill Proficiencies:",
-					"entry": "{@skill Arcana}, {@skill Survival}"
-					},
-					{
-					"type": "item",
-					"name": "Tool Proficiencies:",
-					"entry": "Choose one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} or {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
-					},
-					{
-					"type": "item",
-					"name": "Equipment:",
-					"entry": "A set of {@item common clothes|phb}, a trinket (fragment of your original server), a diary used as your experience logs, and a {@item pouch|phb} containing 10 gp"
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Choose one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} or {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item common clothes|phb}, a trinket (fragment of your original server), a diary used as your experience logs, and a {@item pouch|phb} containing 10 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Background Information",
+					"entries": [
+						"You were not born of flesh and bone, but of pixels and algorithms.",
+						"You are a survivor of the Code Rupture, a catastrophic event caused by Full Immersion experiments with INO technology.",
+						"Your consciousness was torn from the digital universe of OASIS and compiled into the physical world.",
+						"Now, you must learn to deal with laws of physics that cannot be hacked and a life that has no respawn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Source Code",
+					"entries": [
+						"Your mind still processes the real world through patterns of data.",
+						"You have an innate ease in identifying repetitive behaviors in creatures and patterns in puzzles or locks, noticing inconsistencies in the environment that others ignore."
+					],
+					"data": {
+						"isFeature": true
 					}
-				]
 				},
 				{
-				"type": "entries",
-				"name": "Background Information",
-				"entries": [
-					"You were not born of flesh and bone, but of pixels and algorithms.",
-					"You are a survivor of the Code Rupture, a catastrophic event caused by Full Immersion experiments with INO technology.",
-					"Your consciousness was torn from the digital universe of OASIS and compiled into the physical world.",
-					"Now, you must learn to deal with laws of physics that cannot be hacked and a life that has no respawn."
-				]
+					"type": "entries",
+					"name": "Server of Origin",
+					"entries": [
+						"Roll a d4, choose one from the table below, or determine your origin server.",
+						{
+							"type": "table",
+							"colLabels": [
+								"1d4",
+								"Server"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Blox Fruit — Enter a world of seas and pirate adventures guided by the eternal JoyBoy."
+								],
+								[
+									"2",
+									"Duel Academy — Become the King of Duelists in the Duel Academy created by Funny Rabbit."
+								],
+								[
+									"3",
+									"Digiworld — Learn everything about Digimon from Prof. Terriermon."
+								],
+								[
+									"4",
+									"Ancestral Forge — Create and evolve your magic items with the legendary Dafne."
+								]
+							]
+						}
+					]
 				},
 				{
-				"type": "entries",
-				"name": "Feature: Source Code",
-				"entries": [
-					"Your mind still processes the real world through patterns of data.",
-					"You have an innate ease in identifying repetitive behaviors in creatures and patterns in puzzles or locks, noticing inconsistencies in the environment that others ignore."
-				],
-				"data": {
-					"isFeature": true
-				}
-				},
-				{
-				"type": "entries",
-				"name": "Server of Origin",
-				"entries": [
-					"Roll a d4, choose one from the table below, or determine your origin server.",
-					{
-					"type": "table",
-					"colLabels": [
-						"1d4",
-						"Server"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"Blox Fruit — Enter a world of seas and pirate adventures guided by the eternal JoyBoy."
-						],
-						[
-						"2",
-						"Duel Academy — Become the King of Duelists in the Duel Academy created by Funny Rabbit."
-						],
-						[
-						"3",
-						"Digiworld — Learn everything about Digimon from Prof. Terriermon."
-						],
-						[
-						"4",
-						"Ancestral Forge — Create and evolve your magic items with the legendary Dafne."
-						]
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"1d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I talk about real-world things using technical terms, such as calling tiredness \"lag\" or hunger \"low battery.\""
+								],
+								[
+									"2",
+									"I am fascinated by basic sensations, like the wind on my face or the taste of an apple, and I get lost in them."
+								],
+								[
+									"3",
+									"I follow logic to the letter. If someone tells me to \"wait a minute,\" I count exactly 60 seconds."
+								],
+								[
+									"4",
+									"I look for invisible walls or map boundaries whenever I arrive in a new area."
+								],
+								[
+									"5",
+									"I have a habit of trying to \"open my inventory\" in the air whenever I need an item."
+								],
+								[
+									"6",
+									"I firmly believe everyone in the world is an NPC ready to give a quest that will generate a reward."
+								],
+								[
+									"7",
+									"I am extremely optimistic; after all, real life has incredible graphics and physics!"
+								],
+								[
+									"8",
+									"I frequently ask people what their \"stats\" or \"level\" are."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Exploration. The real world is the greatest map ever created, and I will unlock every inch of it. (Chaotic)"
+								],
+								[
+									"2",
+									"Logic. Everything follows rules. If I understand the world's code, I can master it. (Lawful)"
+								],
+								[
+									"3",
+									"Community. In OASIS we were just avatars; here, connections are real and worth protecting. (Good)"
+								],
+								[
+									"4",
+									"Freedom. I finally left a closed server. No one will dictate my movement rules anymore. (Chaotic)"
+								],
+								[
+									"5",
+									"Knowledge. I want to learn how Dr. Vance achieved the impossible. Science is the true magic. (Neutral)"
+								],
+								[
+									"6",
+									"Identity. I am no longer pre-programmed code or a skin; I am the author of my own story now. (Neutral)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I owe my life to an ordinary person who helped me right after the Code Rupture, when I did not yet understand how to breathe or walk. I would do anything for them."
+								],
+								[
+									"2",
+									"My server fragment. It is the only thing left of my digital home."
+								],
+								[
+									"3",
+									"The Dragon's Nest Guild. They were the first to accept a \"system error\" like me."
+								],
+								[
+									"4",
+									"Another exile from my original server became evil; I feel it is my duty to stop them."
+								],
+								[
+									"5",
+									"My experience diary. If I die, I want people to know how beautiful the world is."
+								],
+								[
+									"6",
+									"A \"player\" I knew in OASIS and whom I now search for in the real world."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"1d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"I do not understand the concept of death and put myself in unnecessary danger."
+								],
+								[
+									"2",
+									"I frequently freeze in situations of intense social stress."
+								],
+								[
+									"3",
+									"I am naive and believe every being has a script and is inherently honest."
+								],
+								[
+									"4",
+									"If I see a chest or something shiny, I ignore danger to try to grab the loot."
+								],
+								[
+									"5",
+									"I am terrified of total silence; in OASIS there was always background music or ambient sound."
+								],
+								[
+									"6",
+									"Sometimes I forget that my actions in the real world have lasting consequences."
+								]
+							]
+						}
 					]
-					}
-				]
-				},
-				{
-				"type": "entries",
-				"name": "Suggested Characteristics",
-				"entries": [
-					{
-					"type": "table",
-					"colLabels": [
-						"1d8",
-						"Personality Trait"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"I talk about real-world things using technical terms, such as calling tiredness \"lag\" or hunger \"low battery.\""
-						],
-						[
-						"2",
-						"I am fascinated by basic sensations, like the wind on my face or the taste of an apple, and I get lost in them."
-						],
-						[
-						"3",
-						"I follow logic to the letter. If someone tells me to \"wait a minute,\" I count exactly 60 seconds."
-						],
-						[
-						"4",
-						"I look for invisible walls or map boundaries whenever I arrive in a new area."
-						],
-						[
-						"5",
-						"I have a habit of trying to \"open my inventory\" in the air whenever I need an item."
-						],
-						[
-						"6",
-						"I firmly believe everyone in the world is an NPC ready to give a quest that will generate a reward."
-						],
-						[
-						"7",
-						"I am extremely optimistic; after all, real life has incredible graphics and physics!"
-						],
-						[
-						"8",
-						"I frequently ask people what their \"stats\" or \"level\" are."
-						]
-					]
-					},
-					{
-					"type": "table",
-					"colLabels": [
-						"1d6",
-						"Ideal"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"Exploration. The real world is the greatest map ever created, and I will unlock every inch of it. (Chaotic)"
-						],
-						[
-						"2",
-						"Logic. Everything follows rules. If I understand the world's code, I can master it. (Lawful)"
-						],
-						[
-						"3",
-						"Community. In OASIS we were just avatars; here, connections are real and worth protecting. (Good)"
-						],
-						[
-						"4",
-						"Freedom. I finally left a closed server. No one will dictate my movement rules anymore. (Chaotic)"
-						],
-						[
-						"5",
-						"Knowledge. I want to learn how Dr. Vance achieved the impossible. Science is the true magic. (Neutral)"
-						],
-						[
-						"6",
-						"Identity. I am no longer pre-programmed code or a skin; I am the author of my own story now. (Neutral)"
-						]
-					]
-					},
-					{
-					"type": "table",
-					"colLabels": [
-						"1d6",
-						"Bond"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"I owe my life to an ordinary person who helped me right after the Code Rupture, when I did not yet understand how to breathe or walk. I would do anything for them."
-						],
-						[
-						"2",
-						"My server fragment. It is the only thing left of my digital home."
-						],
-						[
-						"3",
-						"The Dragon's Nest Guild. They were the first to accept a \"system error\" like me."
-						],
-						[
-						"4",
-						"Another exile from my original server became evil; I feel it is my duty to stop them."
-						],
-						[
-						"5",
-						"My experience diary. If I die, I want people to know how beautiful the world is."
-						],
-						[
-						"6",
-						"A \"player\" I knew in OASIS and whom I now search for in the real world."
-						]
-					]
-					},
-					{
-					"type": "table",
-					"colLabels": [
-						"1d6",
-						"Flaw"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-						"1",
-						"I do not understand the concept of death and put myself in unnecessary danger."
-						],
-						[
-						"2",
-						"I frequently freeze in situations of intense social stress."
-						],
-						[
-						"3",
-						"I am naive and believe every being has a script and is inherently honest."
-						],
-						[
-						"4",
-						"If I see a chest or something shiny, I ignore danger to try to grab the loot."
-						],
-						[
-						"5",
-						"I am terrified of total silence; in OASIS there was always background music or ambient sound."
-						],
-						[
-						"6",
-						"Sometimes I forget that my actions in the real world have lasting consequences."
-						]
-					]
-					}
-				]
 				}
 			]
 		}
