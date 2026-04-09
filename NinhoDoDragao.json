@@ -4910,101 +4910,269 @@
 			"wondrous": true,
 			"reqAttune": true,
 			"entries": [
-				"This crystal contains the essence of the city of the Dragon's Nest.",
-				"As an action, you can attach the fragment to a Tiny object (such as a weapon or a jewel) or detach it. It falls if your attunement ends.",
-				"If attached to an item that requires attunement, both share the same attunement slot.",
-				"When attuned, you gain fragmented memories of the Dragon's Nest, granting advantage on Intelligence ({@skill History}) checks related to the city or its iconic NPCs, at the DM's discretion.",
-				"The essence exists in three states: Dormant, Awakened, and Exalted. Its state changes automatically based on the attuned character's level.",
+				"This crystal contains the essence of the city of the Dragon's Nest. As an action, you can attach the fragment to a Tiny object (such as a weapon or a jewel) or detach it. It falls if your attunement with it ends.",
+				"If you attach it to an object that requires attunement, the essence shares attunement with the object, requiring only one attunement for both items.",
+				"When attuned to the essence, the character acquires memories and recollections of stories and facts from various places and people in the Dragon's Nest city, gaining advantage on any Intelligence ({@skill History}) check related to the city or an iconic NPC from the Dragon's Nest. This advantage is applied at the DM's discretion.",
+				"The essence can be found in 3 states: dormant, awakened, or exalted. Its state changes automatically according to the level of the character attuned to it.",
+				"",
 				{
 					"type": "entries",
 					"name": "Dormant",
 					"entries": [
-						"In this state, the essence functions as a very rare item.",
-						"Spells cast through it are cast at 7th level with +12 spell attack and DC 20.",
+						"In its dormant state, the essence is a very rare item and can be equipped by Ancient characters, granting the following benefits:",
+						"The essence's spells are cast at 7th level with a +12 attack bonus and DC 20.",
 						{
 							"type": "entries",
 							"name": "Founders' Ancestry (Dormant)",
 							"entries": [
-								"Each day, roll a d10 to determine your draconic ancestry.",
-								"You grow scales, gain wings (fly speed 30 ft.), and gain a breath weapon.",
-								"Breath Weapon: Each creature in the area must make a saving throw (DC equal to the item's spell DC). On failure, it takes {@damage 9d6} damage of the ancestry type, or half on success.",
-								"After using this breath, you must finish a short or long rest before using it again."
+								"True dragons are winged reptiles of ancestral lineage and terrifying power. Dragons are also magical creatures whose innate power fuels their fearsome breath weapons and abilities that carry the purest energy of Arcane Chaos.",
+								"When attuned to the essence, its owner gains ancestral dragon abilities according to the dragon observing them that day.",
+								"To determine the dragon influencing your ancestry, roll 1d10 at the start of each day (or whenever a new mission begins).",
+								"",
+								{
+									"type": "table",
+									"caption": "Draconic Ancestry Type",
+									"colLabels": [
+										"1d10",
+										"Dragon"
+									],
+									"rows": [
+										[
+											"1",
+											"Black"
+										],
+										[
+											"2",
+											"Blue"
+										],
+										[
+											"3",
+											"Brass"
+										],
+										[
+											"4",
+											"Bronze"
+										],
+										[
+											"5",
+											"Copper"
+										],
+										[
+											"6",
+											"Gold"
+										],
+										[
+											"7",
+											"Green"
+										],
+										[
+											"8",
+											"Red"
+										],
+										[
+											"9",
+											"Silver"
+										],
+										[
+											"10",
+											"White"
+										]
+									]
+								},
+								"",
+								"Your skin develops draconic scales in the color of your ancestry, dragon wings grow from your back granting a flying speed of 30 feet, and your physiology changes, allowing you to use a dragon breath weapon.",
+								"{@b Breath Weapon.} Each creature in the area must make a saving throw according to the table below. The DC is equal to the spell DC of the essence. A creature takes {@damage 9d6} damage (of the ancestry type) on a failure, or half as much on a success.",
+								"",
+								{
+									"type": "table",
+									"caption": "Ancestry Breath",
+									"colLabels": [
+										"Dragon",
+										"Damage Type",
+										"Breath Weapon"
+									],
+									"rows": [
+										[
+											"Black",
+											"Acid",
+											"5 by 30 ft line (Dex save)"
+										],
+										[
+											"Blue",
+											"Lightning",
+											"5 by 30 ft line (Dex save)"
+										],
+										[
+											"Brass",
+											"Fire",
+											"5 by 30 ft line (Dex save)"
+										],
+										[
+											"Bronze",
+											"Lightning",
+											"5 by 30 ft line (Dex save)"
+										],
+										[
+											"Copper",
+											"Acid",
+											"5 by 30 ft line (Dex save)"
+										],
+										[
+											"Gold",
+											"Fire",
+											"15 ft cone (Dex save)"
+										],
+										[
+											"Green",
+											"Poison",
+											"15 ft cone (Con save)"
+										],
+										[
+											"Red",
+											"Fire",
+											"15 ft cone (Dex save)"
+										],
+										[
+											"Silver",
+											"Cold",
+											"15 ft cone (Con save)"
+										],
+										[
+											"White",
+											"Cold",
+											"15 ft cone (Con save)"
+										]
+									]
+								},
+								"",
+								"After using your breath weapon, you cannot use it again until you finish a short or long rest."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Founders' Essence",
 							"entries": [
-								"The essence has 6 charges.",
-								"You can expend 1 charge to cast {@spell absorb elements|phb} or Comfort.",
-								"You can expend 2 charges to cast {@spell fireball|phb}, choosing acid, cold, fire, lightning, or poison damage."
+								"The first dragons to arrive in Aincrad were the chromatic and metallic dragons, and although they changed over time as they claimed floors in the tower, their original essence remains.",
+								"The essence has 6 charges. Its owner can spend 1 charge to cast {@spell absorb_elements|phb} or {@spell Comfort|NDD}, and 2 charges to cast {@spell fireball|phb}, choosing one of the following damage types at the moment of casting: acid, cold, fire, lightning, or poison."
 							]
 						}
 					]
 				},
+				"",
 				{
 					"type": "entries",
 					"name": "Awakened",
 					"entries": [
-						"In this state, the essence is a legendary item.",
-						"Spells cast through it are cast at 8th level with +13 spell attack and DC 21.",
+						"In its awakened state, the essence is a legendary item and can be equipped by legendary characters, granting the following benefits:",
+						"The essence's spells are cast at 8th level with a +13 attack bonus and DC 21.",
 						{
 							"type": "entries",
 							"name": "Founders' Ancestry (Awakened)",
 							"entries": [
-								"Your fly speed increases to 60 feet.",
+								"",
+								"Your flying speed increases to 60 feet.",
 								"Your breath weapon damage increases to {@damage 13d6}.",
-								"Line effects become 5 by 60 feet, and cone effects become 30 feet.",
-								"You gain resistance to your ancestry's damage type."
+								"Line areas become 5 by 60 feet and cone areas become 30 feet.",
+								"You gain resistance to the damage type of your ancestry."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "True Form",
 							"entries": [
-								"You can cast {@spell true polymorph|phb} on yourself to become a dragon, following normal CR limitations."
+								"The owner of the essence can cast {@spell true polymorph|phb} to transform themselves into a dragon. The spell works only on the user and only to transform into a dragon, following normal CR limitations."
 							]
 						}
 					]
 				},
+				"",
 				{
 					"type": "entries",
 					"name": "Exalted",
 					"entries": [
-						"In this state, the essence is an artifact usable by level 20 characters.",
-						"Spells cast through it are cast at 9th level with +14 spell attack and DC 22.",
+						"In its exalted state, the essence is an artifact usable by level 20 legendary characters and grants the following benefits:",
+						"The essence's spells are cast at 9th level with a +14 attack bonus and DC 22.",
 						{
 							"type": "entries",
-							"name": "Eternal War of Dragons",
+							"name": "The Eternal Draconic War",
 							"entries": [
-								"You roll 2d5 daily to determine two ancestral influences instead of one."
+								"Since their creation, chromatic and metallic dragons have been at war, sometimes directly, sometimes inderectly. This war is going on for millenia e there is neither a prediction or any effort for it to end.",
+								"At this maximum level, you attract attention of other dragons, and like it or not, you are not part of their endless war.",
+								"Instead of rolling 1d10, you now roll 2d5 (one for each table below) and are affected by both results for your Founder's Ancestry.",
+								"",
+								{
+									"type": "table",
+									"colLabels": [
+										"1d5",
+										"Chromatic",
+										"1d5",
+										"Metallic"
+									],
+									"rows": [
+										[
+											"1",
+											"White",
+											"1",
+											"Brass"
+										],
+										[
+											"2",
+											"Black",
+											"2",
+											"Copper"
+										],
+										[
+											"3",
+											"Green",
+											"3",
+											"Bronze"
+										],
+										[
+											"4",
+											"Blue",
+											"4",
+											"Silver"
+										],
+										[
+											"5",
+											"Red",
+											"5",
+											"Gold"
+										]
+									]
+								},
+								""
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Founders' Ancestry (Exalted)",
 							"entries": [
-								"You gain the flyby trait.",
-								"Your breath weapon deals {@damage 18d6} damage.",
-								"Line effects become 5 by 90 feet, and cone effects become 60 feet.",
+								"",
+								"You gain the Flyby trait: You do not provoke Opportunity Attacks when flying out of an enemy's reach.",
+								"Your breath weapon deals {@damage 18d6} damage and the damage type can be of either rolled Ancestry type.",
+								"Line areas become 5 by 90 feet and cone areas become 60 feet.",
 								"You gain resistance to both ancestry damage types."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Guardian's Tea",
+							"name": "The Marvelous Guardian's Tea",
 							"entries": [
-								"As an action, you create a magical tea.",
-								"When consumed, the drinker gains temporary hit points equal to 5 × their level.",
-								"This ability can be used once per long rest."
+								"We've all tried the teas from our beloved guardian Red, haven't we? The essence of the nest manages to capture almost the entire flavor and essence of that tea (even though Red keeps insisting that his is better).",
+								"As an action, the essence produces a liquid similar to the most delicious tea your character has ever tasted.",
+								"When consumed as part of the same action, the character gains temporary hit points equal to 5 × their level.",
+								"This ability can be used again only after a long rest."
 							]
 						},
+						"",
 						{
 							"type": "entries",
 							"name": "Power of a Dragon God",
 							"entries": [
-								"You can teleport into or out of Aincrad with 100% success.",
-								"Using this ability suppresses all other properties of the item for 1 week.",
+								"As everyone knows, entering and leaving the tower is no easy task, and although people have been transported there using high magic with the help of various powerful mages, only a few creatures of extreme power—such as those of a god—have the ability to organize and comprehend the chaos of the tower well enough to enter and leave it, or to transport people, without relying on outside help.",
+								"As a free action, you can enter or exit Aincrad as if using a teleport spell with 100% success.",
+								"Doing so exhausts the essence, removing all its abilities for 1 week.",
 								"This ability can only be used once every 120 days."
 							]
 						}
