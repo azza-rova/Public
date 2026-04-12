@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "3.0",
+				"version": "4.0",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -23,7 +23,7 @@
 			]
 		},
 		"dateAdded": 1754720728,
-		"dateLastModified": 1768009500,
+		"dateLastModified": 1768009600,
 		"edition": "classic"
 	},
 	"spell": [
@@ -5374,6 +5374,166 @@
 				"B",
 				"N"
 			]
+		},
+		{
+			"name": "Crawling Servant",
+			"source": "NDD",
+			"size": [
+				"T"
+			],
+			"type": "undead",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d4 + 1"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 3,
+			"dex": 15,
+			"con": 13,
+			"int": 2,
+			"wis": 12,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"can repeat one phrase it knew in life"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The Crawling Servant can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The Crawling Servant can mimic a single word or phrase it spoke in life. A creature that hears the sounds can tell they are imitations with a successful {@dc 11} Wisdom ({@skill Insight}) check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Withering Touch",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) necrotic damage."
+					]
+				},
+				{
+					"name": "Unavoidable Touch",
+					"entries": [
+						"{@atk mw} automatic hit, reach 5 ft., one target. 1 necrotic damage.",
+						"After using this action, the Crawling Servant dies."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/CrawlingServant-Token.png"
+			},
+			"traitTags": [
+				"Incorporeal Movement",
+				"Mimicry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Soul Fragment",
+			"source": "NDD",
+			"size": [
+				"T"
+			],
+			"ac": [
+				0
+			],
+			"hp": {
+				"average": 0
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 0,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 0,
+			"dex": 0,
+			"con": 0,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 0,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Object",
+					"entries": [
+						"This sheet represents more of an object that is movable than a creature. It shows the remains of a soul slain in the presence of a Paladin that follows the Oath of the Death Knight and has the Soulsmith trait."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/SoulFragment-Token.png"
+			}
 		}
 	],
 	"condition": [
