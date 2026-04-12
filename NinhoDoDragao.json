@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "4.0",
+				"version": "5.0",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -23,7 +23,7 @@
 			]
 		},
 		"dateAdded": 1754720728,
-		"dateLastModified": 1768009600,
+		"dateLastModified": 1775970495,
 		"edition": "classic"
 	},
 	"spell": [
@@ -5500,20 +5500,17 @@
 			"size": [
 				"T"
 			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
 			"ac": [
 				0
 			],
 			"hp": {
-				"average": 0
+				"special": "0"
 			},
-			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 0,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
+			"speed": {},
 			"str": 0,
 			"dex": 0,
 			"con": 0,
@@ -5522,6 +5519,10 @@
 			"cha": 0,
 			"passive": 0,
 			"cr": "0",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/SoulFragment-Token.png"
+			},
 			"trait": [
 				{
 					"name": "Object",
@@ -5529,11 +5530,7 @@
 						"This sheet represents more of an object that is movable than a creature. It shows the remains of a soul slain in the presence of a Paladin that follows the Oath of the Death Knight and has the Soulsmith trait."
 					]
 				}
-			],
-			"tokenHref": {
-				"type": "external",
-				"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/SoulFragment-Token.png"
-			}
+			]
 		}
 	],
 	"condition": [
@@ -7141,7 +7138,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Whenever a creature that is not a construct dies within 60 feet of you, a fragment of its soul remains above its body, floating like a small pale-blue flame.",
+				"Whenever a creature that is not a construct dies within 60 feet of you, a fragment of its soul remains above its body in the format of a {@creature Soul Fragment|NDD}, floating like a small pale-blue flame.",
 				"Soul Fragments are visible only to you, and vanish after 1 minute if not interacted with.",
 				"A Soul Fragment starts following you automatically whenever you touch it, if you allow it. It keeps floating around you no matter how fast or how far you travel, but it can be stolen by other Death Knights.",
 				"You can later consume Soul Fragments to empower your abilities, and you can also dismiss any number of them as a free action on your turns.",
@@ -7168,10 +7165,10 @@
 					"type": "entries",
 					"name": "Soul Shepherd",
 					"entries": [
-						"As an action, you force open a small rift to the Ethereal Plane, from which creep out a number of undead Crawling Servants equal to your paladin level.",
+						"As an action, you force open a small rift to the Ethereal Plane, from which creep out a number of undead {@creature Crawling Servant|NDD} equal to your paladin level.",
 						"You control these servants without needing to issue direct orders. In combat, they do not roll initiative and instead act immediately after you on your turn.",
 						"While you have servants, you may spend a bonus action on your turns to make one of them explode and die automatically.",
-						"When a servant dies, it spawns a Soul Fragment as any other non-construct creature would."
+						"When a servant dies, it spawns a {@creature Soul Fragment|NDD} as any other non-construct creature would."
 					]
 				},
 				{
