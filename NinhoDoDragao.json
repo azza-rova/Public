@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "5.0",
+				"version": "6.0",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -23,8 +23,11 @@
 			]
 		},
 		"dateAdded": 1754720728,
-		"dateLastModified": 1775970495,
-		"edition": "classic"
+		"dateLastModified": 1791764382,
+		"edition": "classic",
+		"optionalFeatureTypes": {
+			"NDD:UMP": "Undead Masterpiece Parts"
+		}
 	},
 	"spell": [
 		{
@@ -4576,6 +4579,53 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Preserve Death",
+			"source": "NDD",
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This magic was created to preserve the undead. More than just mending broken bones or missing parts of a decrepit body, it helps maintain the essence of death and necromantic magic within the animate body of the dead, physically restoring and mending already dead parts.",
+				"If an undead creature is subjected to this magic, it regains {@dice 2d6} hit points."
+			],
+			"classes": {
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"shortName": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				]
+			}
 		}
 	],
 	"item": [
@@ -5531,6 +5581,80 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Undead Masterpiece",
+			"source": "NDD",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"ac": [
+				{
+					"special": "10 + your artificer level divided by 3 (rounded down) + Dexterity modifier"
+				}
+			],
+			"hp": {
+				"special": "5 × your artificer level + Constitution modifier × your artificer level"
+			},
+			"speed": {
+				"walk": {
+					"number": 15,
+					"condition": "+ Dexterity modifier × 5 ft."
+				}
+			},
+			"str": 13,
+			"dex": 13,
+			"con": 15,
+			"wis": 10,
+			"int": 10,
+			"cha": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"passive": 10,
+			"languages": [
+				"understands Common"
+			],
+			"cr": "Your artificer level",
+			"pbNote": "Your character proficiency bonus",
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the Masterpiece to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken - the Masterpiece's PB, unless the damage is radiant or from a critical hit. On a success, it drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"The Masterpiece is immune to poison damage and to the poisoned condition. It doesn't require air, food, drink or sleep."
+					]
+				},
+				{
+					"name": "Progressive Evolution",
+					"entries": [
+						"The Masterpiece has a pool of extra attribute points to be distributed equal to twice the amount of times you gained an Ability Score Improvement as an Artificer.",
+						"You can assign them freely, but each attribute can only reach a maximum of 20 points through this trait."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"Melee weapon attack: PB + Strength Modifier to hit, reach 5 ft, one creature.",
+						"Hit: {@damage 1d8} + strength modifier bludgeoning damage."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Monsters/UndeadMasterpiece.png"
+			}
 		}
 	],
 	"condition": [
@@ -6857,6 +6981,51 @@
 				"Soulshield|Paladin|PHB|Death Knight|NDD|15",
 				"Soulrift Incarnate|Paladin|PHB|Death Knight|NDD|20"
 			]
+		},
+		{
+			"name": "Undertaker",
+			"shortName": "Undertaker",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"Preserve Death|NDD"
+						]
+					},
+					"prepared": {
+						"3": [
+							"Detect Evil and Good|PHB",
+							"Creeping Touch|grimhollowplayerpack"
+						],
+						"5": [
+							"Augment Undead|NDD",
+							"Warding Bond|PHB",
+							"Otto's Abomination|NDD"
+						],
+						"9": [
+							"Animate Dead|PHB",
+							"Delay Death|NDD"
+						],
+						"13": [
+							"Despair|NDD",
+							"Death Ward|PHB"
+						],
+						"17": [
+							"Fleshshiver|NDD",
+							"Rip|NDD"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Undertaker|Artificer|TCE|Undertaker|NDD|3",
+				"Rotten Recycling Design|Artificer|TCE|Undertaker|NDD|5",
+				"Profane Affinity|Artificer|TCE|Undertaker|NDD|9",
+				"Eternal Mutation|Artificer|TCE|Undertaker|NDD|15"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -7239,6 +7408,271 @@
 				"If you would drop to 0 hit points or be subjected to an effect that would kill you instantly, the rift closes immediately instead, and you regain hit points equal to the number of Soul Fragments you have.",
 				"When the rift closes, all Soul Fragments within 500 feet are sucked into it and vanish, including those following you.",
 				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Undertaker",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 3,
+			"entries": [
+				"The Undertaker is a genetics specialist, able to study a large number of creatures and unify their traits after some manipulation. It spends its knowledge and power into necromancy in order to bend the rules of life and death, crafting an ultimate servant, the Undead Masterpiece.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Profane Knowledge|Artificer|TCE|Undertaker|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Undertaker Spells|Artificer|TCE|Undertaker|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Undead Masterpiece|Artificer|TCE|Undertaker|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Profane Assembly|Artificer|TCE|Undertaker|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Accursed Creation|Artificer|TCE|Undertaker|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blasphemous Immortality|Artificer|TCE|Undertaker|NDD|3"
+				}
+			]
+		},
+		{
+			"name": "Undertaker Spells",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Undertaker Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Detect Evil and Good|PHB}, {@spell Creeping Touch|grimhollowplayerpack}, {@spell Preserve Death|NDD}"
+						],
+						[
+							"5th",
+							"{@spell Augment Undead|NDD}, {@spell Warding Bond|PHB}, {@spell Otto's Abomination|NDD}"
+						],
+						[
+							"9th",
+							"{@spell Animate Dead|PHB}, {@spell Delay Death|NDD}"
+						],
+						[
+							"13th",
+							"{@spell Despair|NDD}, {@spell Death Ward|PHB}"
+						],
+						[
+							"17th",
+							"{@spell Fleshshiver|NDD}, {@spell Rip|NDD}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Profane Knowledge",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you adopt this specialization at 3rd level, you gain proficiency with {@item leatherworker's tools | phb} and either with the {@b Nature} or {@b Medicine} skill, choose when you gain this trait."
+			],
+			"toolProficiencies": [
+				{
+					"leatherworker's tools": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"nature",
+							"medicine"
+						],
+						"count": 1
+					}
+				}
+			]
+		},
+		{
+			"name": "Undead Masterpiece",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Beginning at 3rd level, you start developing and evolving your own masterpiece: an undead made from scratch to perfection that will evolve with you. You can define the general details of its appearance, but it is made either from flesh and/or bones from one or multiple creatures.",
+				"Use the {@creature Undead Masterpiece|NDD} sheet as the basis for it and the {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD} as reference for its optional parts, the rules for all of them are explained bellow.",
+				"In combat, the Masterpiece is friendly to you and your allies. You need to spend a bonus action to give orders to it, it then follows that order until you utter a new one or it is not possible to follow the current one. In that case, the Masterpiece takes the dodge action. It shares initiative with you, but acts right after you finish your turn.",
+				{
+					"type": "entries",
+					"name": "Appearance",
+					"entries": [
+						"The undead and its parts are generic and can be reinterpreted as to allow you to define how your Masterpiece looks.",
+						"They are a matter of balance, to limit the combinations that can be made. The lore-wise part of your undead is yours to define, without gaining any mechanical advantages that were not explicitly written.",
+						"E.g.: If it has Draconic parts mixed with Centaur and Beholder, you may freely define how they physically interact. Even if the masterpiece doesn't have fly speed, you can say it has attached pieces of dragon wings that do not work."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Profanity Core",
+					"entries": [
+						"The {@creature Undead Masterpiece|NDD} is based on a Profanity Core, which is a tiny item, like a gemstone, a bone, a vial, or another item that contains its very essence. Similar to a Lich's Phylactery, it anchors conscience, awareness and \"life\".",
+						"If the core is destroyed, the masterpiece crumbles into pieces and dies, unable to be revived in any way.",
+						"You are not required to carry the Core with you, but some traits are only available when you do so."
+					]
+				}
+			]
+		},
+		{
+			"name": "Profane Assembly",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As you grow as an Artificer, you become capable of better manipulating and understanding profanity, improving a Profanity Core's composition. The Core has something called {@b Wicked Capacity}, which is at first equals to your own Artificer level.",
+				"When you start a long rest you may increase your Wicked Capacity by empowering your Profanity Core temporarily: choose any number of your Artificer Spell slots to sacrifice: the Core's Wicked Capacity will be increased by half of the total level of the chosen spell slots (rounded up) until your next long rest. ",
+				"Example: As a 5th level artificer, your baseline Wicked Capacity is 5. Then, sacrificing two 2nd level spell slots and one 1st level spell slot will generate an increase of 3 (2+2+1 divided by two, rounded up), and your Wicked Capacity will become 8.",
+				"When the long rest is finished, the chosen slots are already spent, as if you never recovered them.",
+				"To use this trait you must have the Profanity Core with yourself."
+			]
+		},
+		{
+			"name": "Accursed Creation",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Whenever you finish a long rest you can create a new {@creature Undead Masterpiece|NDD} or change your current one if you have your Leatherworker's Tools. You can either reuse an existing Profane Core or create a new one together with your new servant.",
+				"When you do that, any other {@creature Undead Masterpiece|NDD} and Core under your control crumbles into pieces and ceases existing.",
+				"Your Masterpiece is made from parts of multiple creatures, each with a predefined {@b cost}. The Wicked Capacity of a Profane Core determines the limit of how much the combined parts of a Masterpiece can cost.",
+				"If the sum of the cost of all parts being used on the Masterpiece is greater than its Core's Wicked Capacity, the Masterpiece becomes unconscious and unable to act until that total cost lowers.",
+				"As you gain levels in this class, you will learn to manipulate and incorporate more parts of many types of creatures.",
+				"Refer to the {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD} to check which options you have available according to your Artificer Level.",
+				"To allocate parts into a Masterpiece you must have the Profanity Core with yourself."
+			]
+		},
+		{
+			"name": "Blasphemous Immortality",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"If the {@creature Undead Masterpiece|NDD} dies, you can spend a spell slot of any level and perform an one minute ritual to bring it back to life with 1 HP.",
+				"To use this trait you must have the Profanity Core with yourself."
+			]
+		},
+		{
+			"name": "Rotten Recycling Design",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"You gain access to new {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD}, and two new traits:",
+				{
+					"type": "entries",
+					"name": "Restorative Curse",
+					"entries": [
+						"While you are within 30 ft. of your masterpiece you can spend a bonus action and a spell slot of any level to heal it. The HP received equals your BP + half your artificer level (rounded down) x the level of the spell slot spent."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Loathsome Butchery",
+					"entries": [
+						"While you are within 30 ft. of your masterpiece you can use an action and spend a spell slot of any level to magically change one of the {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD} of your {@creature Undead Masterpiece|NDD}, removing one part and optionally replacing it by another.",
+						"The chosen part to be removed can have cost equal to or lower than the level of the spell slot spent, and it can either be replaced by nothing or by another part with cost equal to or lower than the level of the spell slot spent.",
+						"Example: spending a 2th level spell slot allows you to remove a part of cost 2 or lower and optionally replace it by another part of cost 2 or lower.",
+						"To use this trait you need to have the Profane Core with yourself."
+					]
+				}
+			]
+		},
+		{
+			"name": "Profane Affinity",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"When you reach level 9 you improve the bond between your {@creature Undead Masterpiece|NDD}, its Profane Core and yourself. You now have access to new {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD}.",
+				"While you are carrying the Profane Core with yourself, your Masterpiece may attune to and use any magic item or infusion that you could.",
+				"Additionally, when you take a short rest, while holding the Profanity Core, you can choose a magic item that is not consumable, that you are touching or wearing and are attuned to. The Profanity Core transforms itself, not in shape or size, but it replicates the item's magical effects and applies them to your Masterpiece by redirecting part of its magic.",
+				"Only the magical properties of an item are replicated to the Masterpiece, as if they are attuned to and wearing/holding it. Weapons will apply their extra effects or modifiers to the Masterpiece's Slam attack. Armors will apply their extra AC bonus to the Masterpiece's AC, aside from also granting it any other magical effect.", 
+				"The Masterpiece and the item itself still share the same magical source, so if the item has charges or counters, they are shared between yourself and the Masterpiece. This replication is temporarily disabled if your masterpiece is ever 120 ft or more away from you, if the Profanity Core is not in your possession or you are unconscious.",
+				"Using an action, you can touch your Masterpiece and change which item is being replicated. You can do this a number of times equal to your Intelligence modifier per long rest."
+			]
+		},
+		{
+			"name": "Eternal Mutation",
+			"source": "NDD",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Undertaker",
+			"subclassSource": "NDD",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"When you reach level 15 you can amplify the profane magic that fuels your masterpiece to its maximum. You now have access to the strongest {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD}.",
+				"When you finish a long rest, you may cast {@spell Imbue Undead|NDD} on your {@creature Undead Masterpiece|NDD} without expending a spell slot, and you may choose one spell of 5th level or lower from any class list as the target spell.",
+				"Your {@creature Undead Masterpiece|NDD} also gains the following trait:",
+				{
+					"type": "entries",
+					"name": "Persistent Malevolence",
+					"entries": [
+						"You have incorporated within your body a gemstone with the imprisoned soul of a magical creature. If you would die as a result of taking damage or from an effect that causes death, the imprisoned soul is consumed and your HP is restored to half of the maximum value (rounded down).",
+						"This trait can then only be used again after a long rest."
+					]
+				}
 			]
 		}
 	],
@@ -10638,6 +11072,1713 @@
 			"source": "NDD",
 			"entries": [
 				"Esse antecedente foi disponibilizado no servidor pelo jogador Otto, que atingiu o nível 20."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Chuul Pincer",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece gains a new attack option:", 
+				{
+					"type": "entries",
+					"name": "Grasping Pincer",
+					"entries": [
+						"Melee Weapon Attack: Strength modifier to hit, reach 10ft., one target. 2d4 + Strength modifier of bludgeoning damage.",
+						"On hit, the target is grappled. While grappled, the target is restrained.",
+						"The Masterpiece can make this attack only once per Attack action. This can replace one of the attacks of an Extra Attack feature."
+					]
+				}
+				
+			]
+		},
+		{
+			"name": "Myconid Spore Sac",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece has Telepathy out to a distance equals to its Wisdom modifier x 10 ft.",
+				"It also has advantage on Insight checks."
+			]
+		},
+		{
+			"name": "Ettercap Fangs",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece gains the new attack option:",
+				{
+					"type": "entries",
+					"name": "Venomous Bite",
+					"entries": [
+						"Melee Weapon Attack: Strength modifier to hit, reach 5ft., one target. 1d6 + Strength modifier of piercing damage.",
+						"The target must succeed on a Constitution saving throw against the spell DC of the Masterpiece's master or take extra 1d12 poison damage.", 
+						"The Masterpiece can make this attack only once per Attack action. This can replace one of the attacks of an Extra Attack feature."
+					]
+				}
+				
+			]
+		},
+		{
+			"name": "Hadozee Legs",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece gains walking speed equal to its Dexterity modifier x 5.",
+				"It can perform a long jump without moving.",
+				"When using the Dash action, it ignores difficult terrain."
+			]
+		},
+		{
+			"name": "Ooze Skin",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece gains the following bonus action option:",
+				{
+					"type": "entries",
+					"name": "Gelatinous Form",
+					"entries": [
+						"The Masterpiece transforms its body into a gelatinous form, allowing it to pass through spaces as narrow as 1 inch.", 
+						"While on that form, the Masterpiece is immune to being grappled, but it is Slowed, as if under the {@spell Slow|phb} spell, and can't attack.",
+						"The Masterpiece can revert to its normal form as an action.",
+						"Creatures that hit the Masterpiece while in gelatinous form take acid damage equal to your proficiency bonus."
+					]
+				}
+			]
+		},
+		{
+			"name": "Chocobo Feathers",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece's size is increased by one level and it can be ridden as a mount."
+			]
+		},
+		{
+			"name": "Clay Golem Cells",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece gains +2 to Armor Class."
+			]
+		},
+		{
+			"name": "Flesh Golem Cells",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece's max HP is increased by 2 * its CR."
+			]
+		},
+		{
+			"name": "Beast Senses",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece has advantage on Perception checks."
+			]
+		},
+		{
+			"name": "Spider Silk Glands",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains a new Action option:",
+				{
+					"type": "entries",
+					"name": "Throw Web",
+					"entries": [
+						"The Masterpiece throw web into a target within 30 ft. of itself.", 
+						"The target must succeed on a Dexterity saving throw against the spell DC of the Masterpiece's master or become restricted for 1 minute. The target can repeat the saving throw to free itself at the end of each of its turns.",
+						"The Masterpiece can use this action a number of times equal to its Constitution modifier per long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bullywug Skin",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains Swimming speed equal to its walking speed."
+			]
+		},
+		{
+			"name": "Doppelganger Flesh",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece has advantage on Deception checks and it gains a new Action option:",
+				{
+					"type": "entries",
+					"name": "Minor Shapeshifting",
+					"entries": [
+						"The Masterpiece casts {@spell Disguise Self|PHB} on itself, but needs to keep concentration on it while it lasts."
+					]
+				}
+				
+			]
+		},
+		{
+			"name": "Goat Head",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:", 
+				{
+					"type": "entries",
+					"name": "Charge",
+					"entries": [
+						"If the Masterpiece moves at least 20ft. in a straight line before hitting a target, it takes extra 2d6 damage from the attack.",
+						"The creature must then make a Strength saving throw against the spell DC of the Masterpiece's master or be pushed back 10ft."
+					]
+				}
+			]
+		},
+		{
+			"name": "Panther Paw",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Pounce",
+					"entries": [
+						"If the Masterpiece moves at least 20ft. in a straight line before hitting a target, it takes extra 2d6 damage from the attack.", 
+						"The creature must then make a Strength saving throw against the spell DC of the Masterpiece's master or fall prone."
+					]
+				}
+			]
+		},
+		{
+			"name": "Chameleon Scales",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece has advantage on Stealth checks and can use a Bonus action to take the Hide action.",
+				"If the Masterpiece doesn't move on its turn, creatures have disadvantage on checks to detect it."
+			]
+		},
+		{
+			"name": "Demilich Cranial",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece becomes immune to effects that turn undead."
+			]
+		},
+		{
+			"name": "Drow Eyes",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains {@sense darkvision} out to a distance of 120ft."
+			]
+		},
+		{
+			"name": "Modron Circuit",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"You can choose one skill for the Masterpiece to be proficient with.",
+				"You can select this part a number of times equal to your proficiency bonus. Each time you do so, you must choose a different skill."
+			]
+		},
+		{
+			"name": "Couatl Tongue",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece can choose two languages to understand but can't speak.", 
+				"You can select this Part a number of times equal to your proficiency bonus. Each time you do so, you must choose different languages."
+			]
+		},
+		{
+			"name": "Orc Muscles",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains proficiency on Simple and Martial Weapons."
+			]
+		},
+		{
+			"name": "Giant Heart",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains proficiency in one saving throw of your choice."
+			]
+		},
+		{
+			"name": "Tarrasque Scales",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Siege Monster",
+					"entries": [
+						"You deal double damage to objects and structures."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bulette Subterranean Carapace",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece has Burrow speed equal to 5 * its Strength modifier + 10ft.",
+				"It also gains advantage on checks to avoid being knocked prone."
+			]
+		},
+		{
+			"name": "Dragon Scales",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"When you choose this Part, select a damage type between acid, cold, fire or lightning.", 
+				"The Masterpiece gains resistance to that type of damage.", 
+				"You can select this Part multiple times. Each time you do so, you must choose a different damage type."
+			]
+		},
+		{
+			"name": "Abishai Eyes",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					},
+					"otherSummary": {
+						"entry": "The Masterpiece must have {@sense darkvision} to choose this Part.",
+						"entrySummary": "Darkvision"
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity. The Masterpiece must have {@sense darkvision} to choose this Part.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Devil's Sight",
+					"entries": [
+						"You can see normally in darkness, both magical and nonmagical, to a distance equals to your {@sense darkvision}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Hook Horror Claws",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece has climb speed equal to its walking speed and cannot be shoved."
+			]
+		},
+		{
+			"name": "Harpy Vocal Cords",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece gains proficiency on the Persuasion skill and one new Action option:",
+				{
+					"type": "entries",
+					"name": "Alluring Song",
+					"entries": [
+						"You sing beautifully to a creature of your choice that you can see.", 
+						"If it can hear the Masterpiece, it must succeed on a Wisdom saving throw against the spell DC of the Masterpiece's master or spend its reaction moving towards it.",
+						"The Masterpiece can use this action a number of times equal to the Intelligence modifier of the Masterpiece's master per long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Drider Limbs",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					},
+					"otherSummary": {
+						"entry": "The Masterpiece can't have any Flying or Swimming speed.",
+						"entrySummary": "No Flying or Swimming speed"
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity. The Masterpiece can't have any Flying or Swimming speed.",
+				"The Masterpiece gains Climb speed equals to its walking speed. It also gains the following Traits:",
+				{
+					"type": "entries",
+					"name": "Spider Climb",
+					"entries": [
+						"You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Web Walker",
+					"entries": [
+						"You ignore movement restrictions caused by webbing."
+					]
+				},
+				"The Masterpiece gains the following action option:", 
+				{
+					"type": "entries",
+					"name": "Webmaker (Recharge 6)",
+					"entries": [
+						"As an action you can produce an effect similar to the {@spell Web|phb} spell from its limbs.", 
+						"It requires concentration to keep, but it is not considered a spell."
+					]
+				}
+			]
+		},
+		{
+			"name": "Manticore Tail",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece gains a new Action option:",
+				{
+					"type": "entries",
+					"name": "Tail Spike",
+					"entries": [
+						"Ranged Weapon Attack: Dexterity modifier to hit, range 100/200 ft., one target. 1d8 + Dexterity modifier of piercing damage.",
+						"If the Masterpiece has Extra Attack, it shoots an amount of spikes equal to the number of attacks it can make. Make a separate attack and damage roll for each spike."
+					]
+				}
+			]
+		},
+		{
+			"name": "Amphibian Jump Musculature",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains +10 ft. of walking speed and the distance of its jump is tripled.",
+				"The Masterpiece only takes fall damage if it falls from 20ft. or more."
+			]
+		},
+		{
+			"name": "Death Knight Bones",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Extra Attack",
+					"entries": [
+						"You can attack twice, instead of once, whenever you take the Attack action on your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Yugoloth Talons",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Magic Weapons",
+					"entries": [
+						"Your attacks are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Kobold Instinct Glands",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 4 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Pack Tactics",
+					"entries": [
+						"You have advantage on attack rolls if any of your allies is within 5 ft. of your enemy."
+					]
+				}
+			]
+		},
+		{
+			"name": "Yuan-Ti Scales",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 4 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Magic Resistance",
+					"entries": [
+						"You have advantage on saving throws against spells and other magical effects."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bat ears",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 4 Wicked Capacity.",
+				"The Masterpiece has {@sense blindsight} out to a distance equal to its Wisdom modifier x 5, unless it is deafened."
+			]
+		},
+		{
+			"name": "Wyvern Wings",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 4 Wicked Capacity.",
+				"The Masterpiece gains flying speed of 60 ft."
+			]
+		},
+		{
+			"name": "Mind Flayer Tadpole",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 4 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Heightened Mind",
+					"entries": [
+						"The Masterpiece and its master have a strong mental connection, meaning that its master's commands do not require any kind of action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Basilisk Pupils",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece gains the following Action option:",
+				{
+					"type": "entries",
+					"name": "Piercing Gaze",
+					"entries": [
+						"The Masterpiece chooses a creature within 30ft in its line of sight that can see its eyes.",
+						"The target must succeed on a Constitution saving throw against the spell DC of the Masterpiece's master or become Slowed.",
+						"While slowed, the creature's movement is halved, and it can only take one action, bonus action, or move. If it attacks, it can only attack once.",
+						"To maintain this effect, the creature needs to be in the Masterpiece's line of sight. If the Masterpiece takes another action, becomes incapacitated or loses the line of sight, the effects end."
+					]
+				}
+			]
+		},
+		{
+			"name": "Stone Golem Cells",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece's max HP is increased by 1 for each Artificer level of its master. It also gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Immutable Form",
+					"entries": [
+						"You become immune to any spell or effect that would alter your form."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cambion Horn",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece gains a new Action option:",
+				{
+					"type": "entries",
+					"name": "Fire Ray",
+					"entries": [
+						"Ranged Spell Attack: the Intelligence modifier of the Masterpiece's master to hit, range 120 ft., one target. 3d6 fire damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Unicorn Ivory Horn",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece gains immunity to the {@condition charmed|PHB} and {@condition paralyzed|PHB} conditions."
+			]
+		},
+		{
+			"name": "Sphinx Eyes",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece gains resistance to psychic damage and can speak Sphinx."
+			]
+		},
+		{
+			"name": "Displacer Tendrils",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 4 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Displacement",
+					"entries": [
+						"The Masterpiece projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage.",
+						"If it takes any damage, this trait is disrupted until the end of its next turn. This trait is also disrupted while it is incapacitated or has a speed of 0."
+					]
+				}
+			]
+		},
+		{
+			"name": "Marilith Arm Bones",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					},
+					"otherSummary": {
+						"entry": "The Masterpiece must have Extra Attack Trait to choose this Part.",
+						"entrySummary": "Extra Attack trait"
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity. The Masterpiece must have Extra Attack Trait to choose this Part.",
+				"The Masterpiece can attack three times whenever it takes the Attack action on its turn."
+			]
+		},
+		{
+			"name": "Ogre Muscles",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece's Melee Weapon Attacks deal an extra weapon dice damage on hit."
+			]
+		},
+		{
+			"name": "Tlincalli Tail",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 3 Wicked Capacity.",
+				"The Masterpiece gains the new attack option:",
+				{
+					"type": "entries",
+					"name": "Sting",
+					"entries": [
+						"Melee Weapon Attack: Strength modifier to hit, reach 5ft., one target. 2d6 + Strength modifier of piercing damage plus 5d6 poison damage.",
+						"The target must succeed on a Constitution saving throw against the spell DC of the Masterpiece's master or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"The Masterpiece can make this attack only once per Attack action. This can replace one of the attacks of an Extra Attack feature."
+					]
+				}
+			]
+		},
+		{
+			"name": "Slaad Blood",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 4 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Demoniac Blood",
+					"entries": [
+						"The Masterpiece can receive healing from features and spells as if it was not an undead.",
+						"Additionally, whenever it is healed through the Rotten Recycling Design feature, it receives extra healing equal to its CON modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "Trolls Blood",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 4 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Regeneration",
+					"entries": [
+						"The Masterpiece regains an amount equal to its Constitution modifier * 2 hit points at the start of its turn.",
+						"If it takes acid or fire damage, this trait doesn't function until the start of its next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Core",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 Wicked Capacity.",
+				"The Masterpiece gains proficiency in one saving throw of your choice."
+			]
+		},
+		{
+			"name": "Goristo Arm",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity.",
+				"The Masterpiece's Slam damage increases to 2d8 bludgeoning damage."
+			]
+		},
+		{
+			"name": "Beholder Eyestalks",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 5 Wicked Capacity.",
+				"The Masterpiece gains a new Action option:",
+				{
+					"type": "entries",
+					"name": "Eye Rays",
+					"entries": [
+						"The eye stalks in its body still retain some unpredictable magic, letting the Masterpiece shoot one of the following magical rays at random (roll a d4), choosing one target it can see within 60 feet:",
+						{
+							"type": "entries",
+							"name": "1. Enervation Ray",
+							"entries": [
+								"The targeted creature must make a Constitution saving throw against the spell DC of the Masterpiece's master, taking 6d8 necrotic damage on a failed save, or half as much damage on a successful one."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "2. Sleep Ray",
+							"entries": [
+								"The targeted creature must succeed on a Wisdom saving throw against the spell DC of the Masterpiece's master or fall asleep and remain unconscious for 1 minute.",
+								"The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "3. Petrification Ray",
+							"entries": [
+								"The targeted creature must make a Dexterity saving throw against the spell DC of the Masterpiece's master. On a failed save, the creature begins to turn to stone and is restrained.",
+								"It must repeat the saving throw at the end of its next turn. On a success, the effect ends.",
+								"On a failure, the creature is petrified until freed by the {@spell greater restoration|PHB} spell or other magic."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "4. Disintegration Ray",
+							"entries": [
+								"If the target is a creature, it must succeed on a Dexterity saving throw against the spell DC of the Masterpiece's master or take 8d8 force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.",
+								"If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw.",
+								"If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dragon Breath Gland",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 5 Wicked Capacity.",
+				"When you choose this Part, select the dragon type that will reflect the damage of the Masterpiece's breath.",
+				"The Masterpiece gains resistance to that type of damage.",
+				"Black — Acid; Blue — Lightning; Green — Poison; Red — Fire; White — Cold.",
+				"The Masterpiece gains a new action option:",
+				{
+					"type": "entries",
+					"name": "Breath Weapon (Recharge 6)",
+					"entries": [
+						"The Masterpiece has a powerful dragon gland implanted in its body, allowing it to replicate the breath of these mighty creatures.",
+						"It exhales a burst of energy with the chosen damage type within a range of 30ft cone.",
+						"Each creature in this area must make a Dexterity saving throw against the spell DC of the Masterpiece's master, taking 10d6 of the chosen damage type on a failed save, or half as much damage on a successful one."
+					]
+				}
+			]
+		},
+		{
+			"name": "Displacer Skin",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 5 Wicked Capacity.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Avoidance",
+					"entries": [
+						"When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+					]
+				}
+			]
+		},
+		{
+			"name": "Quetzalcoatlus Back",
+			"source": "NDD",
+			"featureType": [
+				"NDD:UMP"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Artificer",
+							"source": "TCE"
+						},
+						"subclass": {
+							"name": "Undertaker",
+							"source": "NDD"
+						}
+					},
+					"otherSummary": {
+						"entry": "The Masterpiece must have Flying speed to choose this Part.",
+						"entrySummary": "Flying speed"
+					}
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 Wicked Capacity. The Masterpiece must have Flying speed to choose this Part.",
+				"The Masterpiece gains the following Trait:",
+				{
+					"type": "entries",
+					"name": "Flyby",
+					"entries": [
+						"You don't provoke an opportunity attack when you fly out of an enemy's reach."
+					]
+				}
 			]
 		}
 	]
