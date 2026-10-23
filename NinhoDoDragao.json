@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "6.0",
+				"version": "7.0",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -7314,9 +7314,10 @@
 				"When you use your {@b Divine Sense}, you may consume 2 Soul Fragments to empower it, allowing it to reveal undead spectral creatures, such as ghosts, spirits, and specters, even behind total cover within range.",
 				"Any ghosts or similar creatures revealed this way cannot benefit from invisibility until the end of your next turn.",
 				"When you use your {@b Lay on Hands}, you may consume a number of Soul Fragments no greater than the amount of points spent from the healing pool, healing the target by 1 additional hit point per Soul Fragment spent.",
-				"As a bonus action, you can target a number of Soul Fragments equal to half your proficiency bonus, rounded down, that you can see, and either pull or push them up to 30 feet toward or away from yourself.",
-				"If you end a turn being followed by more Soul Fragments than your proficiency bonus, make a Constitution saving throw with a DC equal to the number of fragments. On a failure, half of them vanish.",
-				"When you start a long rest, any Soul Fragments currently following you are dismissed and vanish."
+				"As a bonus action, you can target a number of Soul Fragments equal to half your Paladin level, rounded up, that you can see, and either pull or push them up to 30 feet toward or away from yourself.",
+				"If you end a turn being followed by more Soul Fragments than half of your Paladin level (rounded up), make a Constitution saving throw with a DC equal to the number of fragments. On a failure, half of them vanish.",
+				"When you start a short or long rest, any Soul Fragments currently following you are dismissed and vanish.",
+				"When you finish a short or long rest, a number of Soul Fragments equals to half your Paladin level (rounded up) starts following you."
 			]
 		},
 		{
@@ -7337,7 +7338,8 @@
 						"As an action, you force open a small rift to the Ethereal Plane, from which creep out a number of undead {@creature Crawling Servant|NDD} equal to your paladin level.",
 						"You control these servants without needing to issue direct orders. In combat, they do not roll initiative and instead act immediately after you on your turn.",
 						"While you have servants, you may spend a bonus action on your turns to make one of them explode and die automatically.",
-						"When a servant dies, it spawns a {@creature Soul Fragment|NDD} as any other non-construct creature would."
+						"When a servant dies, it spawns a {@creature Soul Fragment|NDD} as any other non-construct creature would.",
+						"When you start a short or long rest, any servants summoned by this skill are dragged back to the Ethereal Plane without dying."
 					]
 				},
 				{
@@ -7348,7 +7350,7 @@
 						"Creatures in the explosion's radius must make a Constitution saving throw against your spell save DC, taking half damage on a success.",
 						"The explosion deals Xd8 necrotic or radiant damage, your choice.",
 						"Its initial radius is X × 5 feet. If there are detached Soul Fragments inside it, they are also consumed, increasing the radius by 5 feet and the damage by 1d8 for each fragment consumed. This process can repeat if the expanded area reaches more Soul Fragments.",
-						"When the flare ends, you can teleport to any point inside the affected area."
+						"When the flare ends, you can spend a reaction to teleport to any point inside the affected area."
 					]
 				}
 			]
@@ -7365,7 +7367,8 @@
 			"entries": [
 				"Soul Fragments are visible while within any of your paladin auras, and are also considered to be touching you while within their reach.",
 				"When you use your {@b Divine Smite}, you may choose to deal necrotic damage instead of radiant damage.",
-				"You may also consume a number of Soul Fragments up to the level of the spell slot used, dealing 1d6 extra damage for each Soul Fragment consumed."
+				"You may also consume a number of Soul Fragments up to the level of the spell slot used, dealing 1d6 extra damage for each Soul Fragment consumed.",
+				"When you gain the Improved Divine Smite feature you may choose to cause necrotic damage with it instead of radiant damage."
 			]
 		},
 		{
