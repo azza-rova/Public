@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "8.0",
+				"version": "9.0",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -23,7 +23,7 @@
 			]
 		},
 		"dateAdded": 1754720728,
-		"dateLastModified": 1794523362,
+		"dateLastModified": 1794540338,
 		"edition": "classic",
 		"optionalFeatureTypes": {
 			"NDD:UMP": "Undead Masterpiece Parts"
@@ -3647,20 +3647,20 @@
 				}
 			],
 			"entries": [
-				"When you cast this spell, the Weave is bent to summon the Ice Lord's Zero Absolute and embed it in yourself, empowering your spells that deal cold damage and hurting your enemies.",
+				"When you cast this spell, the Weave is bent to summon the Ice Lord's Zero Absolute and embed it within you, empowering your spells that deal cold damage and hurting your enemies.",
 				"You radiate an aura of cold and oppression. Within range, the ground starts freezing, and cold air circles around you, creating a pale vortex of snow.",
 				"Whenever one of your spells deals cold damage to an enemy inside the aura, the following effects apply:",
 				{
 					"type": "list",
 					"items": [
-						"The spell deals one extra damage die (of the same type as the spell's damage dice).",
-						"If the target of the spell has immunity to cold damage, the spell treats that immunity as resistance. On the other hand, if it has resistance, the resistance is ignored by the spell.",
-						"If the target of the spell has no immunity or resistance to cold damage, the spell's damage is doubled for that target.",
-						"If the target is naturally vulnerable to cold damage, after it is damaged by the spell it must succeed on a Constitution saving throw against your spell save DC or be frozen in place, {@condition restrained|phb} until the end of its next turn."
+						"The spell deals one extra damage die (of the same size as the spell's damage dice).",
+						"If the target of the spell has immunity to cold damage, the spell treats that immunity as resistance. If the target has resistance to cold damage instead, the spell ignores that resistance.",
+						"If the target of the spell has neither immunity nor resistance to cold damage, the spell's damage is doubled for that target.",
+						"If the target is naturally vulnerable to cold damage, after it takes damage from the spell, it must succeed on a Constitution saving throw against your spell save DC or be frozen in place, becoming {@condition restrained|phb} until the end of its next turn."
 					]
 				},
-				"If you cast any spell that deals damage and it doesn't deal cold damage, this spell immediately ends.",
-				"When this spell ends, the intense accumulated cold implodes at once and the spell's extra effects end, but all creatures within the area (including yourself) must make a Constitution saving throw against your spell save DC. On a failed save, a creature takes {@damage 1d12} + your spellcasting ability modifier cold damage for each round you concentrated on the spell and becomes {@condition restrained|phb} until the end of its next turn. On a successful save, it takes only half the damage.",
+				"If you cast any spell that deals damage but doesn't deal cold damage, this spell ends immediately.",
+				"When this spell ends, the intense accumulated cold implodes at once and the spell's extra effects end, but all creatures within the area (including you) must make a Constitution saving throw against your spell save DC. On a failed save, a creature takes {@damage 1d12} + your spellcasting ability modifier cold damage for each round you concentrated on the spell and becomes {@condition restrained|phb} until the end of its next turn. On a successful save, it takes only half as much damage.",
 				"Spells whose damage type was changed by the Order of Scribes' {@b Awakened Spellbook} class feature cannot benefit from this spell."
 			],
 			"entriesHigherLevel": [
@@ -3668,7 +3668,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"If you cast this spell using a 9th-level spell slot, the range of the aura increases to 80 feet, spells deal two extra damage dice instead of one, and its final explosion doesn't affect you."
+						"When you cast this spell using a 9th-level spell slot, the aura's radius increases to 80 feet, spells deal two extra damage dice instead of one, and the final implosion doesn't affect you."
 					]
 				}
 			],
@@ -7210,9 +7210,9 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
-				"When you cast one of your Pestilence Cleric spells or any other spell that deals poison damage, you can spend one use of your Channel Divinity to empower it. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
+				"When you cast one of your Pestilence Domain spells or any other spell that deals poison damage, you can spend one use of your Channel Divinity to empower it. Start by choosing one of these magical diseases: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD}, or {@disease Bitter Torment|NDD}.",
 				"The first time that spell {@b affects} one or more creatures within the next minute, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
-				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use) you must choose a number of creatures no bigger than your proficiency bonus to be diseased.",
+				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use), you must choose a number of creatures no greater than your proficiency bonus to become diseased.",
 				{
 					"type": "inset",
 					"name": "What creatures are considered affected by a spell in this context?",
@@ -7222,7 +7222,7 @@
 							"type": "list",
 							"items": [
 								"A creature is hit by a spell attack, even if the spell doesn't deal damage, like {@spell ray of sickness|phb} or {@spell ray of enfeeblement|phb}.",
-								"A creature makes a saving throw against the spell, whether it succeeds or fails, like {@spell cloudkill|phb}, {@spell stinking cloud|phb} or {@spell blindness/deafness|phb}.",
+								"A creature makes a saving throw against the spell, whether it succeeds or fails, like {@spell cloudkill|phb}, {@spell stinking cloud|phb}, or {@spell blindness/deafness|phb}.",
 								"A creature is hit by an attack that uses the effect of a spell that imbues something with magic, or makes a saving throw against that effect (whether it succeeds or fails), like {@spell holy weapon|xge}."
 							]
 						}
@@ -7240,9 +7240,9 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"When you cast one of your Pestilence Cleric spells or any other spell that deals necrotic damage, you can spend one use of your Channel Divinity to empower it. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
+				"When you cast one of your Pestilence Domain spells or any other spell that deals necrotic damage, you can spend one use of your Channel Divinity to empower it. Start by choosing one of these magical diseases: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD}, or {@disease Crawling Delirium|NDD}.",
 				"The first time that spell {@b affects} one or more creatures within the next minute, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
-				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use) you must choose a number of creatures no bigger than your proficiency bonus to be diseased.",
+				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use), you must choose a number of creatures no greater than your proficiency bonus to become diseased.",
 				{
 					"type": "inset",
 					"name": "What creatures are considered affected by a spell in this context?",
@@ -7252,7 +7252,7 @@
 							"type": "list",
 							"items": [
 								"A creature is hit by a spell attack, even if the spell doesn't deal damage, like {@spell ray of sickness|phb} or {@spell ray of enfeeblement|phb}.",
-								"A creature makes a saving throw against the spell, whether it succeeds or fails, like {@spell cloudkill|phb}, {@spell stinking cloud|phb} or {@spell blindness/deafness|phb}.",
+								"A creature makes a saving throw against the spell, whether it succeeds or fails, like {@spell cloudkill|phb}, {@spell stinking cloud|phb}, or {@spell blindness/deafness|phb}.",
 								"A creature is hit by an attack that uses the effect of a spell that imbues something with magic, or makes a saving throw against that effect (whether it succeeds or fails), like {@spell holy weapon|xge}."
 							]
 						}
@@ -7388,18 +7388,18 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Whenever a creature that is not a construct dies within 60 feet of you, a fragment of its soul remains above its body in the format of a {@creature Soul Fragment|NDD}, floating like a small pale-blue flame.",
+				"Whenever a creature that is not a construct dies within 60 feet of you, a fragment of its soul remains above its body in the form of a {@creature Soul Fragment|NDD}, floating like a small pale-blue flame.",
 				"Soul Fragments are visible only to you, and vanish after 1 minute if not interacted with.",
 				"A Soul Fragment starts following you automatically whenever you touch it, if you allow it. It keeps floating around you no matter how fast or how far you travel, but it can be stolen by other Death Knights.",
 				"You can later consume Soul Fragments to empower your abilities, and you can also dismiss any number of them as a free action on your turns.",
 				"When you use your {@b Divine Sense}, you may consume 2 Soul Fragments to empower it, allowing it to reveal undead spectral creatures, such as ghosts, spirits, and specters, even behind total cover within range.",
 				"Any ghosts or similar creatures revealed this way cannot benefit from invisibility until the end of your next turn.",
-				"When you use your {@b Lay on Hands}, you may consume a number of Soul Fragments no greater than the amount of points spent from the healing pool, healing the target by 1 additional hit point per Soul Fragment spent.",
+				"When you use your {@b Lay on Hands}, you may consume a number of Soul Fragments no greater than the number of points spent from the healing pool, healing the target for 1 additional hit point per Soul Fragment consumed.",
 				"Before you make an attack, you may consume any number of Soul Fragments to gain a bonus to the attack roll and the damage roll of that attack equal to the number of Soul Fragments consumed.",
-				"As a bonus action, you can target a number of Soul Fragments equal to half your Paladin level, rounded up, that you can see, and either pull or push them up to 30 feet toward or away from yourself.",
+				"As a bonus action, you can target a number of Soul Fragments equal to half your Paladin level (rounded up) that you can see, and either pull or push them up to 30 feet toward or away from you.",
 				"If you end a turn being followed by more Soul Fragments than half of your Paladin level (rounded up), make a Constitution saving throw with a DC equal to the number of fragments. On a failure, half of them vanish.",
 				"When you start a short or long rest, any Soul Fragments currently following you are dismissed and vanish.",
-				"When you finish a short or long rest, a number of Soul Fragments equals to half your Paladin level (rounded up) starts following you."
+				"When you finish a short or long rest, a number of Soul Fragments equal to half your Paladin level (rounded up) start following you."
 			]
 		},
 		{
@@ -7747,14 +7747,14 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you reach level 15 you can amplify the profane magic that fuels your masterpiece to its maximum. You now have access to the strongest {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD}.",
+				"When you reach level 15, you can amplify the profane magic that fuels your Masterpiece to its maximum. You now have access to the strongest {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD}.",
 				"When you finish a long rest, you may cast {@spell Imbue Undead|NDD} at 6th level on your {@creature Undead Masterpiece|NDD} without expending a spell slot, and you can choose from spells of any class list, not just spells you know. The Masterpiece can cast a spell that has verbal components even if it is not capable of speaking a language.",
 				"Your {@creature Undead Masterpiece|NDD} also gains the following trait:",
 				{
 					"type": "entries",
 					"name": "Persistent Malevolence",
 					"entries": [
-						"You have incorporated within your body a gemstone with the imprisoned soul of a magical creature. If you would die as a result of taking damage or from an effect that causes death, the imprisoned soul is consumed and your HP is restored to half of the maximum value (rounded down).",
+						"The Masterpiece has a gemstone incorporated into its body that holds the imprisoned soul of a magical creature. If the Masterpiece would die as a result of taking damage or from an effect that causes death, the imprisoned soul is consumed instead, and the Masterpiece's hit points are restored to half its hit point maximum (rounded down).",
 						"This trait can then only be used again after a long rest."
 					]
 				}
@@ -7769,7 +7769,7 @@
 			"subclassSource": "NDD",
 			"level": 3,
 			"entries": [
-				"A true fighter embodies the concept of self-improvement through training and challenge. Those who follow this path must never stray, and in return, will take their bodies to heights no one else can achieve.",
+				"A true fighter embodies the concept of self-improvement through training and challenge. Those who follow this path must never stray, and in return they will take their bodies to heights no one else can achieve.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Unshakable|Fighter|PHB|True Fighter|NDD|3"
@@ -7790,9 +7790,9 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"To choose this archetype at 3rd level, you cannot have any classes besides Fighter.",
-				"If you ever take a level in a class other than Fighter through a level up, you immediately lose all benefits from this subclass.",
-				"Whenever you gain an {@b Ability Score Improvement}, you can either increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1, but you cannot take a feat."
+				"To choose this archetype at 3rd level, you can't have levels in any class other than Fighter.",
+				"If you ever take a level in a class other than Fighter when you level up, you immediately lose all benefits of this subclass.",
+				"Whenever you gain an {@b Ability Score Improvement}, you can either increase one ability score of your choice by 2 or increase two ability scores of your choice by 1, but you can't take a feat instead."
 			]
 		},
 		{
@@ -7805,7 +7805,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you reach 3rd level, you gain two points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 20 to 22.",
+				"When you reach 3rd level, you gain two points to distribute as you wish among your ability scores, and the maximum value each of your ability scores can reach is raised from 20 to 22.",
 				"You can use your {@b Second Wind} feature one additional time between rests, and you can spend one use of it to end one of the following conditions on yourself instead of healing: {@condition blinded|phb}, {@condition deafened|phb}, {@condition poisoned|phb}, {@condition frightened|phb}, or {@condition charmed|phb}."
 			]
 		},
@@ -7819,7 +7819,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"When you reach 7th level, you gain three points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 22 to 24.",
+				"When you reach 7th level, you gain three points to distribute as you wish among your ability scores, and the maximum value each of your ability scores can reach is raised from 22 to 24.",
 				"You gain a bonus to all of your saving throws equal to half your proficiency bonus (rounded down)."
 			]
 		},
@@ -7833,7 +7833,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"When you reach 10th level, you gain four points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 24 to 26.",
+				"When you reach 10th level, you gain four points to distribute as you wish among your ability scores, and the maximum value each of your ability scores can reach is raised from 24 to 26.",
 				"You can choose a second option from the {@b Fighting Style} class feature."
 			]
 		},
@@ -7847,7 +7847,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you reach 15th level, you gain five points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 26 to 28.",
+				"When you reach 15th level, you gain five points to distribute as you wish among your ability scores, and the maximum value each of your ability scores can reach is raised from 26 to 28.",
 				"You gain proficiency in Dexterity saving throws.",
 				"When you activate your {@b Indomitable} feature, you can choose to spend two uses instead of one to automatically succeed on the saving throw."
 			]
@@ -7862,11 +7862,11 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"When you reach 18th level, you gain six points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 28 to 30.",
-				"During your turns, if you have already spent all uses of your {@b Action Surge} feature, you can try to force your body beyond all conceived limits to take one additional action. When you choose to do so, make a Constitution saving throw with a DC equal to 10 + half of your total Constitution score (not the modifier), rounded down.",
+				"When you reach 18th level, you gain six points to distribute as you wish among your ability scores, and the maximum value each of your ability scores can reach is raised from 28 to 30.",
+				"During your turn, if you have already spent all uses of your {@b Action Surge} feature, you can try to force your body beyond all conceivable limits to take one additional action. When you do so, make a Constitution saving throw with a DC equal to 10 + half your total Constitution score (not the modifier), rounded down.",
 				"If you fail, you cannot take the extra action, you gain two levels of {@condition exhaustion|phb}, and your turn immediately ends.",
-				"If you succeed, you can take the extra action, and after it is done you still gain one level of {@condition exhaustion|phb}.",
-				"You can repeat this as many times as your body is able to handle, but each time you do so after the first (regardless of success or failure), the base DC increases by 5. These increases reset when you finish a long rest."
+				"If you succeed, you can take the extra action, but after you take it, you still gain one level of {@condition exhaustion|phb}.",
+				"You can repeat this as many times as your body can handle, but each time you do so after the first (whether you succeed or fail), the base DC increases by 5. These increases reset when you finish a long rest."
 			]
 		},
 		{
@@ -7878,7 +7878,7 @@
 			"subclassSource": "NDD",
 			"level": 3,
 			"entries": [
-				"A true barbarian embodies the concept of ruthless aggression and extreme survival. Those who follow this path can never stray, and in return will accomplish feats other mortals can only dream about.",
+				"A true barbarian embodies the concept of ruthless aggression and extreme survival. Those who follow this path can never stray, and in return they will accomplish feats other mortals can only dream of.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Ferocity|Barbarian|PHB|True Barbarian|NDD|3"
@@ -7895,8 +7895,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"To choose this path at 3rd level, you cannot have any classes besides Barbarian.",
-				"If you ever take a level in a class other than Barbarian through a level up, you immediately lose all benefits from this subclass.",
+				"To choose this path at 3rd level, you can't have levels in any class other than Barbarian.",
+				"If you ever take a level in a class other than Barbarian when you level up, you immediately lose all benefits of this subclass.",
 				"When you reach 3rd level, you gain one extra Hit Die (which also increases your hit point maximum as if you had gained it from leveling up, without adding your Constitution modifier).",
 				"You can add your Strength modifier to {@skill Intimidation} checks.",
 				"While raging, you are also resistant to acid, fire, cold, lightning, thunder, and poison damage, and you have advantage on saving throws against being {@condition poisoned|phb} or {@condition deafened|phb}."
@@ -7927,19 +7927,19 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"When you have fewer hit points than 3/4 of your hit point maximum (rounded up), you can activate a state of primal fury.",
-				"You can do this whenever you activate your {@b Rage} feature or, if you already have it active, at the beginning of your turns, before moving or acting.",
-				"Spend a number of Hit Dice equal to your proficiency bonus, roll them, and take true damage equal to the total rolled. Repeat this at the start of each of your turns if you wish to maintain it. If you choose not to, or if you don't have enough Hit Dice to spend, the Primal Rage reverts back to a normal Rage.",
-				"While in this state, whenever you make a weapon attack, the attack's damage is treated as if you rolled the maximum damage.",
-				"You can also choose to spend one of your Hit Dice and add it to increase the damage of the attack, but you can only do that a number of times equal to your proficiency bonus per Primal Rage. The Hit Die added this way is also treated as if you rolled its maximum value.",
+				"When you have fewer hit points than 3/4 of your hit point maximum (rounded up), you can enter a state of primal fury.",
+				"You can do this whenever you activate your {@b Rage} feature or, if your Rage is already active, at the start of your turn, before you move or act.",
+				"To do so, spend a number of Hit Dice equal to your proficiency bonus, roll them, and take true damage equal to the total rolled. Repeat this at the start of each of your turns if you wish to maintain the Primal Rage. If you choose not to, or if you don't have enough Hit Dice to spend, the Primal Rage reverts to a normal Rage.",
+				"While in this state, whenever you hit with a weapon attack, its damage is treated as if you had rolled the maximum on every damage die.",
+				"You can also spend one of your Hit Dice to add it to the attack's damage, but you can do so only a number of times equal to your proficiency bonus per Primal Rage. A Hit Die added this way is also treated as if you had rolled its maximum value.",
 				"You can also replace one of your attacks with a special {@b Savagery} attack. You can do this only twice per Primal Rage.",
 				{
 					"type": "entries",
 					"name": "Savagery",
 					"entries": [
-						"You shout a deep and terrifying howl while gathering your strength. Choose between brutally stomping the ground or uncontrollably attacking all creatures around you with a weapon.",
-						"All creatures within 20 feet of you must make a Strength saving throw with a DC equal to 8 + your proficiency bonus + your Strength modifier. On a failure, they are pushed 10 feet away from you, fall {@condition prone|phb}, and take damage equal to your Strength modifier + your barbarian level × 3. On a success, they take only half the damage.",
-						"If you are grappling an enemy, you can use it as the weapon instead. It automatically fails the saving throw, but the grapple ends after the Savagery.",
+						"You let out a deep and terrifying howl while gathering your strength. Choose between brutally stomping the ground or uncontrollably attacking all creatures around you with a weapon.",
+						"All creatures within 20 feet of you must make a Strength saving throw with a DC equal to 8 + your proficiency bonus + your Strength modifier. On a failure, they are pushed 10 feet away from you, knocked {@condition prone|phb}, and take damage equal to your Strength modifier + your barbarian level × 3. On a success, they take only half as much damage.",
+						"If you are grappling an enemy, you can use that creature as the weapon instead. It automatically fails the saving throw, but the grapple ends after the Savagery.",
 						"The damage type is the same as your weapon's if you chose to attack with it, or bludgeoning if you chose to stomp or to use an enemy."
 					]
 				}
@@ -7958,7 +7958,7 @@
 				"When you reach 10th level, you gain three extra Hit Dice (which also increase your hit point maximum as if you had gained them from leveling up, without adding your Constitution modifier).",
 				"You suffer no penalty to movement while grappling another creature.",
 				"When you reach this level, pick one damage type among fire, cold, lightning, acid, and thunder.",
-				"While raging, you are resistant to radiant, necrotic, psychic, and force damage, are immune to the damage type you chose and to slashing damage from nonmagical attacks, cannot be {@condition blinded|phb} or {@condition deafened|phb}, and have advantage on saving throws against being {@condition incapacitated|phb}."
+				"While raging, you are also resistant to radiant, necrotic, psychic, and force damage, are immune to the damage type you chose and to slashing damage from nonmagical attacks, cannot be {@condition blinded|phb} or {@condition deafened|phb}, and have advantage on saving throws against being {@condition incapacitated|phb}."
 			]
 		},
 		{
@@ -7971,8 +7971,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"While raging, take note of all damage you would have taken but didn't thanks to your resistances or immunities. When you hit a creature or an object with an attack, you can spend one Hit Die to add half of the prevented damage (rounded down) as bonus damage to its damage roll (the bonus damage can be of any damage type your weapon deals).",
-				"The accumulated damage total is reset to zero whenever you add the bonus to an attack or when you reach the end of one of your turns."
+				"While raging, keep track of all the damage you would have taken but didn't because of your resistances or immunities. When you hit a creature or an object with an attack, you can spend one Hit Die to add half of that prevented damage (rounded down) as bonus damage to the attack's damage roll (the bonus damage can be of any damage type your weapon deals).",
+				"The accumulated total resets to zero whenever you add the bonus to an attack and at the end of each of your turns."
 			]
 		},
 		{
@@ -7985,7 +7985,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you gain four extra Hit Dice (which also increase your hit point maximum as if you had gained them from leveling up, without adding your Constitution modifier).",
+				"When you reach 14th level, you gain four extra Hit Dice (which also increase your hit point maximum as if you had gained them from leveling up, without adding your Constitution modifier).",
 				"You can grapple creatures up to two sizes larger than you.",
 				"When you reach this level, pick a damage type that isn't slashing, piercing, bludgeoning, poison, or the type you chose at 10th level.",
 				"While raging, you are also immune to piercing damage from nonmagical attacks and to the chosen damage type, cannot be {@condition poisoned|phb}, and have advantage on saving throws against being {@condition paralyzed|phb}."
@@ -11528,9 +11528,9 @@
 			],
 			"entries": [
 				"{@b Cost:} 2 Wicked Capacity.",
-				"The Masterpiece gains walking speed equal to 10 + its Dexterity modifier x 5.",
-				"It can perform a long jump without moving.",
-				"When using the Dash action, it ignores difficult terrain."
+				"The Masterpiece's walking speed increases by 10 feet + its Dexterity modifier × 5 feet.",
+				"It can make a long jump without a running start.",
+				"When it takes the Dash action, it ignores difficult terrain."
 			]
 		},
 		{
@@ -11796,8 +11796,8 @@
 					"type": "entries",
 					"name": "Charge",
 					"entries": [
-						"If the Masterpiece moves at least 20ft. in a straight line before hitting a target, it takes extra 2d6 damage from the attack.",
-						"The creature must then make a Strength saving throw against the spell DC of the Masterpiece's master or be pushed back 10ft.",
+						"If the Masterpiece moves at least 20 feet in a straight line before hitting a target, the target takes an extra 2d6 damage from the attack.",
+						"The target must then succeed on a Strength saving throw against the spell save DC of the Masterpiece's master or be pushed back 10 feet.",
 						"This trait can't be used in the same attack as the Pounce trait of the {@optfeature Panther Paw|NDD}. If the Masterpiece has both parts, it must choose which one to use."
 					]
 				}
@@ -11831,8 +11831,8 @@
 					"type": "entries",
 					"name": "Pounce",
 					"entries": [
-						"If the Masterpiece moves at least 20ft. in a straight line before hitting a target, it takes extra 2d6 damage from the attack.", 
-						"The creature must then make a Strength saving throw against the spell DC of the Masterpiece's master or fall prone.",
+						"If the Masterpiece moves at least 20 feet in a straight line before hitting a target, the target takes an extra 2d6 damage from the attack.", 
+						"The target must then succeed on a Strength saving throw against the spell save DC of the Masterpiece's master or be knocked {@condition prone|phb}.",
 						"This trait can't be used in the same attack as the Charge trait of the {@optfeature Goat Head|NDD}. If the Masterpiece has both parts, it must choose which one to use."
 					]
 				}
@@ -11861,7 +11861,7 @@
 			],
 			"entries": [
 				"{@b Cost:} 2 Wicked Capacity.",
-				"The Masterpiece has advantage on Stealth checks and can use a Bonus action to take the Hide action.",
+				"The Masterpiece has advantage on Dexterity ({@skill Stealth}) checks and can take the Hide action as a bonus action.",
 				"If the Masterpiece doesn't move on its turn, creatures have disadvantage on checks to detect it."
 			]
 		},
@@ -12197,14 +12197,14 @@
 			],
 			"entries": [
 				"{@b Cost:} 2 Wicked Capacity.",
-				"The Masterpiece gains the ability to speak the languages it knows and one new Action option:",
+				"The Masterpiece gains the ability to speak the languages it knows, as well as the following action:",
 				{
 					"type": "entries",
 					"name": "Alluring Song",
 					"entries": [
-						"You sing beautifully to a creature of your choice that you can see.", 
-						"If it can hear the Masterpiece, it must succeed on a Wisdom saving throw against the spell DC of the Masterpiece's master or spend its reaction moving towards it.",
-						"The Masterpiece can use this action a number of times equal to the Intelligence modifier of the Masterpiece's master per long rest."
+						"The Masterpiece sings beautifully to a creature of its choice that it can see.", 
+						"If the target can hear the Masterpiece, it must succeed on a Wisdom saving throw against the spell save DC of the Masterpiece's master or use its reaction to move toward the Masterpiece.",
+						"The Masterpiece can use this action a number of times per long rest equal to its master's Intelligence modifier."
 					]
 				}
 			]
@@ -12456,7 +12456,7 @@
 			]
 		},
 		{
-			"name": "Bat ears",
+			"name": "Bat Ears",
 			"source": "NDD",
 			"featureType": [
 				"NDD:UMP"
@@ -12478,7 +12478,7 @@
 			],
 			"entries": [
 				"{@b Cost:} 4 Wicked Capacity.",
-				"The Masterpiece has {@sense blindsight} out to a distance of 30 feet + its Wisdom modifier x 5 feet, unless it is deafened."
+				"The Masterpiece has {@sense blindsight} out to a distance of 30 feet + its Wisdom modifier × 5 feet, unless it is deafened."
 			]
 		},
 		{
@@ -12600,12 +12600,12 @@
 			],
 			"entries": [
 				"{@b Cost:} 3 Wicked Capacity.",
-				"The Masterpiece's max HP is increased by 2 for each Artificer level of its master. It also gains the following Trait:",
+				"The Masterpiece's hit point maximum increases by 2 for each Artificer level of its master. It also gains the following Trait:",
 				{
 					"type": "entries",
 					"name": "Immutable Form",
 					"entries": [
-						"You become immune to any spell or effect that would alter your form."
+						"The Masterpiece is immune to any spell or effect that would alter its form."
 					]
 				}
 			]
