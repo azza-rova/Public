@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "7.0",
+				"version": "8.0",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -23,107 +23,13 @@
 			]
 		},
 		"dateAdded": 1754720728,
-		"dateLastModified": 1791764382,
+		"dateLastModified": 1794523362,
 		"edition": "classic",
 		"optionalFeatureTypes": {
 			"NDD:UMP": "Undead Masterpiece Parts"
 		}
 	},
 	"spell": [
-		{
-			"name": "Absolute Zero Disruption",
-			"source": "NDD",
-			"level": 2,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 90
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a white dragon scale"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1,
-						"upTo": true
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You channel the most extreme cold at a creature you can see within range of the spell. ",
-				"That creature must make a successful Constitution save or have its cold resistances affected for the duration of the spell.",
-				"If it has Immunity, it becomes resistant, if it has resistance, the resistance is ignored."
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Fathomless",
-							"shortName": "Fathomless",
-							"source": "TCE"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Nature",
-							"shortName": "Nature",
-							"source": "PHB"
-						}
-					}
-				]
-			},
-			"fluff": {
-				"entries": [
-					"Essa magia foi inspirada em Tartalis Naillo, personagem do jogador Diego que alcançou o nível 20."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Characters/TartalisNaillo.png"
-						}
-					}
-				]
-			}
-		},
 		{
 			"name": "Acid Lash",
 			"source": "NDD",
@@ -3707,6 +3613,130 @@
 			}
 		},
 		{
+			"name": "Tartalis's Zero Absolute",
+			"source": "NDD",
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a white dragon scale"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"When you cast this spell, the Weave is bent to summon the Ice Lord's Zero Absolute and embed it in yourself, empowering your spells that deal cold damage and hurting your enemies.",
+				"You radiate an aura of cold and oppression. Within range, the ground starts freezing, and cold air circles around you, creating a pale vortex of snow.",
+				"Whenever one of your spells deals cold damage to an enemy inside the aura, the following effects apply:",
+				{
+					"type": "list",
+					"items": [
+						"The spell deals one extra damage die (of the same type as the spell's damage dice).",
+						"If the target of the spell has immunity to cold damage, the spell treats that immunity as resistance. On the other hand, if it has resistance, the resistance is ignored by the spell.",
+						"If the target of the spell has no immunity or resistance to cold damage, the spell's damage is doubled for that target.",
+						"If the target is naturally vulnerable to cold damage, after it is damaged by the spell it must succeed on a Constitution saving throw against your spell save DC or be frozen in place, {@condition restrained|phb} until the end of its next turn."
+					]
+				},
+				"If you cast any spell that deals damage and it doesn't deal cold damage, this spell immediately ends.",
+				"When this spell ends, the intense accumulated cold implodes at once and the spell's extra effects end, but all creatures within the area (including yourself) must make a Constitution saving throw against your spell save DC. On a failed save, a creature takes {@damage 1d12} + your spellcasting ability modifier cold damage for each round you concentrated on the spell and becomes {@condition restrained|phb} until the end of its next turn. On a successful save, it takes only half the damage.",
+				"Spells whose damage type was changed by the Order of Scribes' {@b Awakened Spellbook} class feature cannot benefit from this spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a 9th-level spell slot, the range of the aura increases to 80 feet, spells deal two extra damage dice instead of one, and its final explosion doesn't affect you."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Fathomless",
+							"shortName": "Fathomless",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Nature",
+							"shortName": "Nature",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"fluff": {
+				"entries": [
+					"Essa magia foi inspirada em Tartalis Naillo, personagem do jogador Diego que alcançou o nível 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/azza-rova/Public/refs/heads/main/Characters/TartalisNaillo.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Temporal Eye",
 			"source": "NDD",
 			"level": 7,
@@ -7026,6 +7056,47 @@
 				"Profane Affinity|Artificer|TCE|Undertaker|NDD|9",
 				"Eternal Mutation|Artificer|TCE|Undertaker|NDD|15"
 			]
+		},
+		{
+			"name": "The True Fighter",
+			"shortName": "True Fighter",
+			"source": "NDD",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"optionalfeatureProgression": [
+				{
+					"name": "Fighting Style",
+					"featureType": [
+						"FS:F"
+					],
+					"progression": {
+						"10": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The True Fighter|Fighter|PHB|True Fighter|NDD|3",
+				"Unyielding|Fighter|PHB|True Fighter|NDD|7",
+				"Immeasurable|Fighter|PHB|True Fighter|NDD|10",
+				"Unconquerable|Fighter|PHB|True Fighter|NDD|15",
+				"Limitless|Fighter|PHB|True Fighter|NDD|18"
+			]
+		},
+		{
+			"name": "Path of the True Barbarian",
+			"shortName": "True Barbarian",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Path of the True Barbarian|Barbarian|PHB|True Barbarian|NDD|3",
+				"Sadism|Barbarian|PHB|True Barbarian|NDD|6",
+				"Primal Rage|Barbarian|PHB|True Barbarian|NDD|6",
+				"Merciless|Barbarian|PHB|True Barbarian|NDD|10",
+				"Brutality|Barbarian|PHB|True Barbarian|NDD|10",
+				"Ruthlessness|Barbarian|PHB|True Barbarian|NDD|14",
+				"Cruelty|Barbarian|PHB|True Barbarian|NDD|14"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -7139,17 +7210,22 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
-				"You can spend your bonus action to empower the next use of the next spell you cast within a minute that deals {@b poison damage}. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
-				"The first time that spell {@b affects} one or more creatures, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
+				"When you cast one of your Pestilence Cleric spells or any other spell that deals poison damage, you can spend one use of your Channel Divinity to empower it. Start by choosing one magical disease between: {@disease Withering Flash|NDD}, {@disease Minothaurite|NDD} and {@disease Bitter Torment|NDD}.",
+				"The first time that spell {@b affects} one or more creatures within the next minute, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
 				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use) you must choose a number of creatures no bigger than your proficiency bonus to be diseased.",
 				{
 					"type": "inset",
 					"name": "What creatures are considered affected by a spell in this context?",
 					"entries": [
-						"The following scenarios cover most situations, and if a spell cause more than one of those scenarios, any of them will make a creature be considered affected:",
-						"A creature is hit by a spell that produce spell attack rolls to cause damage, like {@spell ray of sickness|phb}.",
-						"A creature fails a saving throw of a spell against damage, like {@spell cloudkill|phb}.",
-						"A creature is hit by an attack using the effect or fails a save against the effect of a spell that imbues something with magic to cause damage, like {@spell holy weapon|xge}."
+						"The following scenarios cover most situations. If a spell causes more than one of them, any of them makes a creature count as affected:",
+						{
+							"type": "list",
+							"items": [
+								"A creature is hit by a spell attack, even if the spell doesn't deal damage, like {@spell ray of sickness|phb} or {@spell ray of enfeeblement|phb}.",
+								"A creature makes a saving throw against the spell, whether it succeeds or fails, like {@spell cloudkill|phb}, {@spell stinking cloud|phb} or {@spell blindness/deafness|phb}.",
+								"A creature is hit by an attack that uses the effect of a spell that imbues something with magic, or makes a saving throw against that effect (whether it succeeds or fails), like {@spell holy weapon|xge}."
+							]
+						}
 					]
 				}
 			]
@@ -7164,17 +7240,22 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You can spend your bonus action to empower the next use of the next spell you cast within a minute that deals {@b necrotic damage}. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
-				"The first time that spell {@b affects} one or more creatures, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
+				"When you cast one of your Pestilence Cleric spells or any other spell that deals necrotic damage, you can spend one use of your Channel Divinity to empower it. Start by choosing one magical disease between: {@disease Whispering Void|NDD}, {@disease Stonebone Syndrome|NDD} and {@disease Crawling Delirium|NDD}.",
+				"The first time that spell {@b affects} one or more creatures within the next minute, they gain the {@condition diseased|NDD} condition for one minute and suffer the effects of the chosen disease.",
 				"If the spell can have multiple targets or creates an area of effect (affecting multiple targets with a single use) you must choose a number of creatures no bigger than your proficiency bonus to be diseased.",
 				{
 					"type": "inset",
 					"name": "What creatures are considered affected by a spell in this context?",
 					"entries": [
-						"The following scenarios cover most situations, and if a spell cause more than one of those scenarios, any of them will make a creature be considered affected:",
-						"A creature is hit by a spell that produce spell attack rolls to cause damage, like {@spell ray of sickness|phb}.",
-						"A creature fails a saving throw of a spell against damage, like {@spell cloudkill|phb}.",
-						"A creature is hit by an attack using the effect or fails a save against the effect of a spell that imbues something with magic to cause damage, like {@spell holy weapon|xge}."
+						"The following scenarios cover most situations. If a spell causes more than one of them, any of them makes a creature count as affected:",
+						{
+							"type": "list",
+							"items": [
+								"A creature is hit by a spell attack, even if the spell doesn't deal damage, like {@spell ray of sickness|phb} or {@spell ray of enfeeblement|phb}.",
+								"A creature makes a saving throw against the spell, whether it succeeds or fails, like {@spell cloudkill|phb}, {@spell stinking cloud|phb} or {@spell blindness/deafness|phb}.",
+								"A creature is hit by an attack that uses the effect of a spell that imbues something with magic, or makes a saving throw against that effect (whether it succeeds or fails), like {@spell holy weapon|xge}."
+							]
+						}
 					]
 				}
 			]
@@ -7314,6 +7395,7 @@
 				"When you use your {@b Divine Sense}, you may consume 2 Soul Fragments to empower it, allowing it to reveal undead spectral creatures, such as ghosts, spirits, and specters, even behind total cover within range.",
 				"Any ghosts or similar creatures revealed this way cannot benefit from invisibility until the end of your next turn.",
 				"When you use your {@b Lay on Hands}, you may consume a number of Soul Fragments no greater than the amount of points spent from the healing pool, healing the target by 1 additional hit point per Soul Fragment spent.",
+				"Before you make an attack, you may consume any number of Soul Fragments to gain a bonus to the attack roll and the damage roll of that attack equal to the number of Soul Fragments consumed.",
 				"As a bonus action, you can target a number of Soul Fragments equal to half your Paladin level, rounded up, that you can see, and either pull or push them up to 30 feet toward or away from yourself.",
 				"If you end a turn being followed by more Soul Fragments than half of your Paladin level (rounded up), make a Constitution saving throw with a DC equal to the number of fragments. On a failure, half of them vanish.",
 				"When you start a short or long rest, any Soul Fragments currently following you are dismissed and vanish.",
@@ -7666,7 +7748,7 @@
 			"header": 2,
 			"entries": [
 				"When you reach level 15 you can amplify the profane magic that fuels your masterpiece to its maximum. You now have access to the strongest {@filter Undead Masterpiece Parts|optionalfeatures|feature type=ndd:ump|source=NDD}.",
-				"When you finish a long rest, you may cast {@spell Imbue Undead|NDD} on your {@creature Undead Masterpiece|NDD} without expending a spell slot, and you may choose one spell of 5th level or lower from any class list as the target spell.",
+				"When you finish a long rest, you may cast {@spell Imbue Undead|NDD} at 6th level on your {@creature Undead Masterpiece|NDD} without expending a spell slot, and you can choose from spells of any class list, not just spells you know. The Masterpiece can cast a spell that has verbal components even if it is not capable of speaking a language.",
 				"Your {@creature Undead Masterpiece|NDD} also gains the following trait:",
 				{
 					"type": "entries",
@@ -7676,6 +7758,251 @@
 						"This trait can then only be used again after a long rest."
 					]
 				}
+			]
+		},
+		{
+			"name": "The True Fighter",
+			"source": "NDD",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "True Fighter",
+			"subclassSource": "NDD",
+			"level": 3,
+			"entries": [
+				"A true fighter embodies the concept of self-improvement through training and challenge. Those who follow this path must never stray, and in return, will take their bodies to heights no one else can achieve.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Unshakable|Fighter|PHB|True Fighter|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenacious|Fighter|PHB|True Fighter|NDD|3"
+				}
+			]
+		},
+		{
+			"name": "Unshakable",
+			"source": "NDD",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "True Fighter",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"To choose this archetype at 3rd level, you cannot have any classes besides Fighter.",
+				"If you ever take a level in a class other than Fighter through a level up, you immediately lose all benefits from this subclass.",
+				"Whenever you gain an {@b Ability Score Improvement}, you can either increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1, but you cannot take a feat."
+			]
+		},
+		{
+			"name": "Tenacious",
+			"source": "NDD",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "True Fighter",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you reach 3rd level, you gain two points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 20 to 22.",
+				"You can use your {@b Second Wind} feature one additional time between rests, and you can spend one use of it to end one of the following conditions on yourself instead of healing: {@condition blinded|phb}, {@condition deafened|phb}, {@condition poisoned|phb}, {@condition frightened|phb}, or {@condition charmed|phb}."
+			]
+		},
+		{
+			"name": "Unyielding",
+			"source": "NDD",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "True Fighter",
+			"subclassSource": "NDD",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"When you reach 7th level, you gain three points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 22 to 24.",
+				"You gain a bonus to all of your saving throws equal to half your proficiency bonus (rounded down)."
+			]
+		},
+		{
+			"name": "Immeasurable",
+			"source": "NDD",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "True Fighter",
+			"subclassSource": "NDD",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"When you reach 10th level, you gain four points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 24 to 26.",
+				"You can choose a second option from the {@b Fighting Style} class feature."
+			]
+		},
+		{
+			"name": "Unconquerable",
+			"source": "NDD",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "True Fighter",
+			"subclassSource": "NDD",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"When you reach 15th level, you gain five points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 26 to 28.",
+				"You gain proficiency in Dexterity saving throws.",
+				"When you activate your {@b Indomitable} feature, you can choose to spend two uses instead of one to automatically succeed on the saving throw."
+			]
+		},
+		{
+			"name": "Limitless",
+			"source": "NDD",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "True Fighter",
+			"subclassSource": "NDD",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"When you reach 18th level, you gain six points to distribute as you wish between your ability scores, and the maximum value each of your ability scores can reach is raised from 28 to 30.",
+				"During your turns, if you have already spent all uses of your {@b Action Surge} feature, you can try to force your body beyond all conceived limits to take one additional action. When you choose to do so, make a Constitution saving throw with a DC equal to 10 + half of your total Constitution score (not the modifier), rounded down.",
+				"If you fail, you cannot take the extra action, you gain two levels of {@condition exhaustion|phb}, and your turn immediately ends.",
+				"If you succeed, you can take the extra action, and after it is done you still gain one level of {@condition exhaustion|phb}.",
+				"You can repeat this as many times as your body is able to handle, but each time you do so after the first (regardless of success or failure), the base DC increases by 5. These increases reset when you finish a long rest."
+			]
+		},
+		{
+			"name": "Path of the True Barbarian",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "True Barbarian",
+			"subclassSource": "NDD",
+			"level": 3,
+			"entries": [
+				"A true barbarian embodies the concept of ruthless aggression and extreme survival. Those who follow this path can never stray, and in return will accomplish feats other mortals can only dream about.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ferocity|Barbarian|PHB|True Barbarian|NDD|3"
+				}
+			]
+		},
+		{
+			"name": "Ferocity",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "True Barbarian",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"To choose this path at 3rd level, you cannot have any classes besides Barbarian.",
+				"If you ever take a level in a class other than Barbarian through a level up, you immediately lose all benefits from this subclass.",
+				"When you reach 3rd level, you gain one extra Hit Die (which also increases your hit point maximum as if you had gained it from leveling up, without adding your Constitution modifier).",
+				"You can add your Strength modifier to {@skill Intimidation} checks.",
+				"While raging, you are also resistant to acid, fire, cold, lightning, thunder, and poison damage, and you have advantage on saving throws against being {@condition poisoned|phb} or {@condition deafened|phb}."
+			]
+		},
+		{
+			"name": "Sadism",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "True Barbarian",
+			"subclassSource": "NDD",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"When you reach 6th level, you gain two extra Hit Dice (which also increase your hit point maximum as if you had gained them from leveling up, without adding your Constitution modifier).",
+				"Your proficiency bonus is doubled for ability checks made with the {@skill Athletics} skill.",
+				"While raging, you are also immune to poison damage and to bludgeoning damage from nonmagical attacks, and you have advantage on saving throws against being {@condition blinded|phb} or {@condition frightened|phb}."
+			]
+		},
+		{
+			"name": "Primal Rage",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "True Barbarian",
+			"subclassSource": "NDD",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"When you have fewer hit points than 3/4 of your hit point maximum (rounded up), you can activate a state of primal fury.",
+				"You can do this whenever you activate your {@b Rage} feature or, if you already have it active, at the beginning of your turns, before moving or acting.",
+				"Spend a number of Hit Dice equal to your proficiency bonus, roll them, and take true damage equal to the total rolled. Repeat this at the start of each of your turns if you wish to maintain it. If you choose not to, or if you don't have enough Hit Dice to spend, the Primal Rage reverts back to a normal Rage.",
+				"While in this state, whenever you make a weapon attack, the attack's damage is treated as if you rolled the maximum damage.",
+				"You can also choose to spend one of your Hit Dice and add it to increase the damage of the attack, but you can only do that a number of times equal to your proficiency bonus per Primal Rage. The Hit Die added this way is also treated as if you rolled its maximum value.",
+				"You can also replace one of your attacks with a special {@b Savagery} attack. You can do this only twice per Primal Rage.",
+				{
+					"type": "entries",
+					"name": "Savagery",
+					"entries": [
+						"You shout a deep and terrifying howl while gathering your strength. Choose between brutally stomping the ground or uncontrollably attacking all creatures around you with a weapon.",
+						"All creatures within 20 feet of you must make a Strength saving throw with a DC equal to 8 + your proficiency bonus + your Strength modifier. On a failure, they are pushed 10 feet away from you, fall {@condition prone|phb}, and take damage equal to your Strength modifier + your barbarian level × 3. On a success, they take only half the damage.",
+						"If you are grappling an enemy, you can use it as the weapon instead. It automatically fails the saving throw, but the grapple ends after the Savagery.",
+						"The damage type is the same as your weapon's if you chose to attack with it, or bludgeoning if you chose to stomp or to use an enemy."
+					]
+				}
+			]
+		},
+		{
+			"name": "Merciless",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "True Barbarian",
+			"subclassSource": "NDD",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"When you reach 10th level, you gain three extra Hit Dice (which also increase your hit point maximum as if you had gained them from leveling up, without adding your Constitution modifier).",
+				"You suffer no penalty to movement while grappling another creature.",
+				"When you reach this level, pick one damage type among fire, cold, lightning, acid, and thunder.",
+				"While raging, you are resistant to radiant, necrotic, psychic, and force damage, are immune to the damage type you chose and to slashing damage from nonmagical attacks, cannot be {@condition blinded|phb} or {@condition deafened|phb}, and have advantage on saving throws against being {@condition incapacitated|phb}."
+			]
+		},
+		{
+			"name": "Brutality",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "True Barbarian",
+			"subclassSource": "NDD",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"While raging, take note of all damage you would have taken but didn't thanks to your resistances or immunities. When you hit a creature or an object with an attack, you can spend one Hit Die to add half of the prevented damage (rounded down) as bonus damage to its damage roll (the bonus damage can be of any damage type your weapon deals).",
+				"The accumulated damage total is reset to zero whenever you add the bonus to an attack or when you reach the end of one of your turns."
+			]
+		},
+		{
+			"name": "Ruthlessness",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "True Barbarian",
+			"subclassSource": "NDD",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you gain four extra Hit Dice (which also increase your hit point maximum as if you had gained them from leveling up, without adding your Constitution modifier).",
+				"You can grapple creatures up to two sizes larger than you.",
+				"When you reach this level, pick a damage type that isn't slashing, piercing, bludgeoning, poison, or the type you chose at 10th level.",
+				"While raging, you are also immune to piercing damage from nonmagical attacks and to the chosen damage type, cannot be {@condition poisoned|phb}, and have advantage on saving throws against being {@condition paralyzed|phb}."
+			]
+		},
+		{
+			"name": "Cruelty",
+			"source": "NDD",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "True Barbarian",
+			"subclassSource": "NDD",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"When you activate your {@b Brutality} feature, you can spend an extra Hit Die to add the full prevented damage instead of only half.",
+				"If the attack roll is a critical hit, double the total bonus damage."
 			]
 		}
 	],
@@ -11201,7 +11528,7 @@
 			],
 			"entries": [
 				"{@b Cost:} 2 Wicked Capacity.",
-				"The Masterpiece gains walking speed equal to its Dexterity modifier x 5.",
+				"The Masterpiece gains walking speed equal to 10 + its Dexterity modifier x 5.",
 				"It can perform a long jump without moving.",
 				"When using the Dash action, it ignores difficult terrain."
 			]
@@ -11291,7 +11618,7 @@
 			],
 			"entries": [
 				"{@b Cost:} 2 Wicked Capacity.",
-				"The Masterpiece gains +2 to Armor Class."
+				"The Masterpiece gains a bonus to its Armor Class equal to its proficiency bonus."
 			]
 		},
 		{
@@ -11470,7 +11797,8 @@
 					"name": "Charge",
 					"entries": [
 						"If the Masterpiece moves at least 20ft. in a straight line before hitting a target, it takes extra 2d6 damage from the attack.",
-						"The creature must then make a Strength saving throw against the spell DC of the Masterpiece's master or be pushed back 10ft."
+						"The creature must then make a Strength saving throw against the spell DC of the Masterpiece's master or be pushed back 10ft.",
+						"This trait can't be used in the same attack as the Pounce trait of the {@optfeature Panther Paw|NDD}. If the Masterpiece has both parts, it must choose which one to use."
 					]
 				}
 			]
@@ -11504,7 +11832,8 @@
 					"name": "Pounce",
 					"entries": [
 						"If the Masterpiece moves at least 20ft. in a straight line before hitting a target, it takes extra 2d6 damage from the attack.", 
-						"The creature must then make a Strength saving throw against the spell DC of the Masterpiece's master or fall prone."
+						"The creature must then make a Strength saving throw against the spell DC of the Masterpiece's master or fall prone.",
+						"This trait can't be used in the same attack as the Charge trait of the {@optfeature Goat Head|NDD}. If the Masterpiece has both parts, it must choose which one to use."
 					]
 				}
 			]
@@ -11531,7 +11860,7 @@
 				}
 			],
 			"entries": [
-				"{@b Cost:} 1 Wicked Capacity.",
+				"{@b Cost:} 2 Wicked Capacity.",
 				"The Masterpiece has advantage on Stealth checks and can use a Bonus action to take the Hide action.",
 				"If the Masterpiece doesn't move on its turn, creatures have disadvantage on checks to detect it."
 			]
@@ -11868,7 +12197,7 @@
 			],
 			"entries": [
 				"{@b Cost:} 2 Wicked Capacity.",
-				"The Masterpiece gains proficiency on the Persuasion skill and one new Action option:",
+				"The Masterpiece gains the ability to speak the languages it knows and one new Action option:",
 				{
 					"type": "entries",
 					"name": "Alluring Song",
@@ -12149,7 +12478,7 @@
 			],
 			"entries": [
 				"{@b Cost:} 4 Wicked Capacity.",
-				"The Masterpiece has {@sense blindsight} out to a distance equal to its Wisdom modifier x 5, unless it is deafened."
+				"The Masterpiece has {@sense blindsight} out to a distance of 30 feet + its Wisdom modifier x 5 feet, unless it is deafened."
 			]
 		},
 		{
@@ -12206,7 +12535,8 @@
 					"type": "entries",
 					"name": "Heightened Mind",
 					"entries": [
-						"The Masterpiece and its master have a strong mental connection, meaning that its master's commands do not require any kind of action."
+						"The Masterpiece and its master have a strong mental connection, meaning that its master's commands do not require any kind of action.",
+						"The Masterpiece and its master can also communicate telepathically while they are within a number of feet of each other equal to its master's artificer level (the Masterpiece's challenge rating) × 10."
 					]
 				}
 			]
@@ -12270,7 +12600,7 @@
 			],
 			"entries": [
 				"{@b Cost:} 3 Wicked Capacity.",
-				"The Masterpiece's max HP is increased by 1 for each Artificer level of its master. It also gains the following Trait:",
+				"The Masterpiece's max HP is increased by 2 for each Artificer level of its master. It also gains the following Trait:",
 				{
 					"type": "entries",
 					"name": "Immutable Form",
