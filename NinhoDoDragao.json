@@ -6,7 +6,7 @@
 				"json": "NDD",
 				"abbreviation": "NDD",
 				"full": "Ninho do Dragão",
-				"version": "9.0",
+				"version": "10.0",
 				"authors": [
 					"Staff do Ninho do Dragão"
 				],
@@ -23,7 +23,7 @@
 			]
 		},
 		"dateAdded": 1754720728,
-		"dateLastModified": 1794540338,
+		"dateLastModified": 1795366067,
 		"edition": "classic",
 		"optionalFeatureTypes": {
 			"NDD:UMP": "Undead Masterpiece Parts"
@@ -7097,6 +7097,46 @@
 				"Ruthlessness|Barbarian|PHB|True Barbarian|NDD|14",
 				"Cruelty|Barbarian|PHB|True Barbarian|NDD|14"
 			]
+		},
+		{
+			"name": "The True Archer",
+			"shortName": "True Archer",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"Feather Fall"
+						],
+						"5": [
+							"Misty Step"
+						],
+						"9": [
+							"Glyph of Warding"
+						],
+						"13": [
+							"Dimension Door"
+						],
+						"17": [
+							"Scrying"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The True Archer|Ranger|PHB|True Archer|NDD|3",
+				"Fangs of Nature|Ranger|PHB|True Archer|NDD|7",
+				"Attention Cascade|Ranger|PHB|True Archer|NDD|7",
+				"Quick Ambusher|Ranger|PHB|True Archer|NDD|11",
+				"Elevated Synchronicity|Ranger|PHB|True Archer|NDD|11",
+				"Dedicated Posture|Ranger|PHB|True Archer|NDD|11",
+				"Wrath of Nature|Ranger|PHB|True Archer|NDD|11",
+				"Transcendent Instinct|Ranger|PHB|True Archer|NDD|15",
+				"Transcend Mind|Ranger|PHB|True Archer|NDD|15",
+				"Unleash Catastrophe|Ranger|PHB|True Archer|NDD|20"
+			]
 		}
 	],
 	"subclassFeature": [
@@ -7863,10 +7903,10 @@
 			"header": 2,
 			"entries": [
 				"When you reach 18th level, you gain six points to distribute as you wish among your ability scores, and the maximum value each of your ability scores can reach is raised from 28 to 30.",
-				"During your turn, if you have already spent all uses of your {@b Action Surge} feature, you can try to force your body beyond all conceivable limits to take one additional action. When you do so, make a Constitution saving throw with a DC equal to 10 + half your total Constitution score (not the modifier), rounded down.",
+				"Within your turn, if you have already spent all uses of your {@b Action Surge} feature, you can try to force your body beyond all conceivable limits to take one additional action. When you do so, make a Constitution saving throw with a DC equal to 10 + half your total Constitution score (not the modifier), rounded down. If you have already taken more than one action this turn, increase that DC by 5.",
 				"If you fail, you cannot take the extra action, you gain two levels of {@condition exhaustion|phb}, and your turn immediately ends.",
 				"If you succeed, you can take the extra action, but after you take it, you still gain one level of {@condition exhaustion|phb}.",
-				"You can repeat this as many times as your body can handle, but each time you do so after the first (whether you succeed or fail), the base DC increases by 5. These increases reset when you finish a long rest."
+				"You can activate this skill only once per turn but otherwise can repeat this as many times as your body can handle, each time you do so after the first (whether you succeed or fail), the base DC increases by 10. These increases reset when you finish a long rest."
 			]
 		},
 		{
@@ -8003,6 +8043,789 @@
 			"entries": [
 				"When you activate your {@b Brutality} feature, you can spend an extra Hit Die to add the full prevented damage instead of only half.",
 				"If the attack roll is a critical hit, double the total bonus damage."
+			]
+		},
+		{
+			"name": "The True Archer",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 3,
+			"entries": [
+				"True Archers are rangers that live by the bow, specializing in the art of hunting, honing their focus and long-range precision to the utmost limit.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dauntless Hunter|Ranger|PHB|True Archer|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "True Archer Magic|Ranger|PHB|True Archer|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Flow State|Ranger|PHB|True Archer|NDD|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sharpen Mind|Ranger|PHB|True Archer|NDD|3"
+				}
+			]
+		},
+		{
+			"name": "Dauntless Hunter",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"To choose this archetype at 3rd level, you can't have levels in any class other than Ranger.",
+				"If you ever take a level in a class other than Ranger when you level up, you immediately lose all benefits of this subclass."
+			]
+		},
+		{
+			"name": "True Archer Magic",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the True Archer Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
+				{
+					"type": "table",
+					"caption": "True Archer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Feather Fall|PHB}"
+						],
+						[
+							"5th",
+							"{@spell Misty Step|PHB}"
+						],
+						[
+							"9th",
+							"{@spell Glyph of Warding|PHB}"
+						],
+						[
+							"13th",
+							"{@spell Dimension Door|PHB}"
+						],
+						[
+							"17th",
+							"{@spell Scrying|PHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Flow State",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you gain the capacity to attain greater focus in battle. This focus represents a state of flow or synchronicity between your mind and the battlefield, and its status, your opponents, your allies, and everything happening around you.",
+				"Having greater focus means being able to do things you normally wouldn't be able to, at a cost.",
+				"While in combat, you always keep track of a number called {@b Focus Level}. It starts at 1 as soon as you roll initiative and can never be less than 0.",
+				"Certain actions or choices can either increase or decrease your flow, and you must keep track of it at all times.",
+				"As you gain levels in this archetype, you will have more ways to increase and decrease it, and you'll gain more {@b passive and active abilities}.",
+				"Passive abilities come into effect just by having at least a certain number of focus levels.",
+				"Active abilities are the ones that you can activate by spending a number of focus levels. They also specify the minimum total focus levels you must have to activate them. If they don't, the minimum equals the amount they spend.",
+				"While {@condition unconscious|PHB} or {@condition stunned|PHB}, you lose half of your current focus level (rounded down) at the start of each of your turns.",
+				{
+					"type": "entries",
+					"name": "Focus Change Table",
+					"entries": [
+						"The following tables show actions, choices, or events that increase or decrease your focus and by how much.",
+						"These tables gain new entries at certain levels.",
+						{
+							"type": "table",
+							"caption": "Attacking!",
+							"colLabels": [
+								"Focus Change",
+								"Trigger"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"+1",
+									"Hitting the same target consecutively (starts at the second hit)."
+								],
+								[
+									"+2",
+									"Hitting a hostile creature with an attack roll (double on a critical hit)."
+								],
+								[
+									"+2",
+									"Killing or knocking out a hostile creature."
+								],
+								[
+									"-2",
+									"Missing a hostile creature with an attack roll (double on a critical failure)."
+								],
+								[
+									"-2",
+									"Being hit by a hostile creature with an attack roll (double on a critical hit)."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Tracking!",
+							"colLabels": [
+								"Focus Change",
+								"Trigger"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"+1",
+									"Detecting a hidden enemy through passive Perception (double on a {@skill Perception} check)."
+								],
+								[
+									"+1",
+									"Discovering an immunity, resistance, or vulnerability of a creature."
+								],
+								[
+									"+1",
+									"Moving no more than half your speed on your turn (double if you don't move at all)."
+								],
+								[
+									"+1",
+									"Starting your turn still holding the same ranged weapon (double if you keep a hostile creature in your line of sight)."
+								],
+								[
+									"+2",
+									"Successfully hiding from hostile creatures (only once per {@action Hide|PHB|Hide} action)."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"style": "ve-mt-4",
+					"entries": [
+						"{@b {@i Passive Abilities}}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Hawk Eyes.",
+									"entries": [
+										"While your focus level is greater than 9, you gain a bonus to your passive Perception equal to your focus level divided by 10 (rounded down)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Enemy Stalker (Favored Enemy).",
+									"entries": [
+										"While your focus level is greater than 14, you gain a +1 modifier to ranged attack and damage rolls against your Favored Enemies.",
+										"While your focus level is greater than 24, the modifier becomes +2."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Foe Stalker (Favored Foe).",
+									"entries": [
+										"While your focus level is greater than 14, you can concentrate on both your Favored Foe feature and on other things at the same time. You make separate concentration saving throws for them, with disadvantage.",
+										"While your focus level is greater than 19, the concentration saving throws no longer have disadvantage.",
+										"While your focus level is greater than 24, Favored Foe doesn't require concentration at all."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"style": "ve-mt-4",
+					"entries": [
+						"{@b {@i Active Abilities}}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Natural Insight.",
+									"entries": [
+										"When you roll for an ability check, you can spend 5 focus levels to give yourself a bonus on that roll equal to your proficiency bonus. You can choose to do so before or after the roll, but before knowing the result."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Instinctive Shot.",
+									"entries": [
+										"Before making a ranged attack roll, you can spend 5 focus levels to give the roll a modifier equal to your own {@skill Insight} check modifier."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sharpen Mind",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you can spend a bonus action in combat to gain focus levels equal to your proficiency bonus.",
+				"You can use this bonus action a number of times equal to your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Fangs of Nature",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Starting at 7th level, you can imbue your shots with natural energy. When you hit a creature with a ranged weapon attack, you can expend one spell slot to deal extra damage to the target.",
+				"Roll {@dice 1d6} to determine the damage type.",
+				{
+					"type": "table",
+					"caption": "Fangs of Nature Damage Type",
+					"colLabels": [
+						"d6",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							1,
+							"Acid"
+						],
+						[
+							2,
+							"Cold"
+						],
+						[
+							3,
+							"Fire"
+						],
+						[
+							4,
+							"Lightning"
+						],
+						[
+							5,
+							"Poison"
+						],
+						[
+							6,
+							"Lightning"
+						]
+					]
+				},
+				"The extra damage is {@damage 2d6} for a 1st-level spell slot, plus {@damage 1d6} for each spell level higher than 1st, to a maximum of {@damage 6d6}."
+			]
+		},
+		{
+			"name": "Attention Cascade",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Starting at 7th level, you gain 2 focus levels when rolling initiative, and your list of passive and active flow abilities increases.",
+				{
+					"type": "table",
+					"caption": "Attacking!",
+					"colLabels": [
+						"Focus Change",
+						"Trigger"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"+1",
+							"Hitting a hostile creature with an attack while standing 30 feet or more higher than the target."
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"style": "ve-mt-4",
+					"entries": [
+						"{@b {@i Passive Abilities}}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Elemental Sway.",
+									"entries": [
+										"While your focus level is greater than 19 and you use your Fangs of Nature feature, you roll an additional damage type die and choose between the rolled values to determine the damage type of the attack.",
+										"If your focus level is greater than 49, you can choose the damage type instead of rolling."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Improved Range.",
+									"entries": [
+										"While your focus level is greater than 19, the range of your ranged weapon attacks increases by 5 × your proficiency bonus."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Focused Aim.",
+									"entries": [
+										"While your focus level is greater than 29, you gain a modifier to your ranged weapon attack and damage rolls equal to half your proficiency bonus (rounded down)."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"style": "ve-mt-4",
+					"entries": [
+						"{@b {@i Active Abilities}}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Extended Shot.",
+									"entries": [
+										"You can spend 5 focus levels to extend the range of one weapon attack by 20 × your proficiency bonus."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Dodge.",
+									"entries": [
+										"While your focus level is greater than 24, when you would be hit by an attack from a source that you can see, you can use a reaction and expend 10 focus levels to increase your AC against that attack. The increase equals your proficiency bonus if the attack is melee, or double that if it is ranged."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Quick Ambusher",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Starting at 11th level, you become capable of quickly setting up magic traps. Whenever you are outside combat, you may cast {@spell Glyph of Warding|PHB} with a casting time of one action if you choose to use the {@b Explosive Runes} option."
+			]
+		},
+		{
+			"name": "Elevated Synchronicity",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you gain 3 focus levels when rolling initiative, and your list of passive and active flow abilities increases.",
+				{
+					"type": "table",
+					"caption": "Tracking!",
+					"colLabels": [
+						"Focus Change",
+						"Trigger"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"+PB × slot level",
+							"After rolling initiative, you can choose to spend a spell slot of any level and immediately increase your focus level by a number equal to that spell slot's level × your proficiency bonus."
+						],
+						[
+							"+PB",
+							"Whenever you succeed on a mental saving throw, you gain focus levels equal to your proficiency bonus."
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"style": "ve-mt-4",
+					"entries": [
+						"{@b {@i Passive Abilities}}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Deadly Precision.",
+									"entries": [
+										"While your focus level is greater than 49, the range of critical hits of your ranged attacks is reduced by one (if they would normally be a critical hit on a 20, they are now on a 19. If they would normally be on a 19, they are now on an 18, and so on)."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"style": "ve-mt-4",
+					"entries": [
+						"{@b {@i Active Abilities}}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Magic Connection.",
+									"entries": [
+										"You can spend 15 focus levels to increase your spell save DC by a number equal to half your proficiency bonus (rounded down) until the end of your turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Bowstring Dance.",
+									"entries": [
+										"You can spend 5 focus levels to gain advantage on Dexterity saving throws until the end of your next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Obsessive Prowler.",
+									"entries": [
+										"You can spend 5 focus levels to gain advantage on your next ranged attack roll against your Favored Foe or against a Favored Enemy."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Extra Shot.",
+									"entries": [
+										"While your focus level is greater than 29, you can spend 10 focus levels to make one extra attack as a bonus action. If it is greater than 59, you take that extra attack as part of your {@action Attack|PHB|Attack} action instead."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dedicated Posture",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Starting at 11th level, you can choose to forgo every distraction to reach deeper concentration.",
+				"As a bonus action on your turn, you can adopt the Dedicated Posture, and you must stay in it until the start of your next turn, when you decide again whether to continue or end it.",
+				{
+					"type": "entries",
+					"entries": [
+						"{@b {@i While Active}}",
+						{
+							"type": "list",
+							"items": [
+								"You cannot move and are unwilling to move or be moved (though hostile effects may compel you to).",
+								"You automatically fail Dexterity and Strength saving throws.",
+								"Attack rolls have advantage against you.",
+								"You cannot take the {@action Hide|PHB|Hide} action."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@b {@i Benefits}}",
+						{
+							"type": "list",
+							"items": [
+								"You have advantage on {@skill Perception} and {@skill Insight} checks.",
+								"Your eyes gain the ability to focus and zoom, and you can see anything in your line of sight as if you were standing 10 × your proficiency bonus closer to that object.",
+								"At the beginning of your turn in combat (except when you adopt the posture), you gain focus levels equal to your proficiency bonus.",
+								{
+									"type": "list",
+									"style": "list-indent",
+									"items": [
+										"You gain a cumulative +1 focus level bonus on the next round if you decide to keep the posture up. The bonus resets whenever you end the posture or when combat ends."
+									]
+								},
+								"Whenever a creature moves in or out of your normal range, if you are holding your ranged weapon, you may use it to make an opportunity attack."
+							]
+						}
+					]
+				},
+				"{@i You can also use this feature outside combat, but any bonus to focus levels or accumulation doesn't apply until initiative is rolled.}"
+			]
+		},
+		{
+			"name": "Wrath of Nature",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Starting at 11th level, you can further empower your shots with elemental essence to make a special action in place of one of your normal ranged attacks. When you choose to do so, you instantly fabricate special magical ammunition from a specific element, compressing its power and loading it into your weapon.",
+				"To activate this feature, you must have at least 20 focus levels, which are then consumed. You can do this a number of times equal to your Wisdom modifier, but can only change one of your attacks per turn.",
+				"Choose one of the following options.",
+				{
+					"type": "entries",
+					"name": "Roaring Thunderclap",
+					"entries": [
+						"When you take a shot, the thunderclap is immediately released, and all creatures in a 30-foot cone in front of you must succeed on a Strength saving throw against your spell save DC or be violently thrown away from you up to 5 × your ranger level in feet, or until they collide with something in the way.",
+						"When you make this shot, if you are flying or if you choose to jump, you are also thrown in the opposite direction of the blast, moving only half of the same distance. If you point your weapon down, you move up."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blazing Magma",
+					"entries": [
+						"Shoot at a point you can see within your weapon's normal range. At impact, a burst of lava erupts, and all creatures within an area equal to 5 × your proficiency bonus must succeed on a Dexterity saving throw against your spell save DC, taking {@damage 8d6} fire damage, or half as much on a success."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lightning Lance",
+					"entries": [
+						"You can make a normal weapon attack against a creature within your weapon's normal range. The attack deals an extra {@damage 4d6} lightning damage. If there are no other creatures between yourself and the target, the extra damage is increased by {@damage 2d6}. Otherwise, each creature in a 5-foot-wide line between you and the target must succeed on a Constitution saving throw against your spell save DC, taking {@damage 4d6} lightning damage on a failure, or half as much on a success."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Corrosive Dart",
+					"entries": [
+						"You can make a normal weapon attack against a creature within your weapon's normal range. The attack deals an extra {@damage 2d6} acid damage, and on a hit, the ammunition explodes around the creature, which must succeed on a Dexterity saving throw or have its AC reduced by 1 and be covered in acid. At the beginning of its next turn, the creature must then succeed on a Constitution saving throw or have its AC decrease by 1 again."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Freezing Spike",
+					"entries": [
+						"You can make a normal weapon attack against a creature within your weapon's normal range. The attack deals an extra {@damage 2d6} cold damage. On a hit, the ice spreads through the creature from within. The creature must succeed on a Constitution saving throw. On a failure, the creature can't take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action. It gets only one of the three."
+					]
+				}
+			]
+		},
+		{
+			"name": "Transcendent Instinct",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, the focus you gain after rolling initiative is equal to your proficiency bonus, and your list of passive and active flow abilities increases.",
+				{
+					"type": "table",
+					"caption": "Attacking!",
+					"colLabels": [
+						"Focus Change",
+						"Trigger"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"Double",
+							"Whenever you knock out or kill a hostile creature with a shot empowered by any focus ability, you gain double the focus levels you normally would."
+						],
+						[
+							"Double",
+							"Whenever you hit a hostile creature with an attack empowered by an active focus ability other than Unavoidable Shot or Lethal Shot, you gain double the focus levels you would normally gain for hitting that target."
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"style": "ve-mt-4",
+					"entries": [
+						"{@b {@i Passive Abilities}}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Sharpened Fangs.",
+									"entries": [
+										"While your focus level is greater than 49, your ranged attacks deal an extra {@damage 1d6} damage of your choice from acid, cold, fire, lightning, poison, or thunder."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"style": "ve-mt-4",
+					"entries": [
+						"{@b {@i Active Abilities}}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Unavoidable Shot.",
+									"entries": [
+										"While your focus level is greater than 49 and you would miss an attack roll, you can spend 20 focus levels to hit instead."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Lethal Shot.",
+									"entries": [
+										"While your focus level is greater than 99, before making an attack roll, you can spend 40 focus levels to automatically turn that attack into a critical hit."
+									]
+								},
+								{
+									"type": "item",
+									"name": "One with the Wind.",
+									"entries": [
+										"While your focus level is greater than 29, if you are not in your Dedicated Posture and you fail a Dexterity saving throw, you can spend 10 focus levels as a reaction and succeed instead."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Unescapable Eye.",
+									"entries": [
+										"While your focus level is greater than 29, you can spend 10 focus levels and make a {@skill Perception} check as a bonus action to detect enemies and analyze your surroundings."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transcend Mind",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you can spend all your remaining uses of Sharpen Mind at once as a bonus action and gain half the focus levels you would normally gain with them. The amount is (number of uses × your proficiency bonus) divided by 2 (rounded down)."
+			]
+		},
+		{
+			"name": "Unleash Catastrophe",
+			"source": "NDD",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "True Archer",
+			"subclassSource": "NDD",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you are blessed by nature with the ability to empower one of your shots with an ultimate expression of destruction.",
+				"You can use this feature only once a day. As an action, choose one of the following options.",
+				{
+					"type": "entries",
+					"name": "Nature's Revolution",
+					"entries": [
+						"You grow countless wooden arms. Some grasp your weapon, some ready ammunition, and some shoot at your enemies, all at once, creating a seemingly unstoppable and continuous volley.",
+						"Make a ranged attack roll with your weapon against a creature within its range. The attack is affected by your focus abilities as normal.",
+						"If you hit the creature, the damage it takes accounts only for the weapon's base damage dice and your ability modifier. Then, you can choose to make another attack as part of the same action. If you do so, you take a cumulative -1 modifier to the attack roll.",
+						"You can keep attacking and keep gaining the -1 modifiers until you miss a target or decide not to continue with the attacks.",
+						"When that happens, the action ends and the modifiers are removed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beast of Calamity",
+					"entries": [
+						"Load your ranged weapon with chaotic elemental essence and make a ranged attack against a target.",
+						"In the air, as the shot travels toward the target, it transforms into an elemental Beast of Calamity that violently attacks on a hit, exploding in the same instant.",
+						"The attack deals an extra {@damage 5d6} acid damage, {@damage 5d6} cold damage, {@damage 5d6} fire damage, {@damage 5d6} lightning damage, {@damage 5d6} poison damage, and {@damage 5d6} thunder damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spirit of Devastation",
+					"entries": [
+						"Create special ammunition made from spiritual energy and shoot it at a target you can see.",
+						"When you do so, it takes the form of a spirit, generally very slim and agile, like a dragon, an eel, or a feline. It strikes toward the target, gaining potency and speed.",
+						"This shot doesn't have a maximum range.",
+						"This shot automatically misses any target within the normal or long range of your weapon.",
+						{
+							"type": "list",
+							"items": [
+								"The attack becomes more precise and powerful the farther you are from the target.",
+								"For each 25 feet between you and the target, the attack gains {@damage 1d6} extra damage.",
+								"For each 50 feet between you and the target, the attack gains a +1 bonus to the attack roll.",
+								"For each 100 feet between you and the target, the critical hit range of the attack is reduced by 1."
+							]
+						}
+					]
+				}
 			]
 		}
 	],
